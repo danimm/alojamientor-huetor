@@ -1,17 +1,18 @@
 <template lang="pug">
   #app
-    ah-header
+    Header
     router-view
     ah-footer
 </template>
 
 <script>
 // @ is an alias to /src
-  import AhHeader from '@/components/layout/AhHeader.vue'
+  // import AhHeader from '@/components/layout/AhHeader.vue'
+  import Header from '@/components/layout/Header.vue'
   import AhFooter from '@/components/layout/AhFooter.vue'
 
   export default {
-    components: { AhHeader, AhFooter }
+    components: { Header, AhFooter }
   }
 </script>
 
