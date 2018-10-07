@@ -24,7 +24,7 @@
         </b-col>
         <b-col>
           <img 
-            src="@/assets/images/image1.jpg"
+            src="@/assets/images/compressed/Image1.jpg"
             class="d-block img-fluid w-100"
             />
         </b-col>
@@ -35,24 +35,27 @@
         </b-col>
         <b-col>
           <img 
-            src="@/assets/images/image2.jpg"
+            src="@/assets/images/compressed/Image2.jpg"
             class="d-block img-fluid w-100"
             />
         </b-col>
       </b-row>
 
       <b-row id="img-bottom">
-        <b-col cols="2">
-          <img 
-            src="@/assets/images/image1.jpg"
+        <b-col>
+          <!-- <img 
+            src="@/assets/images/compressed/Image2.jpg"
             class="d-block img-fluid w-100"
-            />
+            /> -->
+            <b-img-lazy :src="Image2" fluid-grow blank-color="#bbb" alt="img" />
         </b-col>
         <b-col>
-          <img 
-            src="@/assets/images/image3.jpg"
+          <!-- <b-img :src="Image3" fluid alt="Responsive image" /> -->
+          <b-img-lazy :src="Image3" fluid-grow blank-color="#bbb" alt="img" />
+          <!-- <img 
+            src="@/assets/images/compressed/Image2.jpg"
             class="d-block img-fluid w-100"
-            />
+            /> -->
         </b-col>
         <b-col cols="2" align-self="center" class="p-5 text-center">
           <p>
@@ -65,18 +68,34 @@
 </template>
 
 <script>
+  import Image1 from '@/assets/images/compressed/Image1.jpg'
+  import Image2 from '@/assets/images/compressed/Image2.jpg'
+  import Image3 from '@/assets/images/compressed/Image3.jpg'
+  // import Image4 from '@/assets/images/compressed/Image4.jpg'
+
   export default {
-    
+    data() {
+      return {
+        Image1,
+        Image2,
+        Image3,
+        // Image4
+      }
+    }
   }
 </script>
 
 <style scoped>
-  img {
+  #img-bottom {
+    height: 400px;
+  }
+  #img-bottom img {
     height: 100%;
+    /* width: 100%; */
     object-fit: cover;
+    object-position: center bottom;
   }
   .col, .col-2 {
-    max-height: 300px;
     padding: 0;
   }
 </style>
