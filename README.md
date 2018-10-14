@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # alojamientos-huetor
 
 ## Project setup
@@ -14,3 +15,6 @@ npm run serve
 ```
 npm run build
 ```
+=======
+# alojamientor-huetor
+>>>>>>> origin/master
