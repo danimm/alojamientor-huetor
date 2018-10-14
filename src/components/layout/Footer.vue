@@ -5,50 +5,83 @@
         <b-col class="text-white">
           <img src="@/assets/Logo-White.svg" alt="Logo Huetor" class="logo">
           <p class="mt-4">
-            Hotel WordPress Theme is the best hotel, hostel, resort, apartment presentation WordPress theme. With its beautiful design and high coding quality, this theme can showcase your unique accommodations to the world and attract more visitors to your website.
+            <!-- Hotel WordPress Theme is the best hotel, hostel, resort, apartment presentation WordPress theme. With its beautiful design and high coding quality, this theme can showcase your unique accommodations to the world and attract more visitors to your website. -->
           </p>
-          <p>855-123-1234 / 100-1234</p>
-          <p>Super Hotel Street. 1000 Thailand</p>
-          <p>reservation@hotel.com</p>
+          <p>
+            Comarca de la Axarquía - Málaga - España
+          </p>
+          <p>Trataremos de responder su correo electrónico antes de 24 horas.
+            Para reservas, consultas o información adicional contacte con nosotros.</p>
+          <p>
+            <img src="@/assets/phone.svg" alt="home" class="icon">
+            +34 659 589 562
+          </p>
+          <p>
+            <img src="@/assets/phone.svg" alt="home" class="icon">
+            +34 659 589 562
+          </p>
+          <p>
+            <img src="@/assets/home.svg" alt="home" class="icon">
+            Paraje la Rotura, 29712 La Viñuela, Málaga, España
+          </p>
+          <p>
+            <img src="@/assets/mail.svg" alt="home" class="icon">
+            info@alojamientoshuetor.com
+          </p>
         </b-col>
         <b-col>
-          <h4 class="subtitle mb-4 text-white">Instagram widget</h4>
+          <h4 class="subtitle mb-4 text-white">Cuenta de Instagram ?</h4>
           <div class="grid-container">
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image16.jpg" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image17.jpg" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
-            </picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image18.jpg" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image19.jpg" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
-            </picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image20.jpg" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image21.jpg" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/image2.jpg" alt="">
+              <img src="@/assets/images/compressed/Image22.jpg" alt="">
+            </picture>
+            <picture>
+              <img src="@/assets/images/compressed/Image23.jpg" alt="">
+            </picture>
+            <picture>
+              <img src="@/assets/images/compressed/Image24.jpg" alt="">
             </picture>
           </div>
         </b-col>
         <b-col>
           <h4 class="text-white">Otros datos</h4>
           <p class="text-white mt-4">
-            Winehouse WordPress Theme https://t.co/lXZmhpCAYC for wineries, shops & bars, pubs, online wine sales, #wine… https://t.co/2JF8nGvi7H
+            Este es un espacio que podemos utilizar para añadir enlaces a otras web relacionadas con Huetor o actividades que se te ocurran.
           </p>
           <p class="text-white mt-4">
-            Winehouse WordPress Theme https://t.co/lXZmhpCAYC for wineries, shops & bars, pubs, online wine sales, #wine… https://t.co/2JF8nGvi7H
+            Este es un espacio que podemos utilizar para añadir enlaces a otras web relacionadas con Huetor o actividades que se te ocurran.
           </p>
+        </b-col>
+      </b-row>
+    </b-container>
+    <b-container>
+      <b-row class="lastFooter">
+        <b-col>
+          <p>Creado por Daniel Muñoz Martín</p>
+        </b-col>
+        <b-col class="text-right">
+          <a href="#" class="link">Home</a>
+          <a href="#" class="link">Galería</a>
+          <a href="#" class="link">Precio</a>
+          <a href="#" class="link">Contacto</a>
         </b-col>
       </b-row>
     </b-container>
@@ -78,10 +111,26 @@
     object-position: left;
   }
   .logo {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
   }
-  /* .img-container {
-    height: 100px;
-  } */
+  .icon {
+    max-width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+  .lastFooter {
+    margin-top: 30px;
+    border-top: gray 2px solid;
+    padding-top: 30px;
+    color: white;
+  }
+  .lastFooter a {
+    color: white;
+    padding-right: 12px;
+  }
+  .lastFooter .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
 </style>

@@ -2,7 +2,7 @@
   #app
     Header
     router-view
-    ah-footer
+    //- ah-footer
     Footer
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-container class="mt-4">
+  <div class="wrapper">
+    <b-container class="mt-5 mb-5">
       <b-row class="justify-content-center">
         <b-col
           cols="8"
@@ -43,19 +43,10 @@
 
       <b-row id="img-bottom">
         <b-col>
-          <!-- <img 
-            src="@/assets/images/compressed/Image2.jpg"
-            class="d-block img-fluid w-100"
-            /> -->
             <b-img-lazy :src="Image2" fluid-grow blank-color="#bbb" alt="img" />
         </b-col>
         <b-col>
-          <!-- <b-img :src="Image3" fluid alt="Responsive image" /> -->
           <b-img-lazy :src="Image3" fluid-grow blank-color="#bbb" alt="img" />
-          <!-- <img 
-            src="@/assets/images/compressed/Image2.jpg"
-            class="d-block img-fluid w-100"
-            /> -->
         </b-col>
         <b-col cols="2" align-self="center" class="p-5 text-center">
           <p>
@@ -97,5 +88,9 @@
   }
   .col, .col-2 {
     padding: 0;
+  }
+  .row {
+    max-width: 100%;
+    margin-left: 0;
   }
 </style>

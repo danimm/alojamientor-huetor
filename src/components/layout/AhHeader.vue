@@ -39,7 +39,4 @@
   nav {
     background-color: inherit;
   }
-  // .nav-item .nav-link {
-  //   color: rgba(255, 255, 255, 0.7);
-  // }
 </style>

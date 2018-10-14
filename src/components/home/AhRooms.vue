@@ -7,22 +7,23 @@
         </b-row>
         <b-row>
           <b-col class="pl-0">
-            <img src="@/assets/images/image3.jpg" alt="">
+            <img src="@/assets/images/compressed/Image10.jpg" alt="">
           </b-col>
           <b-col>
-            <img src="@/assets/images/image3.jpg" alt="">
+            <img src="@/assets/images/compressed/Image11.jpg" alt="">
           </b-col>
           <b-col>
-            <img src="@/assets/images/image3.jpg" alt="">
+            <img src="@/assets/images/compressed/Image12.jpg" alt="">
           </b-col>
           <b-col>
-            <img src="@/assets/images/image3.jpg" alt="">
+            <img src="@/assets/images/compressed/Image13.jpg" alt="">
           </b-col>
         </b-row>
         <b-row class="mt-5">
           <b-col cols="10" class="pl-0">
             <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+              Cada casa consta de dos grandes dormitorios, salón/comedor, cocina totalmente equipada, dos baños, una gran terraza con barbacoa.
+              Chimenea en el salón para aquellos que les guste el calor del fuego en invierno. Aire Acondicionado y Calefacción (en las habitaciones).
             </p>
           </b-col>
           <b-col class="bt-container">
@@ -44,9 +45,9 @@
 
 <style scoped>
   .hero {
-    background-image: url('../../assets/images/image3.jpg');
+    background-image: url('../../assets/images/compressed/Image2.jpg');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center 40%;
     height: 500px;
     position: relative;
   }
@@ -56,7 +57,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   img {
     width: 100%;
