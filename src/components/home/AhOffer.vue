@@ -4,7 +4,7 @@
             class="mt-5 mb-5">
       <b-col cols="3">
         <b-card title="Vistas de la Maroma"
-                :img-src="Image1"
+                :img-src="Image7"
                 img-top
                 class="text-center">
           <p class="card-text">
@@ -15,7 +15,7 @@
       </b-col>
       <b-col cols="3" class="mr-4 ml-4">
         <b-card title="El Pantano de la Viñuela"
-                :img-src="Image2"
+                :img-src="Image4"
                 img-bottom
                 class="text-center">
           <p class="card-text">
@@ -26,7 +26,7 @@
       </b-col>
       <b-col cols="3">
         <b-card title="Equipadas con todo"
-                :img-src="Image3"
+                :img-src="Image10"
                 img-top
                 class="text-center">
           <p class="card-text">
@@ -40,16 +40,11 @@
 </template>
 
 <script>
-  import Image1 from '@/assets/images/compressed/Image7.jpg'
-  import Image2 from '@/assets/images/compressed/Image4.jpg'
-  import Image3 from '@/assets/images/compressed/Image10.jpg'
   export default {
-    data() {
-      return {
-        Image1,
-        Image2,
-        Image3
-      }
+    props: {
+      Image4: { type: String, required: true },
+      Image7: { type: String, required: true },
+      Image10: { type: String, required: true },
     }
   }
 </script>

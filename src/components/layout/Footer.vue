@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <b-col class="text-white">
-          <img src="@/assets/Logo-White.svg" alt="Logo Huetor" class="logo">
+          <img :src="Logo" alt="Logo Huetor" class="logo">
           <p class="mt-4">
             <!-- Hotel WordPress Theme is the best hotel, hostel, resort, apartment presentation WordPress theme. With its beautiful design and high coding quality, this theme can showcase your unique accommodations to the world and attract more visitors to your website. -->
           </p>
@@ -13,19 +13,19 @@
           <p>Trataremos de responder su correo electrónico antes de 24 horas.
             Para reservas, consultas o información adicional contacte con nosotros.</p>
           <p>
-            <img src="@/assets/phone.svg" alt="home" class="icon">
+            <img :src="Phone" alt="phone-icon" class="icon">
             +34 659 589 562
           </p>
           <p>
-            <img src="@/assets/phone.svg" alt="home" class="icon">
+            <img :src="Phone" alt="phone-icon" class="icon">
             +34 659 589 562
           </p>
           <p>
-            <img src="@/assets/home.svg" alt="home" class="icon">
+            <img :src="Home" alt="home-icon" class="icon">
             Paraje la Rotura, 29712 La Viñuela, Málaga, España
           </p>
           <p>
-            <img src="@/assets/mail.svg" alt="home" class="icon">
+            <img :src="Mail" alt="mail-icon" class="icon">
             info@alojamientoshuetor.com
           </p>
         </b-col>
@@ -33,31 +33,31 @@
           <h4 class="subtitle mb-4 text-white">Cuenta de Instagram ?</h4>
           <div class="grid-container">
             <picture>
-              <img src="@/assets/images/compressed/Image16.jpg" alt="">
+              <img :src="Image16" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image17.jpg" alt="">
+              <img :src="Image17" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image18.jpg" alt="">
+              <img :src="Image18" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image19.jpg" alt="">
+              <img :src="Image19" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image20.jpg" alt="">
+              <img :src="Image20" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image21.jpg" alt="">
+              <img :src="Image21" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image22.jpg" alt="">
+              <img :src="Image22" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image23.jpg" alt="">
+              <img :src="Image23" alt="">
             </picture>
             <picture>
-              <img src="@/assets/images/compressed/Image24.jpg" alt="">
+              <img :src="Image24" alt="">
             </picture>
           </div>
         </b-col>
@@ -90,7 +90,21 @@
 
 <script>
   export default {
-    
+    props: {
+      Logo: { type: String, required: true},
+      Phone: { type: String, required: true},
+      Home: { type: String, required: true},
+      Mail: { type: String, required: true},
+      Image16: { type: String, required:true },
+      Image17: { type: String, required:true },
+      Image18: { type: String, required:true },
+      Image19: { type: String, required:true },
+      Image20: { type: String, required:true },
+      Image21: { type: String, required:true },
+      Image22: { type: String, required:true },
+      Image23: { type: String, required:true },
+      Image24: { type: String, required:true },
+    }
   }
 </script>
 

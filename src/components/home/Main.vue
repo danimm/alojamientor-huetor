@@ -14,15 +14,15 @@
     >
       <b-carousel-slide>
         <img  slot="img" class="d-block img-fluid w-100" width="100%" height="480" 
-              src="@/assets/images/image1.jpg" alt="image slot">
+              :src="Slide1" alt="image slot">
       </b-carousel-slide>
       <b-carousel-slide>
         <img  slot="img" class="d-block img-fluid w-100" width="100%" height="480" 
-              src="@/assets/images/image2.jpg" alt="image slot">
+              :src="Slide2" alt="image slot">
       </b-carousel-slide>
       <b-carousel-slide>
         <img  slot="img" class="d-block img-fluid w-100" width="100%" height="480" 
-              src="@/assets/images/image3.jpg" alt="image slot">
+              :src="Slide3" alt="image slot">
       </b-carousel-slide>
       <div class="overlay">
         <div class="container">
@@ -50,6 +50,11 @@ export default {
       sliding: null
     }
   },
+  props: {
+      Slide1: { type: String, required: true },
+      Slide2: { type: String, required: true },
+      Slide3: { type: String, required: true },
+    },
   methods: {
     onSlideStart (slide) {
       this.sliding = true

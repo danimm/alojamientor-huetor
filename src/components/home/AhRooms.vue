@@ -7,16 +7,16 @@
         </b-row>
         <b-row>
           <b-col class="pl-0">
-            <img src="@/assets/images/compressed/Image10.jpg" alt="">
+            <img :src="Image10" alt="">
           </b-col>
           <b-col>
-            <img src="@/assets/images/compressed/Image11.jpg" alt="">
+            <img :src="Image11" alt="">
           </b-col>
           <b-col>
-            <img src="@/assets/images/compressed/Image12.jpg" alt="">
+            <img :src="Image12" alt="">
           </b-col>
           <b-col>
-            <img src="@/assets/images/compressed/Image13.jpg" alt="">
+            <img :src="Image13" alt="">
           </b-col>
         </b-row>
         <b-row class="mt-5">
@@ -39,7 +39,12 @@
 
 <script>
   export default {
-    
+    props: {
+      Image10: { type: String, required: true },
+      Image11: { type: String, required: true },
+      Image12: { type: String, required: true },
+      Image13: { type: String, required: true },
+    }
   }
 </script>
 

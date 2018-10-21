@@ -15,7 +15,7 @@
       </b-row>      
 
     </b-container>
-    <b-container-fluid>
+    <b-container fluid>
       <b-row>
         <b-col align-self="center" class="p-5 text-center">
           <p>Naturaleza</p>
@@ -24,7 +24,7 @@
         </b-col>
         <b-col>
           <img 
-            src="@/assets/images/compressed/Image1.jpg"
+            :src="Image1"
             class="d-block img-fluid w-100"
             />
         </b-col>
@@ -35,7 +35,7 @@
         </b-col>
         <b-col>
           <img 
-            src="@/assets/images/compressed/Image2.jpg"
+            :src="Image2"
             class="d-block img-fluid w-100"
             />
         </b-col>
@@ -54,24 +54,17 @@
           </p>
         </b-col>
       </b-row>
-    </b-container-fluid>
+    </b-container>
   </div>
 </template>
 
 <script>
-  import Image1 from '@/assets/images/compressed/Image1.jpg'
-  import Image2 from '@/assets/images/compressed/Image2.jpg'
-  import Image3 from '@/assets/images/compressed/Image3.jpg'
-  // import Image4 from '@/assets/images/compressed/Image4.jpg'
 
   export default {
-    data() {
-      return {
-        Image1,
-        Image2,
-        Image3,
-        // Image4
-      }
+    props: {
+      Image1: { type: String, required: true },
+      Image2: { type: String, required: true },
+      Image3: { type: String, required: true },
     }
   }
 </script>
@@ -85,6 +78,9 @@
     /* width: 100%; */
     object-fit: cover;
     object-position: center bottom;
+  }
+  .container-fluid{
+    padding: 0;
   }
   .col, .col-2 {
     padding: 0;
