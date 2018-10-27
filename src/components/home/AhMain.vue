@@ -1,47 +1,91 @@
-<template>
-  <div id="carousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="@/assets/images/image1.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="@/assets/images/image2.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="@/assets/images/image3.jpg" alt="Third slide">
-      </div>
-      <div class="overlay">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 offset-md-6 text-center text-md-right">
-              <h1 class="display-3">Alojamientos Huetor</h1>
-              <p class="d-none d-md-block h4">Ven a vivir una experiencia única en las mejores casas rurales de la provincia de Málaga.</p>
-              <a href="#" class="btn btn-outline-light">Conócenos</a>
-              <button class="btn btn-warning" data-toggle="modal" data-target="#ReservaModal">Reservar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-
+<template lang="pug">
+  article(:class="{ 'showContent': isLoaded }")
+    b-carousel#carousel(
+      style='text-shadow: 1px 1px 2px #333;',
+      controls='',
+      indicators='',
+      background='#ababab',
+      :interval='5000',
+      img-width='1024',
+      img-height='480',
+      v-model='slide',
+      @sliding-start='onSlideStart',
+      @sliding-end='onSlideEnd'
+      )
+      b-carousel-slide
+        img.d-block.img-fluid.w-100(
+          slot='img',
+          width='100%',
+          height='480',
+          :src='Slide1',
+          alt='Slide 1'
+          )
+      b-carousel-slide
+        img.d-block.img-fluid.w-100(
+          slot='img',
+          width='100%',
+          height='480',
+          :src='Slide2',
+          alt='Slide 2'
+          )
+      b-carousel-slide
+        img.d-block.img-fluid.w-100(
+          slot='img',
+          width='100%',
+          height='480',
+          :src='Slide3',
+          alt='image slot'
+          )
+      .overlay
+        .container
+          .row.align-items-center
+            .col-md-6.offset-md-6.text-center.text-md-right
+              h1.display-3 Alojamientos Huetor
+              p.d-none.d-md-block.h4
+                | Ven a vivir una experiencia única en las mejores casas rurales de la provincia de Málaga.
+              a.btn.btn-outline-light.mr-2(href='#') Conócenos
+              button.btn.btn-warning(data-toggle='modal', data-target='#ReservaModal') Reservar
 </template>
 
 <script>
-export default {}
+
+export default {
+  data () {
+    return {
+      isLoaded: false,
+      slide: 0,
+      sliding: null
+    }
+  },
+  props: {
+    Slide1: { type: String },
+    Slide2: { type: String },
+    Slide3: { type: String }
+  },
+  mounted() {
+    this.isLoaded = true
+  },
+  methods: {
+    onSlideStart (slide) {
+      this.sliding = true
+    },
+    onSlideEnd (slide) {
+      this.sliding = false
+    }
+  }
+}
 </script>
+<!-- carousel-1.vue -->
 
 <style scoped>
+  article {
+    display: none;
+  }
+  .showContent {
+    display: block;
+  }
   #carousel {
-    position: relative;
+      position: relative;
   }
   #carousel .overlay {
     position: absolute;
@@ -56,20 +100,17 @@ export default {}
   #carousel .overlay .row {
     height: 100%;
   }
-
-  .carousel-inner img {
-    /* filter: grayscale(20%) */
+  img {
     max-height: 80vh;
     object-fit: cover;
   }
-
-  .carousel-item:nth-of-type(1) img {
+  :nth-of-type(1) img {
     object-position: 50% 37%;
   }
-  .carousel-item:nth-of-type(2) img {
+  :nth-of-type(2) img {
     object-position: 0 70%;
   }
-  .carousel-item:nth-of-type(3) img {
+  :nth-of-type(3) img {
     object-position: 50% bottom;
   }
 

@@ -1,42 +1,25 @@
 <template lang="pug">
-  header.sticky-top
-    nav#navbar.navbar.navbar-expand-lg.navbar-dark
-      .container
-        a.navbar-brand(href='#')
-          img(src='@/assets/Logo-Dark.svg', alt='')
-        button.navbar-toggler.light(type='button', data-toggle='collapse', data-target='#navbarContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-          span.navbar-toggler-icon
-        #navbarContent.collapse.navbar-collapse
-          ul.navbar-nav.ml-auto
-            li.nav-item
-              a.nav-link(href='#main')
-                | Inicio 
-                span.sr-only (current)
-            li.nav-item
-              a.nav-link(href='#') Galería
-            li.nav-item
-              a.nav-link(href='#speakers') Precio
-            li.nav-item
-              a.nav-link(href='#place-time') Contacto
-            li.nav-item
-              button.nav-link.btn.btn-outline-warning(data-target='#ReservaModal', data-toggle='modal') Reservar
-
+  b-container
+    b-navbar(toggleable="md",type="light")
+      b-navbar-toggle(target="nav_collapse")
+      b-navbar-brand(href="#")
+        img(:src="Logo", alt="Alojamientos Huetor")
+      b-collapse#nav_collapse(is-nav)
+        b-navbar-nav(class="ml-auto")
+          b-nav-item(href="#") Inicio
+          b-nav-item(href="#") Galería
+          b-nav-item(href="#") Precio
+          b-nav-item(href="#") Contacto
 </template>
 
 <script>
   export default {
-    
+    props: { Logo: { type: String }}
   }
 </script>
 
-<style lang="scss" scoped>
-  header {
-    background: linear-gradient(to right, #D0E3CC -5%, #ACBD86 20%, #28544B 95%)
-  }
+<style scoped>
   img {
-    width: 140px;
-  }
-  nav {
-    background-color: inherit;
+    max-width: 150px;
   }
 </style>
