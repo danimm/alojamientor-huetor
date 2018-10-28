@@ -53,8 +53,8 @@
         b-col
           p Creado por Daniel Muñoz Martín
         b-col.text-right
-          a.link(href='#') Home
-          a.link(href='#') Galería
+          router-link.nav-link(to="/") Inicio
+          router-link.nav-link(to="about") Acerca de
           a.link(href='#') Precio
           a.link(href='#') Contacto
 
@@ -118,5 +118,8 @@
   .lastFooter .col {
     padding-left: 0;
     padding-right: 0;
+  }
+  .text-right a {
+    display: inline-block;
   }
 </style>

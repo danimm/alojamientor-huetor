@@ -6,8 +6,8 @@
         img(:src="Logo", alt="Alojamientos Huetor")
       b-collapse#nav_collapse(is-nav)
         b-navbar-nav(class="ml-auto")
-          b-nav-item(href="#") Inicio
-          b-nav-item(href="#") Galería
+          router-link.nav-link(to="/") Inicio
+          router-link.nav-link(to="about") Acerca de
           b-nav-item(href="#") Precio
           b-nav-item(href="#") Contacto
 </template>

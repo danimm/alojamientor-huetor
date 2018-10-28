@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.29e199fe460533d49cce9dbb73eaae78.js"
+  "/precache-manifest.1a1ed4817173598eda9bd4c85863140e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "alojamientos-huetor"});
