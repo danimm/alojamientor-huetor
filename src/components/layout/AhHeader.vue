@@ -8,7 +8,7 @@
         b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") Inicio
           router-link.nav-link(to="about") Acerca de
-          b-nav-item(href="#") Precio
+          router-link.nav-link(to="pricing") Precio
           b-nav-item(href="#") Contacto
 </template>
 
