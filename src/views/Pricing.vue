@@ -15,7 +15,7 @@
             v-for="item in c.list"
             :key="item.id"
             ) {{ item }}
-        b-button(href='#', variant='primary') Elegir
+        b-button(href='#', variant='warning') Consultar fechas
     p * La estancia mínima para temporada alta (Julio - Agosto) es de una semana.
     p * No se admiten mascotas
 
@@ -79,7 +79,8 @@
   .card {
     padding: 50px;
     border-radius: 10px;
-    background-color: #F8F8DD;
+    background-color: #2d3338ed;
+    color: white;
   }
   .card-body h4, h3,h2 {
     text-align: center;

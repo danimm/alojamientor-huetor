@@ -9,7 +9,7 @@
           router-link.nav-link(to="/") Inicio
           router-link.nav-link(to="about") Acerca de
           router-link.nav-link(to="pricing") Precio
-          b-nav-item(href="#") Contacto
+          router-link.nav-link(to="contact") Contacto
 </template>
 
 <script>
