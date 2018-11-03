@@ -1,5 +1,5 @@
 <template lang="pug">
-    b-jumbotron(header="Conozca nuestro alojamiento")
+    b-jumbotron(header="")
 
 </template>
 

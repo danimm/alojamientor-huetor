@@ -13,16 +13,13 @@
             img.icon(:src='Phone', alt='phone-icon')
             | +34 659 589 562
           p
-            img.icon(:src='Phone', alt='phone-icon')
-            | +34 659 589 562
-          p
             img.icon(:src='Home', alt='home-icon')
             | Paraje la Rotura, 29712 La Viñuela, Málaga, España
           p
             img.icon(:src='Mail', alt='mail-icon')
             | info@alojamientoshuetor.com
         b-col
-          h4.subtitle.mb-4.text-white Cuenta de Instagram ?
+          h4.subtitle.mb-4.text-white ¿ Tienes cuenta de Instagram ?
           .grid-container
             picture
               img(:src='Image16', alt='')
@@ -55,8 +52,9 @@
         b-col.text-right
           router-link.nav-link(to="/") Inicio
           router-link.nav-link(to="about") Acerca de
-          a.link(href='#') Precio
-          a.link(href='#') Contacto
+          router-link.nav-link(to="gallery") Galería
+          router-link.nav-link(to="pricing") Precio
+          router-link.nav-link(to="contact") Contacto
 
 </template>
 

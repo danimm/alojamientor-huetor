@@ -37,7 +37,7 @@
       .col-5.text-center
         h2 Isabel Hijano Pérez
         h4 CEO Alojamientos Huetor
-        p Hola! Soy Isa escribéme cualquier duda que tengas y te intentaré responder en menos de 24 horas.
+        p Hola! Soy Isa escríbeme cualquier duda que tengas y te intentaré responder en menos de 24 horas.
         img(:src="img.src")
 
 </template>

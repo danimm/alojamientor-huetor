@@ -9,6 +9,7 @@
           router-link.nav-link(to="/") Inicio
           router-link.nav-link(to="about") Acerca de
           router-link.nav-link(to="pricing") Precio
+          router-link.nav-link(to="gallery") Galería
           router-link.nav-link(to="contact") Contacto
 </template>
 
