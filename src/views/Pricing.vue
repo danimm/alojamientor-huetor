@@ -1,23 +1,27 @@
 <template lang="pug">
   .container
-    h2 Elige la mejor opción para tus próximas vacaciones
-    .grid-container
-      b-card.mb-2(
-        tag='article',
-        style='max-width: 20rem;'
-        v-for="c in cards",
-        :key="c.id"
-        )
-        h2 {{ c.title }}
-        h3 {{ c.price }}
-        ul
-          li(
-            v-for="item in c.list"
-            :key="item.id"
-            ) {{ item }}
+    //- h2 Consulta las fechas disponibles para tus próximas vacaciones
+    .row
+      .col
+        .grid-container
+          b-card.mb-2(
+            tag='article',
+            v-for="c in cards",
+            :key="c.id"
+            )
+            h2 {{ c.title }}
+            h3 {{ c.duration }}
+            ul
+              li(
+                v-for="item in c.list"
+                :key="item.id"
+                ) {{ item }}
+      .col-6.text-center
+        h3 Consulta las fechas disponibles para tus próximas vacaciones
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
         b-button(href='#', variant='warning') Consultar fechas
-    p * La estancia mínima para temporada alta (Julio - Agosto) es de una semana.
-    p * No se admiten mascotas
+
+      
 
 </template>
 
@@ -27,33 +31,21 @@
       return {
         cards: [
           {
-            title: 'Básico',
-            price: '29',
+            title: 'Temporada alta',
+            duration: '1 Junio - 15 Septiembre',
             list: [
-              '2 personas',
-              '10,000 followers',
-              'Analutycis reports',
-              '3 reports per month'
+              'Estancia mínima 2 noches',
+              'No se admiten mascotas',
+              'Julio y Agosto: estancia mínima 1 semana',
+              'Navidad y Semana Santa: estancia mínima 1 semana'
             ]
           },
           {
-            title: 'Avanzado',
-            price: '59',
+            title: 'Temporada baja',
+            duration: 'Resto del año',
             list: [
-              '5 account',
-              '50,000 followers',
-              'Analutycis reports',
-              '10 reports per month'
-            ]
-          },
-          {
-            title: 'Profesional',
-            price: '99',
-            list: [
-              '10 account',
-              '90,000 followers',
-              'Analytics reports',
-              '40 reports per month'
+              'Estancia mínima 2 noches',
+              'No se admiten mascotas',
             ]
           }
         ]
@@ -65,31 +57,47 @@
 <style scoped>
   .container {
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    margin-bottom: 150px;
   }
   .grid-container {
-    margin: 50px 0;
+    /* margin: 0 50px; */
+    grid-gap: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr) / 1fr;
+    justify-content: space-between;
   }
   .btn {
     display: block;
     border-radius: 20px;
     margin-top: 40px;
+    padding: 15px;
+    font-size: 1.2em;
   }
   .card {
-    padding: 50px;
+    padding: 0 20px 0 20px;
     border-radius: 10px;
-    background-color: #2d3338ed;
-    color: white;
+    background-color:#fefdeb;
+    margin: 0 10px;
   }
   .card-body h4, h3,h2 {
-    text-align: center;
+    text-align: left;
+  }
+  h2 {
+    font-size: 3em;
   }
   h3 {
-    font-size: 50px;
+    font-size: 1.5;
+    padding: 20px 0;
   }
-  h3::after {
+  img {
+    width: 50%;
+  }
+  /* h3::after {
     content: "/ Dia";
     font-size: 1rem;
-  }
+  } */
 </style>

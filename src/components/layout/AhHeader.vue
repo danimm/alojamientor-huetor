@@ -7,10 +7,15 @@
       b-collapse#nav_collapse(is-nav)
         b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") Inicio
-          router-link.nav-link(to="about") Acerca de
-          router-link.nav-link(to="pricing") Precio
+          //- router-link.nav-link(to="about") Acerca de
+          router-link.nav-link(to="pricing") Reservas
           router-link.nav-link(to="gallery") Galería
           router-link.nav-link(to="contact") Contacto
+          b-nav-item-dropdown(text="Idiomas" right)
+            b-dropdown-item(href="#") Español
+            b-dropdown-item(href="#") Inglés
+            b-dropdown-item(href="#") Alemán
+            b-dropdown-item(href="#") Francés
 </template>
 
 <script>

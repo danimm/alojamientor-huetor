@@ -1,24 +1,25 @@
 <template lang="pug">
-  b-container
-    b-row.mb-5.mt-5
-      .col-5
-        h3.title Como en casa
-        p
-          | Cada casa consta de dos grandes dormitorios, salón/comedor, cocina totalmente equipada, dos baños, una gran terraza con barbacoa.
-        p
-          | Chimenea en el salón para aquellos que les guste el calor del fuego en invierno. Aire Acondicionado y Calefacción (en las habitaciones).
-        router-link.btn.btn-warning.btn-lg.mr-2(to="gallery") Ir a la Galería
-      .col
-        .row
-          .col
-            img(:src='Image9', alt='')
-          .col
-            img(:src='Image11', alt='')
-        .row
-          .col
-            img(:src='Image12', alt='')
-          .col
-            img(:src='Image13', alt='')
+  .container-fluid
+    b-container
+      b-row.mb-5.mt-5
+        .col-5
+          h3.title Como en casa
+          p
+            | Cada casa consta de dos grandes dormitorios, salón/comedor, cocina totalmente equipada, dos baños, una gran terraza con barbacoa.
+          p
+            | Chimenea en el salón para aquellos que les guste el calor del fuego en invierno. Aire Acondicionado y Calefacción (en las habitaciones).
+          router-link.btn.btn-warning.btn-lg.mr-2(to="gallery") Ir a la Galería
+        .col
+          .row
+            .col
+              img(:src='Image9', alt='')
+            .col
+              img(:src='Image11', alt='')
+          .row
+            .col
+              img(:src='Image12', alt='')
+            .col
+              img(:src='Image13', alt='')
 
 </template>
 
@@ -49,14 +50,16 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.35);
   } */
-  .container {
-    margin-top: 150px;
-    margin-bottom: 150px;
+  .container-fluid {
+    background-color:#fefdeb;
+    padding: 20px 0; 
+    margin: 100px 0;
   }
   img {
     width: 100%;
-    margin-top: 10px;
     border-radius: 5px;
+    /* height: 100%; */
+    margin-bottom: 10px;
   }
   .col-5 {
     display: flex;

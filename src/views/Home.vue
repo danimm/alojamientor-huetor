@@ -11,17 +11,20 @@
     //-   :Image3="Image3",
     //- )
     ah-description
+    ah-columns
     ah-rooms(
       :Image9="Image9",
       :Image11="Image11",
       :Image12="Image12",
       :Image13="Image13",
     )
-    ah-offer(
+    ah-cards(
       :Image4="Image4",
       :Image7="Image7",
       :Image10="Image10",
     )
+    ah-offer
+    ah-map
 </template>
 
 <script>
@@ -36,11 +39,14 @@ let refStorageImages = firebase.storage().ref("images")
 import AhMain from '@/components/home/AhMain.vue'
 import AhIntro from '@/components/home/AhIntro.vue'
 import AhDescription from '@/components/home/AhDescription.vue'
-import AhOffer from '@/components/home/AhOffer.vue'
+import AhCards from '@/components/home/AhCards.vue'
 import AhRooms from '@/components/home/AhRooms.vue'
+import AhColumns from '@/components/home/AhColumns.vue'
+import AhOffer from '@/components/home/AhOffer.vue'
+import AhMap from '@/components/home/AhMap.vue'
 
 export default {
-  components: { AhMain, AhIntro, AhDescription, AhOffer, AhRooms },
+  components: { AhMain, AhIntro, AhDescription, AhCards, AhRooms,AhColumns, AhOffer, AhMap },
   name: 'home',
   data() {
     return {
