@@ -80,4 +80,9 @@
   img {
     width: 30%;
   }
+  @media screen and (max-width: 992px){
+    .grid-container {
+    grid-template: repeat(2, 150px) / repeat(4, 1fr);
+    }
+  }
 </style>

@@ -1,10 +1,10 @@
 <template lang="pug">
   .container
     b-row.mt-4(align-h='center')
-      .col
+      .col-lg-6.col-md-12
         img(
           src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage14.jpg?alt=media&token=d0f5d820-81b5-4cec-ab90-2dd5201f55d7")
-      b-col
+      .col-lg-6.col-md-12
         .content
           h2 Aquí encontrarás paz y descanso. Ven a conocernos
           p Alojamientos Huetor es un lugar pensado para disfrutar de una estancia agradable y relajante en el corazón de la Axarquía de la provincia de Málaga
@@ -42,5 +42,14 @@
   .container {
     margin-bottom: 60px;
     margin-top: 60px;
+  }
+  @media screen and (max-width: 992px){
+    .container {
+      margin-top: 0 !important;
+      height: 100%;
+    }
+    h2 {
+      margin-top: 20px;
+    }
   }
 </style>

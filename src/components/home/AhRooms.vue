@@ -2,14 +2,14 @@
   .container-fluid
     b-container
       b-row.mb-5.mt-5
-        .col-5
+        .col-lg-5.col-md-12
           h3.title Como en casa
           p
             | Cada casa consta de dos grandes dormitorios, salón/comedor, cocina totalmente equipada, dos baños, una gran terraza con barbacoa.
           p
             | Chimenea en el salón para aquellos que les guste el calor del fuego en invierno. Aire Acondicionado y Calefacción (en las habitaciones).
           router-link.btn.btn-warning.btn-lg.mr-2(to="gallery") Ir a la Galería
-        .col
+        .col-lg-5.col-md-12
           .row
             .col
               img(:src='Image9', alt='')
@@ -71,5 +71,10 @@
   }
   h3 {
     font-size: 4em;
+  }
+  @media screen and (max-width: 992px){
+    .btn {
+      margin-bottom: 20px;
+    }
   }
 </style>

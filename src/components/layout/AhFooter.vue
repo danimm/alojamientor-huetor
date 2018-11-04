@@ -2,7 +2,7 @@
   .wrapper.pt-4.pb-5
     b-container
       b-row
-        b-col.text-white
+        .col-lg-4.col-md-12.text-white
           img.logo(:src='Logo', alt='Logo Huetor')
           p.mt-4
             // Hotel WordPress Theme is the best hotel, hostel, resort, apartment presentation WordPress theme. With its beautiful design and high coding quality, this theme can showcase your unique accommodations to the world and attract more visitors to your website.
@@ -11,14 +11,17 @@
             | Para reservas, consultas o información adicional contacte con nosotros.
           p
             img.icon(:src='Phone', alt='phone-icon')
-            | +34 659 589 562
+            a.text-white(href="tel:+34659589562") +34 659 589 562
           p
             img.icon(:src='Home', alt='home-icon')
-            | Paraje la Rotura, 29712 La Viñuela, Málaga, España
+            a.text-white(
+              href="https://www.google.com/maps/place/Alojamientos+Huetor/@36.8786239,-4.1887103,1735m/data=!3m1!1e3!4m7!3m6!1s0xd7269d63c8dbefb:0x2f0a38fa3fbf8baa!5m1!1s2018-11-25!8m2!3d36.881525!4d-4.18549"
+              target="_blank"
+              ) Paraje la Rotura, 29712 La Viñuela, Málaga, España
           p
             img.icon(:src='Mail', alt='mail-icon')
-            | info@alojamientoshuetor.com
-        b-col
+            a.text-white(href="mailto:info@alojamientoshuetor.com") info@alojamientoshuetor.com
+        .col-lg-4.col-md-6
           h4.subtitle.mb-4.text-white ¿ Tienes cuenta de Instagram ?
           .grid-container
             picture
@@ -39,7 +42,7 @@
               img(:src='Image23', alt='')
             picture
               img(:src='Image24', alt='')
-        b-col
+        .col-lg-4.col-md-6
           h4.text-white Enlaces de Interés
           p.text-white.mt-4
             a.text-white(href="http://www.granadatur.com" target="_blank") Turismo de Granada
@@ -64,9 +67,8 @@
           p Creado por Daniel Muñoz Martín
         b-col.text-right
           router-link.nav-link(to="/") Inicio
-          router-link.nav-link(to="about") Acerca de
+          router-link.nav-link(to="reservations") Reservas
           router-link.nav-link(to="gallery") Galería
-          router-link.nav-link(to="pricing") Precio
           router-link.nav-link(to="contact") Contacto
 
 </template>
@@ -132,5 +134,14 @@
   }
   .text-right a {
     display: inline-block;
+  }
+  @media screen and (max-width: 992px){
+    .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+    .text-white:nth-child(1) {
+      margin-bottom: 50px;
+    }
   }
 </style>

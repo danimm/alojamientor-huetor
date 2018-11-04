@@ -1,14 +1,14 @@
 <template lang="pug">
   b-container
-    b-navbar(toggleable="md",type="light")
+    b-navbar(toggleable="lg",type="light")
       b-navbar-toggle(target="nav_collapse")
       b-navbar-brand(href="#")
         img(:src="Logo", alt="Alojamientos Huetor")
       b-collapse#nav_collapse(is-nav)
-        b-navbar-nav(class="ml-auto")
+        b-navbar-nav(class="ml-auto" right)
           router-link.nav-link(to="/") Inicio
           //- router-link.nav-link(to="about") Acerca de
-          router-link.nav-link(to="pricing") Reservas
+          router-link.nav-link(to="reservations") Reservas
           router-link.nav-link(to="gallery") Galería
           router-link.nav-link(to="contact") Contacto
           b-nav-item-dropdown(text="Idiomas" right)

@@ -2,7 +2,7 @@
   .container
     //- h2 Consulta las fechas disponibles para tus próximas vacaciones
     .row
-      .col
+      .col-lg-6.col-md-12
         .grid-container
           b-card.mb-2(
             tag='article',
@@ -16,7 +16,7 @@
                 v-for="item in c.list"
                 :key="item.id"
                 ) {{ item }}
-      .col-6.text-center
+      .col-lg-6.col-md-12.text-center
         h3 Consulta las fechas disponibles para tus próximas vacaciones
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
         b-button(href='#', variant='warning') Consultar fechas
@@ -35,9 +35,12 @@
             duration: '1 Junio - 15 Septiembre',
             list: [
               'Estancia mínima 2 noches',
-              'No se admiten mascotas',
               'Julio y Agosto: estancia mínima 1 semana',
-              'Navidad y Semana Santa: estancia mínima 1 semana'
+              'Navidad y Semana Santa: estancia mínima 1 semana',
+              '30% depósito al reservar',
+              'Fianza 100€',
+              'No se admiten mascotas',
+              'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
             ]
           },
           {
@@ -45,7 +48,11 @@
             duration: 'Resto del año',
             list: [
               'Estancia mínima 2 noches',
+              '30% depósito al reservar',
+              'Fianza 100€',
               'No se admiten mascotas',
+              'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
+              // 'Horario de salida antes de las 12:00'
             ]
           }
         ]
@@ -100,4 +107,9 @@
     content: "/ Dia";
     font-size: 1rem;
   } */
+  @media screen and (max-width: 992px){
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

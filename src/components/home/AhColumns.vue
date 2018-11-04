@@ -84,4 +84,22 @@
     padding: 0 20px 0 0;
   }
 
+  @media screen and (max-width: 992px){
+    .grid-container {
+      grid-template: 1fr 1fr / repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-areas:  "text1 img2"
+                            "img1 text2";
+                            grid-gap: 20px;
+      /* height: 800px; */
+    }
+    .img-container-1 img {
+      height: 100%;
+      width: 100%;
+    }
+    .text-container-2 {
+      display: block;
+    }
+  }
+
 </style>

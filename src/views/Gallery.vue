@@ -65,4 +65,13 @@
   .lvl-3 img {
     object-fit: cover;
   }
+  @media screen and (max-width: 992px){
+    .grid-container {
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+    .lvl-2, .lvl-1, .lvl-3 {
+      grid-column-end: auto;
+    }
+  }
 </style>
