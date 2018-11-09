@@ -20,7 +20,7 @@
             input.form-control#email(name="email",type="email",placeholder="tu@email.com",required)
           .form-group
             label(for="mensaje") Mensaje
-            textarea.form-control#mensaje(name="message",rows="3",placeholder="Escribe lo que quieras",required)
+            textarea.form-control#mensaje(name="message",rows="5",placeholder="Escribe lo que quieras",required)
           button.btn.btn-primary(type='submit') Enviar
           //- b-button(type='reset', variant='danger') Reiniciar
 

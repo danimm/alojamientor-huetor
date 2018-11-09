@@ -74,6 +74,9 @@
         Image24: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage24.JPG?alt=media&token=9753fff9-2b99-4ef4-b2a8-1031994a5d56'
       }
     },
+    beforeRouteLeave(){
+      window.scrollTo(0,0)
+    },
     created() {
       addEventListener("load", () => {
           this.isLoaded = true

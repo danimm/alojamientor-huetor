@@ -66,10 +66,11 @@
         .col-sm-12.col-md-6
           p Creado por Daniel Muñoz Martín
         .col-sm-10.col-md-6.text-right
-          router-link.nav-link(to="/") Inicio
-          router-link.nav-link(to="reservations") Reservas
-          router-link.nav-link(to="gallery") Galería
-          router-link.nav-link(to="contact") Contacto
+          //- router-link.nav-link(to="/") Inicio
+          //- router-link.nav-link(to="reservations") Reservas
+          //- router-link.nav-link(to="gallery") Galería
+          //- router-link.nav-link(to="contact") Contacto
+          a.nav-link(@click="goLegal") Aviso legal
 
 </template>
 
@@ -89,6 +90,12 @@
       Image22: { type: String, required:true },
       Image23: { type: String, required:true },
       Image24: { type: String, required:true },
+    },
+    methods: {
+      goLegal(){
+        window.scrollTo(0, 0)
+        this.$router.push("legal")
+      }
     }
   }
 </script>
@@ -99,15 +106,15 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 120px);
-    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 120px);
     grid-gap: 10px;
   }
   img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: left;
+    /* object-position: left; */
   }
   .logo {
     max-width: 200px;
@@ -132,14 +139,15 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .text-right a {
-    display: inline-block;
+  .nav-link {
+    /* display: none; */
+    cursor: pointer;
   }
   @media screen and (max-width: 992px){
-    .grid-container {
+    /* .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    }
+    grid-template-rows: repeat(2, 120px);
+    } */
   }
   @media screen and (max-width: 768px){
     h4 {
@@ -149,17 +157,18 @@
     .contact {
       margin-bottom: 30px;
     }
-    .col-sm-12 p {
+    /* .col-sm-12 p {
       display: none;
-    }
+    } */
   }
 
   @media screen and (max-width: 576px){ 
     .col-sm-10 {
-      text-align: left !important;
+      display: flex;
+      justify-content: center;
     }
-    .col-sm-10 a {
-      display: block;
+    .lastFooter p {
+      display: none;
     }
   }
 </style>

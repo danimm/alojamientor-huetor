@@ -31,7 +31,10 @@
 
 <script>
   export default {
-    
+    // beforeRouteUpdate(gallery){
+    //   window.scrollTo(0,0)
+    //   // this.$router.push(gallery)
+    // }
   }
   
 </script>
@@ -39,7 +42,7 @@
 <style scoped>
   .grid-container {
     display: grid;
-    grid-template: repeat(5, 380px) / repeat(3, 1fr);
+    grid-template: repeat(5, 70vh) / repeat(3, 1fr);
     grid-gap: 10px;
     margin: 120px 0 150px 0;
   }
@@ -66,27 +69,21 @@
     object-fit: cover;
   }
   @media screen and (max-width: 992px){
+    .container {
+      max-width: 100%;
+    }
     .grid-container {
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(2, 1fr);
     }
-    .lvl-2, .lvl-1, .lvl-3 {
+    .lvl-2, .lvl-1 {
       grid-column-end: auto;
     }
   }
   @media screen and (max-width: 576px){
     .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(7, 50vh);
-    }
-    .lvl-3 {
-      grid-column-end: auto;
-    }
-    .lvl-2 {
-      grid-row-end: auto;
-    }
-    .lvl-1 {
-      grid-column-end: span 2;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fill, 60vh);
     }
   }
 </style>
