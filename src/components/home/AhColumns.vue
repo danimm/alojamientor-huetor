@@ -6,7 +6,6 @@
           h2 Todo a tu alcance
           //- h4 En el interior pero a la vez cerca de todo: Restaurantes, playa, montaña..
           p Vive una experiencia inolvidable con nosotros y disfruta de la tranquilidad, el bienestar y la naturaleza de este maravilloso lugar.
-          p 
         .img-container-1
           img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FH-8116300984.JPEG?alt=media&token=c329bf3c-41fb-454c-a5e8-a9cf17fe8487")
         .img-container-2
@@ -100,6 +99,19 @@
     .text-container-2 {
       display: block;
     }
+  }
+
+  @media screen and (max-width: 992px){
+    .grid-container {
+      display: block;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      margin-bottom: 40px;
+    } 
   }
 
 </style>

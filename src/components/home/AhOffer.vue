@@ -85,4 +85,13 @@
     grid-template: repeat(2, 150px) / repeat(4, 1fr);
     }
   }
+
+  @media screen and (max-width: 767px){
+    .grid-container {
+    grid-template: repeat(2, 150px) / repeat(3, 1fr);
+    }
+    h2 {
+      font-size: 3em;
+    } 
+  }
 </style>

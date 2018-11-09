@@ -34,11 +34,6 @@
             title: 'Temporada alta',
             duration: '1 Junio - 15 Septiembre',
             list: [
-              'Estancia mínima 2 noches',
-              'Julio y Agosto: estancia mínima 1 semana',
-              'Navidad y Semana Santa: estancia mínima 1 semana',
-              '30% depósito al reservar',
-              'Fianza 100€',
               'No se admiten mascotas',
               'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
             ]
@@ -47,9 +42,6 @@
             title: 'Temporada baja',
             duration: 'Resto del año',
             list: [
-              'Estancia mínima 2 noches',
-              '30% depósito al reservar',
-              'Fianza 100€',
               'No se admiten mascotas',
               'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
               // 'Horario de salida antes de las 12:00'

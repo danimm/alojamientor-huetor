@@ -2,15 +2,15 @@
   .container-fluid
     h2.text-center Tu eliges: playa o montaña
     b-row.mt-5.mb-5(align-h='center')
-      .col
+      .col-lg-3.col-sm-12.col-md-12
         b-card.text-center(title='Las mejores vistas', :img-src='Image7', img-top='')
           p.card-text
             | Disfruta desde la terraza de nuestras casas de una de las mejores vistas del pico más alto de la provincia de Málaga: La Maroma (2.066 m)
-      .col.mr-4.ml-4
+      .col-lg-3.mr-4.ml-4.col-sm-12.col-md-12
         b-card.text-center(title='El Pantano de la Viñuela', :img-src='Image4', img-top='')
           p.card-text.mb-4
             | Contempla cada día las vistas del embalse de la Viñuela, un lugar fantástico para disfrutar al aire libre o incluso realizar deportes de agua.
-      .col
+      .col-lg-3.col-sm-12.col-md-12
         b-card.text-center(title='La costa del Sol', :img-src='Image10', img-top='')
           //- p.card-text
           //-   | En Málaga tenemos 320 días de sol al año, en los que disfrutar en nuestras maravillosas playas (a 15 minutos) que hay en Málaga,  (a sólo 15 minutos) o nuestra maravillosa piscina.
@@ -45,4 +45,14 @@
   h2 {
     font-size: 4em;
   }
+
+  @media screen and (max-width: 992px){
+    .row {
+      margin: 0;
+    } 
+    .col-md-12 {
+      margin-bottom: 50px;
+    } 
+  }
+
 </style>

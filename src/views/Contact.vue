@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     .row
-      .col-6
+      .col-sm-12.col-md-6
         h2 Envíanos tus dudas
         b-form(@submit='onSubmit', @reset='onReset', v-if='show')
           b-form-group#InputGroup1(
@@ -34,7 +34,7 @@
               )
           b-button(type='submit', variant='primary') Enviar
           b-button(type='reset', variant='danger') Reiniciar
-      .col-5.text-center
+      .col-sm-12.text-center.col-md-6
         h2 Isabel Hijano Pérez
         h4 CEO Alojamientos Huetor
         p Hola! Soy Isa escríbeme cualquier duda que tengas y te intentaré responder en menos de 24 horas.
@@ -90,4 +90,14 @@ export default {
     border: 10px solid #2d3338ed;
     border-radius: 50%;
   }
+
+  @media screen and (max-width: 567px){
+    .col-sm-12 {
+      margin-bottom: 40px;
+    }
+    img {
+      max-width: 50%;
+    } 
+  }
+
 </style>
