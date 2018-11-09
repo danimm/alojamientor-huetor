@@ -2,12 +2,11 @@
   b-container
     b-navbar(toggleable="lg",type="light")
       b-navbar-toggle(target="nav_collapse")
-      b-navbar-brand(href="#")
-        img(:src="Logo", alt="Alojamientos Huetor")
+      b-navbar-brand(to="/")
+        img(:src="Logo", alt="Alojamientos Huetor",class="d-inline-block align-top")
       b-collapse#nav_collapse(is-nav)
-        b-navbar-nav(class="ml-auto" right)
+        b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") Inicio
-          //- router-link.nav-link(to="about") Acerca de
           router-link.nav-link(to="reservations") Reservas
           router-link.nav-link(to="gallery") Galería
           router-link.nav-link(to="contact") Contacto
@@ -26,6 +25,20 @@
 
 <style scoped>
   img {
-    max-width: 150px;
+    max-width: 180px;
+  }
+  @media screen and (max-width: 576px){
+    img {
+      max-width: 140px;
+      object-fit: contain;
+      /* height: ; */
+    }
+    .navbar-brand {
+      margin-right: 0;
+    }
+    .navbar-light {
+      padding: 0;
+      padding-right: 0.5em;
+    }
   }
 </style>

@@ -94,4 +94,9 @@
       font-size: 3em;
     } 
   }
+  @media screen and (max-width: 576px){
+    .grid-container {
+    grid-template: repeat(2, 150px) / repeat(2, 1fr);
+    }
+  }
 </style>

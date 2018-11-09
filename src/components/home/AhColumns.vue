@@ -114,4 +114,9 @@
     } 
   }
 
+  @media screen and (max-width: 576px){
+    h2 {
+      font-size: 2.5em;
+    }
+  }
 </style>

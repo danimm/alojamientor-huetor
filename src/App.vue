@@ -56,8 +56,10 @@
       return {
         isLoaded: false,
         isLoading: true,
-        LogoWhite: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2FLogo-White.svg?alt=media&token=9c265e0a-2c44-4036-9b9a-cd7e7186f0cd',
-        LogoDark: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2FLogo-Dark.svg?alt=media&token=ee127443-5d48-4e38-b35b-84a14b0cf47a',
+        LogoWhite: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2FLogo-Huetor-White.png?alt=media&token=29b58139-00a4-49a7-be9d-6bc4079099f5',
+        // LogoWhite: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2FLogo-White.svg?alt=media&token=9c265e0a-2c44-4036-9b9a-cd7e7186f0cd',
+        LogoDark: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2FLogo-huetor.png?alt=media&token=41b6efd8-5da2-4f47-9913-99171cf7cd7f',
+        // LogoDark: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2FLogo-Dark.svg?alt=media&token=ee127443-5d48-4e38-b35b-84a14b0cf47a',
         Phone: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fphone.svg?alt=media&token=4e8a8e25-3b16-4582-94ff-57e30fdfbfd6',
         Home: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fhome.svg?alt=media&token=e1b3f244-7e9f-4574-8fbb-6e5e0d0ef82c',
         Mail: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fmail.svg?alt=media&token=b02d8d8d-5384-4d3f-bb70-92d663220d03',

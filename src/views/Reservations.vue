@@ -10,14 +10,14 @@
             :key="c.id"
             )
             h2 {{ c.title }}
-            h3 {{ c.duration }}
+            h3.date {{ c.duration }}
             ul
               li(
                 v-for="item in c.list"
                 :key="item.id"
                 ) {{ item }}
       .col-lg-6.col-md-12.text-center
-        h3 Consulta las fechas disponibles para tus próximas vacaciones
+        h3.text-center Consulta las fechas disponibles para tus próximas vacaciones
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
         b-button(href='#', variant='warning') Consultar fechas
 
@@ -35,7 +35,8 @@
             duration: '1 Junio - 15 Septiembre',
             list: [
               'No se admiten mascotas',
-              'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
+              'checking 16:00',
+              'checkout 12:00'
             ]
           },
           {
@@ -43,7 +44,9 @@
             duration: 'Resto del año',
             list: [
               'No se admiten mascotas',
-              'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
+              'checking 16:00',
+              'checkout 12:00'
+              // 'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
               // 'Horario de salida antes de las 12:00'
             ]
           }
@@ -102,6 +105,17 @@
   @media screen and (max-width: 992px){
     .grid-container {
       grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 576px){
+    h2 {
+      font-size: 1.9em;
+    }
+    .date {
+      font-size: 1.5em;
+    }
+    ul {
+      padding-left: 10px;
     }
   }
 </style>

@@ -2,7 +2,7 @@
   .wrapper.pt-4.pb-5
     b-container
       b-row
-        .col-lg-4.col-md-12.text-white
+        .col-lg-4.col-md-12.text-white.contact
           img.logo(:src='Logo', alt='Logo Huetor')
           p.mt-4
             // Hotel WordPress Theme is the best hotel, hostel, resort, apartment presentation WordPress theme. With its beautiful design and high coding quality, this theme can showcase your unique accommodations to the world and attract more visitors to your website.
@@ -20,9 +20,9 @@
               ) Paraje la Rotura, 29712 La Viñuela, Málaga, España
           p
             img.icon(:src='Mail', alt='mail-icon')
-            a.text-white(href="mailto:info@alojamientoshuetor.com") info@alojamientoshuetor.com
-        .col-lg-4.col-md-6
-          h4.subtitle.mb-4.text-white ¿ Tienes cuenta de Instagram ?
+            a.text-white.email(href="mailto:info@alojamientoshuetor.com") info@alojamientoshuetor.com
+        .col-lg-4.col-md-6.mb-4
+          h4.mb-4.text-white Visita nuestro Instagram
           .grid-container
             picture
               img(:src='Image16', alt='')
@@ -40,8 +40,8 @@
               img(:src='Image22', alt='')
             picture
               img(:src='Image23', alt='')
-            picture
-              img(:src='Image24', alt='')
+            //- picture
+            //-   img(:src='Image24', alt='')
         .col-lg-4.col-md-6
           h4.text-white Enlaces de Interés
           p.text-white.mt-4
@@ -63,9 +63,9 @@
           p.text-white
     b-container
       b-row.lastFooter
-        b-col
+        .col-sm-12.col-md-6
           p Creado por Daniel Muñoz Martín
-        b-col.text-right
+        .col-sm-10.col-md-6.text-right
           router-link.nav-link(to="/") Inicio
           router-link.nav-link(to="reservations") Reservas
           router-link.nav-link(to="gallery") Galería
@@ -140,8 +140,26 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     }
-    .text-white:nth-child(1) {
-      margin-bottom: 50px;
+  }
+  @media screen and (max-width: 768px){
+    h4 {
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+    .contact {
+      margin-bottom: 30px;
+    }
+    .col-sm-12 p {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px){ 
+    .col-sm-10 {
+      text-align: left !important;
+    }
+    .col-sm-10 a {
+      display: block;
     }
   }
 </style>

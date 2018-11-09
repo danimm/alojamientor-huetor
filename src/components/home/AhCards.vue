@@ -6,7 +6,7 @@
         b-card.text-center(title='Las mejores vistas', :img-src='Image7', img-top='')
           p.card-text
             | Disfruta desde la terraza de nuestras casas de una de las mejores vistas del pico más alto de la provincia de Málaga: La Maroma (2.066 m)
-      .col-lg-3.mr-4.ml-4.col-sm-12.col-md-12
+      .col-lg-3.col-sm-12.col-md-12
         b-card.text-center(title='El Pantano de la Viñuela', :img-src='Image4', img-top='')
           p.card-text.mb-4
             | Contempla cada día las vistas del embalse de la Viñuela, un lugar fantástico para disfrutar al aire libre o incluso realizar deportes de agua.
@@ -52,7 +52,21 @@
     } 
     .col-md-12 {
       margin-bottom: 50px;
-    } 
+    }
+    .card-title {
+      font-size: 2.5em;
+    }  
+  }
+  @media screen and (max-width: 576px){
+    h2 {
+      font-size: 3em;
+    }
+    h4.card-title {
+      font-size: 2em;
+    }
+    .container-fluid {
+      margin-bottom: 0;
+    }
   }
 
 </style>

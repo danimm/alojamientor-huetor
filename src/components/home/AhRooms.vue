@@ -77,4 +77,12 @@
       margin-bottom: 20px;
     }
   }
+  @media screen and (max-width: 576px){
+    h3 {
+      font-size: 2.7em;
+    }
+    .container-fluid {
+      margin-bottom: 30px;
+    }
+  }
 </style>
