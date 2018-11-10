@@ -22,9 +22,9 @@
       .item.lvl-2
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage12.jpg?alt=media&token=ad6d81a1-74df-4817-aecc-031c1ce3690b")
       .item.lvl-2
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2F856ce344_original%20Ban%CC%83o%201.jpg?alt=media&token=66e1bdba-f88e-48e6-b377-47dd001f8e3b")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage22.JPG?alt=media&token=0cc0ce2c-16d2-404d-a349-e3cb66f26846")
       .item.lvl-1
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FH-81162952392.JPEG?alt=media&token=e64a688a-6b23-4cf7-b2f5-468b5664d20b")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FIMG_1159%202.JPG?alt=media&token=d6e1f203-36c4-46f2-bd3c-997d6bedb853")
       
 </template>
 

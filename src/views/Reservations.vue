@@ -16,10 +16,16 @@
                 v-for="item in c.list"
                 :key="item.id"
                 ) {{ item }}
+          //- iframe(
+          //-   src="https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=ES"
+          //-   style="width: 500px; height: 355px; border: 0"
+          //-   frameborder=0 allowtransparency="allowtransparency")
+          //- div(style="width: 500px; margin: auto")
+          //-   a(href="https://www.avaibook.com/" target="_blank") software gestión alojamiento
       .col-lg-6.col-md-12.text-center
         h3.text-center Consulta las fechas disponibles para tus próximas vacaciones
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
-        b-button(href='#', variant='warning') Consultar fechas
+        b-button(href='https://www.avaibook.com/reservas/nueva_reserva.php?cod_alojamiento=151137&lang=es', variant='warning', target="_blank") Consultar fechas
 
       
 

@@ -7,7 +7,7 @@
           //- h4 En el interior pero a la vez cerca de todo: Restaurantes, playa, montaña..
           p Vive una experiencia inolvidable con nosotros y disfruta de la tranquilidad, el bienestar y la naturaleza de este maravilloso lugar.
         .img-container-1
-          img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FH-8116300984.JPEG?alt=media&token=c329bf3c-41fb-454c-a5e8-a9cf17fe8487")
+          img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2Ffotopiscina.jpg?alt=media&token=23213aef-77a7-4ddc-99b7-6b800b5c0df4")
         .img-container-2
           img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage15.jpg?alt=media&token=bc972bb4-dec6-4d06-9a0b-847980c9c4c5")
         .text-container-2
@@ -66,7 +66,7 @@
     width: 371px;
     height: 418px;
     object-fit: cover;
-    object-position: 30% center;
+    object-position: 15% center;
   }
   .img-container-2 {
     grid-area: img2;

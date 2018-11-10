@@ -20,9 +20,12 @@
               ) Paraje la Rotura, 29712 La Viñuela, Málaga, España
           p
             img.icon(:src='Mail', alt='mail-icon')
-            a.text-white.email(href="mailto:info@alojamientoshuetor.com") info@alojamientoshuetor.com
+            a.text-white.email(href="mailto:info@alojamientoshuetor.com", target="_blank") info@alojamientoshuetor.com
+          p
+            img.icon(:src="Instagram", alt="instagram-icon")
+            a.text-white(href="https://www.instagram.com/alojamientos_huetor/", target="_blank") alojamientos_huetor
         .col-lg-4.col-md-6.mb-4
-          h4.mb-4.text-white Visita nuestro Instagram
+          h4.mb-4.text-white Síguenos en Instagram:
           .grid-container
             picture
               img(:src='Image16', alt='')
@@ -57,7 +60,7 @@
           p.text-white
             a.text-white(href="http://www.turismohuelva.org" target="_blank") Patronato de Turismo de Huelva
           p.text-white
-            a.text-white(href="http://www.laaxarquiaentumesa.es/index.php" target="_blank") Productos de la Axarquía, gastronomía malagueña
+            a.text-white(href="http://planamalaga.com/" target="_blank") Actividades al aire libre
           p.text-white
             a.text-white(href="http://www.andalucia.org" target="_blank") Web oficial de turismo de Andalucía
           p.text-white
@@ -81,6 +84,7 @@
       Phone: { type: String, required: true},
       Home: { type: String, required: true},
       Mail: { type: String, required: true},
+      Instagram: { type: String, required: true},
       Image16: { type: String, required:true },
       Image17: { type: String, required:true },
       Image18: { type: String, required:true },
