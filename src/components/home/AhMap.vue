@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    h2.text-center ¿ Dónde puedes encontrarnos ?
+    h2.text-center {{ $t('home.map.title') }}
     .row
       .col
         iframe(
