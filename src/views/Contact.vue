@@ -3,25 +3,40 @@
     .row
       .col-sm-12.text-center.col-md-6
         h3 Isabel Hijano Pérez
-        h4 CEO Alojamientos Huetor
-        p Hola! Soy Isa escríbeme cualquier duda que tengas y te intentaré responder en menos de 24 horas.
+        h4 Alojamientos Huetor
+        p {{ $t('contact.text1') }}
         img(:src="img.src")
       .col-sm-12.col-md-6
-        h2 Envíanos tus dudas
+        h2 {{ $t('contact.text2') }}
         form(
           method="POST"
-          action="https://formspree.io/danimm.dev@gmail.com"
+          action="https://formspree.io/huetor@gmail.com"
           )
           .form-group
-            label(for="nombre") Nombre
-            input.form-control#text(name="text",type="text",required)
+            label(for="nombre") {{ $t('contact.form.name') }}
+            input.form-control#text(
+              :placeholder="$t('contact.form.namePH')"
+              name="text",
+              type="text",
+              required
+              )
           .form-group
-            label(for="email") Email
-            input.form-control#email(name="email",type="email",required)
+            label(for="email") {{ $t('contact.form.email') }}
+            input.form-control#email(
+              :placeholder="$t('contact.form.emailPH')"
+              name="email",
+              type="email",
+              required
+              )
           .form-group
-            label(for="mensaje") Mensaje
-            textarea.form-control#mensaje(name="message",rows="5",required)
-          button.btn.btn-primary(type='submit') Enviar
+            label(for="mensaje") {{ $t('contact.form.message') }}
+            textarea.form-control#mensaje(
+              :placeholder="$t('contact.form.messagePH')"
+              name="message",
+              rows="5",
+              required
+              )
+          button.btn.btn-primary(type='submit') {{ $t('contact.button') }}
           //- b-button(type='reset', variant='danger') Reiniciar
 
 </template>

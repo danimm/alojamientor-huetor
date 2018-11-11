@@ -3,12 +3,12 @@
     b-container
       b-row.mb-5.mt-5
         .col-lg-6.col-md-12
-          h3.title Como en casa
-          p
-            | Cada casa consta de dos grandes dormitorios, salón/comedor, cocina totalmente equipada, dos baños, una gran terraza con barbacoa.
-          p
-            | Chimenea en el salón para aquellos que les guste el calor del fuego en invierno. Aire Acondicionado y Calefacción (en las habitaciones).
-          a.btn.btn-warning.btn-lg.mr-2(@click="goTop") Ir a la Galería
+          h3.title {{ $t('home.rooms.title') }}
+          p {{ $t('home.rooms.text1') }}
+          p {{ $t('home.rooms.text2') }}
+          a.btn.btn-warning.btn-lg.mr-2(
+            @click="goTop"
+            ) {{ $t('home.rooms.button') }}
         .col-lg-6.col-md-12
           .row
             .col
@@ -20,6 +20,7 @@
               img(:src='Image12', alt='')
             .col
               img(:src='Image13', alt='')
+        
 
 </template>
 
@@ -83,12 +84,19 @@
       margin-bottom: 20px;
     }
   }
-  @media screen and (max-width: 576px){
-    h3 {
-      font-size: 2.7em;
+  @media screen and (max-width: 768px){
+    .btn {
+      margin: 30px 0;
     }
     .container-fluid {
       margin-bottom: 30px;
+      margin-top: 50px;
+      margin-bottom: 140px;
+    }
+  }
+  @media screen and (max-width: 576px){
+    h3 {
+      font-size: 2.7em;
     }
   }
 </style>

@@ -1,21 +1,31 @@
 <template lang="pug">
   .container-fluid
-    h2.text-center Tu eliges: playa o montaña
+    h2.text-center {{ $t('home.cards.title') }}
     b-row.mt-5.mb-5(align-h='center')
       .col-lg-3.col-sm-12.col-md-12
-        b-card.text-center(title='Las mejores vistas', :img-src='Image7', img-top='')
+        b-card.text-center(
+          :title="$t('home.cards.card1.title')",
+          :img-src='Image7',
+          img-top=''
+          )
           p.card-text
-            | Disfruta desde la terraza de nuestras casas de una de las mejores vistas del pico más alto de la provincia de Málaga: La Maroma (2.066 m)
+            | {{ $t('home.cards.card1.text') }}
       .col-lg-3.col-sm-12.col-md-12
-        b-card.text-center(title='El Pantano de la Viñuela', :img-src='Image4', img-top='')
+        b-card.text-center(
+          :title="$t('home.cards.card2.title')",
+          :img-src='Image4',
+          img-top=''
+          )
           p.card-text.mb-4
-            | Contempla cada día las vistas del embalse de la Viñuela, un lugar fantástico para disfrutar al aire libre o incluso realizar deportes de agua.
+            | {{ $t('home.cards.card2.text') }}
       .col-lg-3.col-sm-12.col-md-12
-        b-card.text-center(title='La costa del Sol', :img-src='Image10', img-top='')
-          //- p.card-text
-          //-   | En Málaga tenemos 320 días de sol al año, en los que disfrutar en nuestras maravillosas playas (a 15 minutos) que hay en Málaga,  (a sólo 15 minutos) o nuestra maravillosa piscina.
+        b-card.text-center(
+          :title="$t('home.cards.card3.title')",
+          :img-src='Image10',
+          img-top=''
+          )
           p.card-text
-            | Con 320 días de sol al año, Málaga es un sitio ideal para tomar el sol en la playa (a 15 minutos) o en nuestra maravillosa piscina.
+            | {{ $t('home.cards.card3.text') }}
 </template>
 
 <script>
@@ -35,13 +45,6 @@
   .row {
     max-width: 100%;
   }
-  .card-img-top {
-    /* height: ; */
-  }
-  /* img {
-    height: 100%;
-    width: 100%;
-  } */
   h2 {
     font-size: 4em;
   }

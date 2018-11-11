@@ -42,10 +42,10 @@
             .col-md-6.offset-md-6.text-center.text-md-right
               h1.display-3 Alojamientos Huetor
               p.d-none.d-md-block.h4
-                | Ven a vivir una experiencia única en las mejores casas rurales de la provincia de Málaga.
-              router-link.btn.btn-outline-light.mr-2(to="gallery") Galería
+                | {{ $t('home.main.text1') }}
+              router-link.btn.btn-outline-light.mr-2(to="gallery") {{ $t('home.main.button1') }}
               //- a.btn.btn-outline-light.mr-2(href='#') Conócenos
-              router-link.btn.btn-warning(to="reservations") Reservar
+              router-link.btn.btn-warning(to="reservations") {{ $t('home.main.button2') }}
 </template>
 
 <script>
@@ -113,6 +113,12 @@ export default {
   }
   :nth-of-type(3) img {
     object-position: 50% bottom;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .btn {
+    margin-left: 20px;
   }
   
   @media screen and (max-width: 992px){

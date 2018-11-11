@@ -6,11 +6,11 @@
           src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage14.jpg?alt=media&token=d0f5d820-81b5-4cec-ab90-2dd5201f55d7")
       .col-lg-6.col-md-12
         .content
-          h2 Aquí encontrarás paz y descanso. Ven a conocernos
-          p Alojamientos Huetor es un lugar pensado para disfrutar de una estancia agradable y relajante en el corazón de la Axarquía de la provincia de Málaga.
-          p Desde donde podrás visitar los diferentes pueblos , tanto del interior como de la costa, en cada uno de ellos encontrará, paisajes entrañables, las costumbres, festivales, productos típicos, sus gentes, todo encantador.
-          p Una visita en cualquier época del año le ofrecerá la oportunidad de disfrutar de los placeres culturales y gastronómicos de la zona, sin olvidar las fiestas populares. Desde Alojamientos Huetor podrá visitar las ciudades históricas de Córdoba, Granada, Sevilla, Antequera, Málaga e incluso esquiar en Sierra Nevada.
-          p A tan sólo 45 minutos del aeropuerto.
+          h2 {{ $t('home.description.title') }}
+          p {{ $t('home.description.text1') }}
+          p {{ $t('home.description.text2') }}
+          p {{ $t('home.description.text3') }}
+          p {{ $t('home.description.text4') }}
 
 </template>
 

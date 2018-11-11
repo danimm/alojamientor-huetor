@@ -7,8 +7,8 @@
           p.mt-4
             // Hotel WordPress Theme is the best hotel, hostel, resort, apartment presentation WordPress theme. With its beautiful design and high coding quality, this theme can showcase your unique accommodations to the world and attract more visitors to your website.
           p Comarca de la Axarquía - Málaga - España
-          p Trataremos de responder su correo electrónico antes de 24 horas.
-            | Para reservas, consultas o información adicional contacte con nosotros.
+          //- p Trataremos de responder su correo electrónico antes de 24 horas.
+          p {{ $t('footer.text1') }}
           p
             img.icon(:src='Phone', alt='phone-icon')
             a.text-white(href="tel:+34659589562") +34 659 589 562
@@ -25,7 +25,7 @@
             img.icon(:src="Instagram", alt="instagram-icon")
             a.text-white(href="https://www.instagram.com/alojamientos_huetor/", target="_blank") alojamientos_huetor
         .col-lg-4.col-md-6.mb-4
-          h4.mb-4.text-white Síguenos en Instagram:
+          h4.mb-4.text-white {{ $t('footer.titleInstagram') }}
           .grid-container
             picture
               img(:src='Image16', alt='')
@@ -46,7 +46,7 @@
             //- picture
             //-   img(:src='Image24', alt='')
         .col-lg-4.col-md-6
-          h4.text-white Enlaces de Interés
+          h4.text-white {{ $t('footer.titleLinks') }}
           p.text-white.mt-4
             a.text-white(href="http://www.granadatur.com" target="_blank") Turismo de Granada
           p.text-white
@@ -67,13 +67,16 @@
     b-container
       b-row.lastFooter
         .col-sm-12.col-md-6
-          p Creado por Daniel Muñoz Martín
+          p
+          | {{ $t('footer.made')}}
+          a.text-white.email(href="mailto:info@danimm.com", target="_blank") info@danimm.com
+          
         .col-sm-10.col-md-6.text-right
           //- router-link.nav-link(to="/") Inicio
           //- router-link.nav-link(to="reservations") Reservas
           //- router-link.nav-link(to="gallery") Galería
           //- router-link.nav-link(to="contact") Contacto
-          a.nav-link(@click="goLegal") Aviso legal
+          a.nav-link(@click="goLegal") {{ $t('footer.legal') }}
 
 </template>
 
