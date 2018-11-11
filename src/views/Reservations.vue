@@ -20,12 +20,6 @@
               li {{ $t('reservations.card.list.item10') }}
               li {{ $t('reservations.card.list.item11') }}
               li {{ $t('reservations.card.list.item12') }}
-          //- iframe(
-          //-   src="https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=ES"
-          //-   style="width: 500px; height: 355px; border: 0"
-          //-   frameborder=0 allowtransparency="allowtransparency")
-          //- div(style="width: 500px; margin: auto")
-          //-   a(href="https://www.avaibook.com/" target="_blank") software gestión alojamiento
       .col-lg-6.col-md-12.text-center
         h4.text-center {{ $t('reservations.title') }}
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
