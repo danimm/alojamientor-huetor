@@ -112,7 +112,7 @@ export default {
     object-position: 0 70%;
   }
   :nth-of-type(3) img {
-    object-position: 50% bottom;
+    object-position: center 64%;
   }
   p {
     margin-bottom: 20px;

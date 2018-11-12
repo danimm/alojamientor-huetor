@@ -86,6 +86,7 @@ const messages = {
         title: 'Notas de interés',
         season: 'Temporada alta:',
         date: '1 Junio - 15 Septiembre',
+        fest: 'Puentes, semana santa y Navidad',
         list: {
           item1: 'Checking: 16:00',
           item2: 'Checkout: 12:00',
@@ -102,6 +103,7 @@ const messages = {
         }
       },
       title: 'Consulta las fechas disponibles para tus próximas vacaciones',
+      reviews: 'Lee las opiniones de nuestros clientes:',
       button: 'Consultar fechas'
     },
     contact: {
@@ -180,15 +182,15 @@ const messages = {
       },
       offer: {
         title: 'What offers Alojamientos Huetor ?',
-        item1: 'Air conditioner',
+        item1: 'Air Conditioning',
         item2: 'barbecue',
-        item3: 'Chimney',
+        item3: 'Fireplace',
         item4: 'Full kitchen',
         item5: 'Terrace',
         item6: 'Parking',
         item7: 'Wifi',
         item8: 'Pool',
-        item9: 'Deck Chair',
+        item9: 'Sunbed',
         item10: 'Garden'
       },
       map: {
@@ -200,6 +202,7 @@ const messages = {
         title: 'Notes of interest',
         season: 'High season:',
         date: 'June 1 - September 15',
+        fest: 'Long weekend, Easter week and Christmas',
         list: {
           item1: 'Checking: 16:00',
           item2: 'Checkout: 12:00',
@@ -216,6 +219,7 @@ const messages = {
         }
       },
       title: 'Check the available dates for your next vacation',
+      reviews: 'Read the opinions of our clients:',
       button: 'Consult dates'
     },
     contact: {

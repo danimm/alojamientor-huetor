@@ -48,6 +48,8 @@
         .col-lg-4.col-md-6
           h4.text-white {{ $t('footer.titleLinks') }}
           p.text-white.mt-4
+            a.text-white(href="http://planamalaga.com/" target="_blank") Actividades al aire libre
+          p.text-white
             a.text-white(href="http://www.granadatur.com" target="_blank") Turismo de Granada
           p.text-white
             a.text-white(href="http://www.turismosevilla.org/opencms2/opencms/es/index.html" target="_blank") Portal de Turismo de la provincia de Sevilla
@@ -59,8 +61,6 @@
             a.text-white(href="http://www.turismoalmeria.com" target="_blank") Costa de Almería
           p.text-white
             a.text-white(href="http://www.turismohuelva.org" target="_blank") Patronato de Turismo de Huelva
-          p.text-white
-            a.text-white(href="http://planamalaga.com/" target="_blank") Actividades al aire libre
           p.text-white
             a.text-white(href="http://www.andalucia.org" target="_blank") Web oficial de turismo de Andalucía
           p.text-white

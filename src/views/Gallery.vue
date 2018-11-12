@@ -4,17 +4,17 @@
       .item.lvl-1
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage1.jpg?alt=media&token=6af97302-4031-4a42-81b3-5a7d0b246dcc")
       .item.lvl-2
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage3.JPEG?alt=media&token=e6f030d9-eb3c-453c-b2a2-df1243578a23")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage3.JPEG?alt=media&token=6908b5a3-bea6-4431-a332-da303161e62c")
       .item.lvl-2
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FH-81162951850.JPEG?alt=media&token=efb5f15b-8e01-4bd9-bae5-0373d68f872a")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2FH-81162951850.JPEG?alt=media&token=bdfd149c-8cea-41f2-be64-37a0d3fd2eab")
       .item.lvl-1
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage2.JPEG?alt=media&token=aba1106c-50ac-4c9f-8eb5-8186ee44c58e")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2FH-8116300984%20(1).JPEG?alt=media&token=b58e2299-863e-4b96-909a-3f15d17d0d40")
       .item.lvl-2
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage6.JPG?alt=media&token=5c7062fb-fced-4e62-ac95-830bc3fa4079")
+        img.pool(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage7.JPEG?alt=media&token=fd12cc98-8c52-48bc-84f6-143ba13ed3a5")
       .item.lvl-1
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage3.jpg?alt=media&token=0a7a27d1-6ed6-4118-99ea-ea9ef0b497b2")
       .item.lvl-1
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage4.JPEG?alt=media&token=1ba4d21a-1f03-49d7-94eb-a1b27e992257")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage4.JPEG?alt=media&token=18e09220-e481-4ecd-b700-9a56753ed339")
       .item.lvl-2
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage7.JPG?alt=media&token=bab52def-ba59-4c40-97f7-d40917ec38c6")
       .item.lvl-1
@@ -67,6 +67,9 @@
   }
   .lvl-3 img {
     object-fit: cover;
+  }
+  .pool {
+    object-position: 68% center;
   }
   @media screen and (max-width: 992px){
     .container {

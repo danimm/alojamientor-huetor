@@ -6,7 +6,8 @@
           b-card.mb-2(tag='article')
             h2 {{ $t('reservations.card.title') }}
             h3.date {{ $t('reservations.card.season') }}
-            h3.date {{ $t('reservations.card.date') }}
+            h3.date {{ $t('reservations.card.date') }}, 
+            h3.date {{ $t('reservations.card.fest') }}
             ul
               li {{ $t('reservations.card.list.item1') }}
               li {{ $t('reservations.card.list.item2') }}
@@ -21,9 +22,23 @@
               li {{ $t('reservations.card.list.item11') }}
               li {{ $t('reservations.card.list.item12') }}
       .col-lg-6.col-md-12.text-center
-        h4.text-center {{ $t('reservations.title') }}
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
-        b-button(href='https://www.avaibook.com/reservas/nueva_reserva.php?cod_alojamiento=151137&lang=es', variant='warning', target="_blank") {{ $t('reservations.button') }}
+        .row.reviews
+          .col
+            p {{ links }}
+            h4 {{ $t('reservations.reviews') }}
+            .row
+              .col.tripadvisor-container
+                a(:href="srcTrip", target="_blank")
+                  img(src="http://www.hotelmadanis.com/wp-content/uploads/2017/10/tripadvisor.png")
+              .col.zoover-container
+                a(:href="srcZoover", target="_blank")
+                  img(src="http://www.stickpng.com/assets/images/58482871cef1014c0b5e49e7.png")
+        h4.text-center.title {{ $t('reservations.title') }}
+        //- img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
+        iframe(
+          :src='srcCalendar', style='height: 355px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+        
+        //- b-button(href='https://www.avaibook.com/reservas/nueva_reserva.php?cod_alojamiento=151137&lang=es', variant='warning', target="_blank") {{ $t('reservations.button') }}
 
       
 
@@ -33,28 +48,27 @@
   export default {
     data() {
       return {
-        cards: [
-          {
-            title: 'Temporada alta',
-            duration: '1 Junio - 15 Septiembre',
-            list: [
-              'No se admiten mascotas',
-              'checking 16:00',
-              'checkout 12:00'
-            ]
-          },
-          {
-            title: 'Temporada baja',
-            duration: 'Resto del año',
-            list: [
-              'No se admiten mascotas',
-              'checking 16:00',
-              'checkout 12:00'
-              // 'Horario de llegada a partir de las 16:00, horario de salida antes de las 12:00 (salvo otro acuerdo con el propietario',
-              // 'Horario de salida antes de las 12:00'
-            ]
-          }
-        ]
+        srcCalendar: `https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=${this.$i18n.locale.toUpperCase()}`,
+        srcZoover: 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
+        srcTrip: 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS',
+        // srcZooverEn: 'http://www.zoover.co.uk/spain/andalusia-costa-del-sol-de-la-luz/vinuela/huetor-casitas/holiday-home',
+        // srcZooverEs: 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
+        // srcTripadvisorEs: 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS',
+        // srcTripadvisorEn: 'https://www.tripadvisor.com/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
+      }
+    },
+    computed: {
+      links() {
+        if (this.$i18n.locale === 'es') {
+          this.srcZoover = 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
+          this.srcTrip = 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
+          return this.srcZoover
+        } else if (this.$i18n.locale === 'en') {
+          this.srcZoover = 'http://www.zoover.co.uk/spain/andalusia-costa-del-sol-de-la-luz/vinuela/huetor-casitas/holiday-home'
+          this.srcTrip = 'https://www.tripadvisor.com/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
+          return this.srcZoover
+          // this.srcCalendar = 'https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=EN'
+        }
       }
     }
   }
@@ -98,13 +112,33 @@
   }
   h3 {
     font-size: 1.5em;
-    padding: 20px 0;
+    text-decoration: underline;
+    padding: 5px 0;
   }
   h4 {
     font-size: 2.4em;
+    margin-bottom: 40px;
   }
   img {
     width: 50%;
+  }
+  iframe {
+    width: 400px;
+  }
+  .zoover-container, .tripadvisor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    font-size: 2em;
+    margin-top: 40px;
+  }
+
+  .reviews {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 40px 0 40px 0;
   }
   /* h3::after {
     content: "/ Dia";
@@ -118,6 +152,9 @@
   @media screen and (max-width: 768px){
     .grid-container {
       margin-bottom: 40px;
+    }
+    iframe {
+      width: 40vw;
     }
   }
   @media screen and (max-width: 576px){
@@ -136,6 +173,9 @@
     .date {
       font-size: 1.4em;
       padding: 5px;
+    }
+    iframe {
+      width: 80vw;
     }
   }
 </style>

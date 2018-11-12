@@ -14,9 +14,9 @@
           )
           .form-group
             label(for="nombre") {{ $t('contact.form.name') }}
-            input.form-control#text(
+            input.form-control#nombre(
               :placeholder="$t('contact.form.namePH')"
-              name="text",
+              name="nombre",
               type="text",
               required
               )
@@ -32,7 +32,7 @@
             label(for="mensaje") {{ $t('contact.form.message') }}
             textarea.form-control#mensaje(
               :placeholder="$t('contact.form.messagePH')"
-              name="message",
+              name="mensaje",
               rows="5",
               required
               )
