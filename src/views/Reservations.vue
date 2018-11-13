@@ -24,7 +24,7 @@
       .col-lg-6.col-md-12.text-center
         .row.reviews
           .col
-            p {{ links }}
+            p.text-center {{ links }}
             h4 {{ $t('reservations.reviews') }}
             .row
               .col.tripadvisor-container
@@ -51,10 +51,6 @@
         srcCalendar: `https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=${this.$i18n.locale.toUpperCase()}`,
         srcZoover: 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
         srcTrip: 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS',
-        // srcZooverEn: 'http://www.zoover.co.uk/spain/andalusia-costa-del-sol-de-la-luz/vinuela/huetor-casitas/holiday-home',
-        // srcZooverEs: 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
-        // srcTripadvisorEs: 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS',
-        // srcTripadvisorEn: 'https://www.tripadvisor.com/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
       }
     },
     computed: {
@@ -62,12 +58,12 @@
         if (this.$i18n.locale === 'es') {
           this.srcZoover = 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
           this.srcTrip = 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
-          return this.srcZoover
+          // return this.srcZoover
+          // console.log('Idioma: español')
         } else if (this.$i18n.locale === 'en') {
           this.srcZoover = 'http://www.zoover.co.uk/spain/andalusia-costa-del-sol-de-la-luz/vinuela/huetor-casitas/holiday-home'
           this.srcTrip = 'https://www.tripadvisor.com/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
-          return this.srcZoover
-          // this.srcCalendar = 'https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=EN'
+          // console.log('Idioma: inglés')
         }
       }
     }
@@ -75,6 +71,9 @@
 </script>
 
 <style scoped>
+  p {
+    display: none;
+  }
   .container {
     padding-top: 50px;
     display: flex;
@@ -120,7 +119,7 @@
     margin-bottom: 40px;
   }
   img {
-    width: 50%;
+    width: 70%;
   }
   iframe {
     width: 400px;
@@ -155,6 +154,13 @@
     }
     iframe {
       width: 40vw;
+    }
+    .reviews {
+      margin: 0 20px;
+      padding: 30px 0px;
+    }
+    img {
+      width: 80%;
     }
   }
   @media screen and (max-width: 576px){
