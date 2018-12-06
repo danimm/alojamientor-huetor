@@ -33,10 +33,17 @@
               .col.zoover-container
                 a(:href="srcZoover", target="_blank")
                   img(src="http://www.stickpng.com/assets/images/58482871cef1014c0b5e49e7.png")
-        h4.text-center.title {{ $t('reservations.title') }}
+            .col
+              h4.text-center.title {{ $t('reservations.title') }}
+              iframe(:src='srcCalendar', style='height: 230px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+              div(style='width: 235px; margin: auto')
+                a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
         //- img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
-        iframe(
-          :src='srcCalendar', style='height: 355px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+        //- iframe(
+        //-   :src='srcCalendar', style='height: 355px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+        //- iframe(src='https://www.avaibook.com/widgets_propietarios/loader.php?id=32406&lang=ES', style='width: 235px; height: 230px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+        //-       div(style='width: 235px; margin: auto')
+        //-         a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
         
         //- b-button(href='https://www.avaibook.com/reservas/nueva_reserva.php?cod_alojamiento=151137&lang=es', variant='warning', target="_blank") {{ $t('reservations.button') }}
 
@@ -48,7 +55,7 @@
   export default {
     data() {
       return {
-        srcCalendar: `https://www.avaibook.com/widgets_propietarios/loader.php?id=32168&lang=${this.$i18n.locale.toUpperCase()}`,
+        srcCalendar: `https://www.avaibook.com/widgets_propietarios/loader.php?id=32406&lang=${this.$i18n.locale}`,
         srcZoover: 'http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones',
         srcTrip: 'https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS',
       }
@@ -122,7 +129,7 @@
     width: 70%;
   }
   iframe {
-    width: 400px;
+    width: 90%;
   }
   .zoover-container, .tripadvisor-container {
     display: flex;
@@ -139,10 +146,6 @@
     border-radius: 5px;
     padding: 40px 0 40px 0;
   }
-  /* h3::after {
-    content: "/ Dia";
-    font-size: 1rem;
-  } */
   @media screen and (max-width: 992px){
     .grid-container {
       grid-template-columns: 1fr;
@@ -151,9 +154,6 @@
   @media screen and (max-width: 768px){
     .grid-container {
       margin-bottom: 40px;
-    }
-    iframe {
-      width: 40vw;
     }
     .reviews {
       margin: 0 20px;
@@ -179,9 +179,6 @@
     .date {
       font-size: 1.4em;
       padding: 5px;
-    }
-    iframe {
-      width: 80vw;
     }
   }
 </style>

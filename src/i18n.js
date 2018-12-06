@@ -14,8 +14,8 @@ const messages = {
         lang: 'Idiomas',
         es: 'Español',
         en: 'Inglés',
-        de: 'Alemán',
-        fr: 'Francés(pronto)'
+        de: '(pronto)',
+        fr: '(pronto)'
       }
     },
     footer: {
@@ -130,8 +130,8 @@ const messages = {
         lang: 'Languages',
         es: 'Spanish',
         en: 'English',
-        de: 'German',
-        fr: 'French(soon)'
+        de: '(soon)',
+        fr: '(soon)'
       }
     },
     footer: {
@@ -297,6 +297,28 @@ const messages = {
         }
       }
     }
+  },
+  fr: {
+    header: {
+      home: 'Anfang',
+      reservations: 'Réserves',
+      gallery: 'Galerie',
+      contact: 'Kontakt',
+      languages: {
+        lang: 'Sprachen',
+        es: 'Spanisch',
+        en: 'Englisch',
+        de: 'Deutsch',
+        fr: 'Französisch'
+      }
+    },
+    footer: {
+      text1: 'For reservations, inquiries or additional information contact us.',
+      titleInstagram: 'Follow us on Instagram',
+      titleLinks: 'Links of interest',
+      made: 'Made by Daniel Muñoz Martín: ',
+      legal: 'Legal terms'
+    },
   }
 }
 

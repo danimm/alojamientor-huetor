@@ -42,21 +42,6 @@
 </script>
 
 <style scoped>
-  /* .hero {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage20.JPG?alt=media&token=0fe251a5-db49-4332-a232-e06eef2b38bf');
-    background-size: cover;
-    background-position: center 40%;
-    height: 500px;
-    position: relative;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
-  } */
   .container-fluid {
     background-color:#fefdeb;
     padding: 20px 0; 

@@ -7,17 +7,18 @@
       b-collapse#nav_collapse(is-nav)
         b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") {{ $t('header.home') }}
-          router-link.nav-link(to="reservations") {{ $t('header.reservations') }}
+          router-link.nav-link.btn.btn-warning(to="reservations") {{ $t('header.reservations') }}
           router-link.nav-link(to="gallery") {{ $t('header.gallery') }}
           router-link.nav-link(to="contact") {{ $t('header.contact') }}
           b-nav-item-dropdown(:text="$t('header.languages.lang')" right)
             b-dropdown-item(@click="selectLang('es')") {{ $t('header.languages.es') }}
-              img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fespana.svg?alt=media&token=cbdf0a1e-215c-43e6-ac76-28e0f47c90b2")
+              img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fespana%20(1).svg?alt=media&token=6fe8b235-f4d4-4c48-971b-3125842c0acb")
             b-dropdown-item(@click="selectLang('en')") {{ $t('header.languages.en') }}
-              img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Freino-unido.svg?alt=media&token=ca4d1110-2f93-4759-8a32-a572e7138cd4")
-            b-dropdown-item(@click="selectLang('de')") {{ $t('header.languages.de') }}
+              img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Freino-unido%20(1).svg?alt=media&token=b44d7fa5-07a9-42f8-9fc2-3a9bdd7bbd8b")
+            b-dropdown-item {{ $t('header.languages.de') }}
               img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Falemania.svg?alt=media&token=05e06cb4-9b48-4a39-9471-8762b0e8e610")
-            b-dropdown-item(href="#") {{ $t('header.languages.fr') }}
+            b-dropdown-item {{ $t('header.languages.fr') }}
+              img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Ffrancia.svg?alt=media&token=924ce700-e45a-47ba-b232-b5062cb3e701")
 </template>
 
 <script>
@@ -29,11 +30,17 @@
     selectLang (lang) {
         this.$i18n.locale = lang
       }
+    },
+    beforeRouteLeave(){
+      window.scrollTo(0,0)
     }
   }
 </script>
 
 <style scoped>
+  .nav-link {
+    text-align: center;
+  }
   img {
     max-width: 180px;
   }
@@ -44,13 +51,22 @@
   .dropdown-item {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    padding: 5px 10px;
+  }
+  .icon {
+    width: 35px;
   }
   @media screen and (max-width: 992px){
-    .icon {
-      width: 50px;
-      /* margin-left: 10px; */
+    /* .container {
+      height: 50px;
     }
+    .navbar {
+      position: fixed;
+      z-index: 10;
+      background-color: white;
+      width: 95vw;
+    } */
   }
   @media screen and (max-width: 576px){
     img {

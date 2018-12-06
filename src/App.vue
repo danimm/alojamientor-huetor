@@ -46,6 +46,8 @@
   let refStorageImages = firebase.storage().ref("images")
   let refStorageIcons = firebase.storage().ref("icons")
 
+  let app = document.getElementById('app')
+
   // Components
   import AhHeader from '@/components/layout/AhHeader.vue'
   import AhFooter from '@/components/layout/AhFooter.vue'
@@ -75,9 +77,6 @@
         Image23: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage23.JPG?alt=media&token=08bc4ed2-82ae-488e-af1d-dc8ebc014033',
         Image24: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage24.JPG?alt=media&token=9753fff9-2b99-4ef4-b2a8-1031994a5d56'
       }
-    },
-    beforeRouteLeave(){
-      window.scrollTo(0,0)
     },
     created() {
       addEventListener("load", () => {
