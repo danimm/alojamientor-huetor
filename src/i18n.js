@@ -7,7 +7,7 @@ const messages = {
   es: {
     header: {
       home: 'Inicio',
-      reservations: 'Reservas',
+      reservations: 'Reservar',
       gallery: 'Galería',
       contact: 'Contacto',
       languages: {
@@ -123,7 +123,7 @@ const messages = {
   en: {
     header: {
       home: 'Home',
-      reservations: 'Reservations',
+      reservations: 'Book',
       gallery: 'Gallery',
       contact: 'Contact',
       languages: {
@@ -239,7 +239,7 @@ const messages = {
   de: {
     header: {
       home: 'Anfang',
-      reservations: 'Reserven',
+      reservations: 'Reservieren',
       gallery: 'Galerie',
       contact: 'Kontakt',
       languages: {

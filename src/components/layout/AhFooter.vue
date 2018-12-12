@@ -28,9 +28,17 @@
           h4.mb-4.text-white {{ $t('footer.titleInstagram') }}
           .grid-container
             picture
-              img(:src='Image16', alt='')
+              img(src='https://scontent-frt3-2.cdninstagram.com/vp/3a70a24d56b506789a9420375f92112a/5C9C1124/t51.2885-15/sh0.08/e35/c135.0.809.809/s640x640/43014924_1750974341696474_8057018949742624768_n.jpg', alt='')
+              //- img(:src='Image16', alt='')
             picture
-              img(:src='Image17', alt='')
+              img(src='https://scontent-frt3-2.cdninstagram.com/vp/84c6d737a1b7315083485e6cbad1be1a/5C904F97/t51.2885-15/e35/c236.0.607.607/45831884_319576411962109_2320455372717948928_n.jpg', alt='')
+              //- img(:src='Image17', alt='')
+            picture
+              img(src='https://scontent-frt3-2.cdninstagram.com/vp/b030ea0e358342163b8f9764ce02f67b/5CB23795/t51.2885-15/sh0.08/e35/c0.135.1080.1080/s640x640/44766451_517433122075725_6381255945023913984_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com', alt='')
+              //- img(:src='Image18', alt='')
+            picture
+              img(src='https://scontent-frt3-2.cdninstagram.com/vp/4ab33f1d2bd058887a784a74ea4b68a0/5CA768D1/t51.2885-15/sh0.08/e35/c0.8.1080.1080a/s640x640/44626715_315581195932900_4565953039155855360_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com', alt='')
+              //- img(:src='Image19', alt='')
             picture
               img(:src='Image18', alt='')
             picture
@@ -39,10 +47,6 @@
               img(:src='Image20', alt='')
             picture
               img(:src='Image21', alt='')
-            picture
-              img(:src='Image22', alt='')
-            picture
-              img(:src='Image23', alt='')
             //- picture
             //-   img(:src='Image24', alt='')
         .col-lg-4.col-md-6
@@ -119,6 +123,7 @@
   }
   img {
     max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     /* object-position: left; */

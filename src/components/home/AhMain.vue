@@ -43,9 +43,6 @@
               h1.display-3 Alojamientos Huetor
               p.d-none.d-md-block.h4
                 | {{ $t('home.main.text1') }}
-              router-link.btn.btn-outline-light.mr-2(to="gallery") {{ $t('home.main.button1') }}
-              //- a.btn.btn-outline-light.mr-2(href='#') Conócenos
-              router-link.btn.btn-warning(to="reservations") {{ $t('home.main.button2') }}
 </template>
 
 <script>
