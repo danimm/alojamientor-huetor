@@ -87,6 +87,9 @@
 </script>
 
 <style scoped>
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satisfy', cursive;
+  }
   .container-fluid {
     background-color:#fefdeb;
     padding: 30px 0 10px 0;

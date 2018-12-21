@@ -21,6 +21,9 @@
 </script>
 
 <style scoped>
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satisfy', cursive;
+  }
   .container {
     margin-top: 150px !important;
     /* margin-bottom: 200px; */

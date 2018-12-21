@@ -105,12 +105,16 @@
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css?family=Satisfy');
   #app {
     /* background-color: red; */
     font-family: system-ui;
     font-weight: 400;
     line-height: 1.8;
     font-size: 1rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satisfy', cursive;
   }
   .content {
     display: none;

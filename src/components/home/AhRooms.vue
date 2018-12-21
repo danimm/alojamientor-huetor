@@ -42,6 +42,9 @@
 </script>
 
 <style scoped>
+  h3 {
+    font-family: 'Satisfy', cursive;
+  }
   .container-fluid {
     background-color:#fefdeb;
     padding: 20px 0; 

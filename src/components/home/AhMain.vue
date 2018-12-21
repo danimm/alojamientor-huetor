@@ -76,6 +76,9 @@ export default {
 <!-- carousel-1.vue -->
 
 <style scoped>
+  h1 {
+    font-family: 'Satisfy', cursive;
+  }
   article {
     display: none;
   }
@@ -106,7 +109,7 @@ export default {
     object-position: 50% 37%;
   }
   :nth-of-type(2) img {
-    object-position: 0 70%;
+    object-position: 0 50%;
   }
   :nth-of-type(3) img {
     object-position: center 64%;
