@@ -45,22 +45,7 @@
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0159.JPG?alt=media&token=3dbd7cb1-6db2-4a5d-8abc-c3aa6e93b082")
       .item.lvl-2
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0167.JPG?alt=media&token=9e136894-0563-4df1-9738-0c6cb5177b9b")
-      //- .item.lvl-2
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0171.JPG?alt=media&token=c193bd11-63d8-4cd5-83db-1c360affb690")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0201.JPG?alt=media&token=d9944bd0-6943-412f-b3c1-8ff86bc4a99b")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0219.JPG?alt=media&token=5184bb24-d3a8-4c27-8c3a-6f7e7167a5d3")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0252.JPG?alt=media&token=d558b1b8-1a45-41dc-89ac-83b655b010b1")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0278.JPG?alt=media&token=e7a0d79a-8baa-4d7a-bf71-514f2a9d0ea7")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0294.JPG?alt=media&token=9382d067-90f7-422b-84b0-f02b4118aecb")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0306.JPG?alt=media&token=fcaebc65-7b0b-4100-9842-7452ce2a17ea")
-      //- .item.lvl-1
-      //-   img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0316.JPG?alt=media&token=e1f368fd-0e49-46e2-bebc-4815969e8f80")
+      
       
 </template>
 

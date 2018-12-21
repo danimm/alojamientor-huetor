@@ -20,11 +20,12 @@
 </script>
 
 <style scoped>
-  h1, h2, h3, h4, h5, h6 {
+  h2 {
     font-family: 'Satisfy', cursive;
   }
   .container-fluid {
     /* background-color: lightslategrey; */
+    margin-top: 120px;
     padding: 30px 0;
     /* color: white; */
   }
@@ -106,7 +107,11 @@
 
   @media screen and (max-width: 992px){
     .grid-container {
-      display: block;
+      grid-template-rows: auto-fill;
+      grid-template-areas:  "text1 text1"
+                            "text2 text2"
+                            "img1 img1"
+                            "img2 img2";
     }
     p {
       margin: 0;

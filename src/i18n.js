@@ -14,7 +14,7 @@ const messages = {
         lang: 'Idiomas',
         es: 'Español',
         en: 'Inglés',
-        de: '(pronto)',
+        de: 'Alemán',
         fr: '(pronto)'
       }
     },
@@ -130,7 +130,7 @@ const messages = {
         lang: 'Languages',
         es: 'Spanish',
         en: 'English',
-        de: '(soon)',
+        de: 'German',
         fr: '(soon)'
       }
     },
@@ -238,8 +238,8 @@ const messages = {
   },
   de: {
     header: {
-      home: 'Anfang',
-      reservations: 'Reservieren',
+      home: 'Home',
+      reservations: 'Reservierungen',
       gallery: 'Galerie',
       contact: 'Kontakt',
       languages: {
@@ -247,13 +247,13 @@ const messages = {
         es: 'Spanisch',
         en: 'Englisch',
         de: 'Deutsch',
-        fr: 'Französisch'
+        fr: '(Bald)'
       }
     },
     footer: {
-      text1: 'Für Reservierungen, Anfragen oder zusätzliche Informationen kontaktieren Sie uns.',
-      titleInstagram: 'Folge uns auf Instagram',
-      titleLinks: 'Links von Interesse',
+      text1: 'Für Reservierungen, Anfragen oder ergänzende Informationen, nehmen Sie mit uns Kontakt auf.',
+      titleInstagram: 'folgen Sie uns auf Instagram',
+      titleLinks: 'interessante Links',
       made: 'Erstellt von Daniel Muñoz Martín: ',
       legal: 'Aviso legal'
     },
@@ -261,7 +261,7 @@ const messages = {
       main: {
         text1: 'Komm und erlebe unvergessliche Momente in den besten Landhäusern der Region Málaga.',
         button1: 'Galerie',
-        button2: 'Reservieren',
+        button2: 'Reservierungen',
       },
       description: {
         title: 'Hier findest du Ruhe und Erholung. Überzeuge dich selbst und lass uns dich bei uns willkommen heissen.',
@@ -295,7 +295,61 @@ const messages = {
           title: 'La costa del Sol',
           text: 'Mit 320 Sonnentagen im Jahr ist Málaga der ideale Ort, um sich am Strand (15 Autominuten entfernt) oder in/an  unserem wunderschönen Pool zu sonnen.'
         }
+      },
+      offer: {
+        title: 'Was bietet Alojamientos Huetor?',
+        item1: 'Klimaanlage',
+        item2: 'Grill',
+        item3: 'Kamin',
+        item4: 'Komplette Küche',
+        item5: 'Terrasse',
+        item6: 'Parkplätze',
+        item7: 'Wifi',
+        item8: 'Aussenschwimmbad',
+        item9: 'Liegestühle',
+        item10: 'Gartenanlage'
+      },
+      map: {
+        title: 'Wo sind wir?'
       }
+    },
+    reservations: {
+      card: {
+        title: 'Wichtige Informationen',
+        season: 'Hochsaison & Feiertage:',
+        date: 'Juni 1 - September 15',
+        fest: 'Long weekend, Easter week and Christmas',
+        list: {
+          item1: 'Checking: 16:00',
+          item2: 'Checkout: 12:00',
+          item3: 'keine Feiern und Events möglich',
+          item4: 'keine Haustiere erlaubt',
+          item5: 'nur Unterkunft (keine Verpflegung)',
+          item6: 'es wird kein Frühstück angeboten',
+          item7: 'Gemeinschaftspool (aussen)',
+          item8: 'Ausflüge und Aktivitäten (gegen Gebühr) buchbar',
+          item9: 'Touristeninformation',
+          item10: 'Kann man mit Karte Zahlen',
+          item11: 'Babybett und Hochkinderstuhl (gegen Gebühr) buchbar',
+          item12: 'Kaminholz (gegen Gebühr)',
+        }
+      },
+      title: 'Prüfe die Verfügbarkeit für Deinen nächsten Urlaub',
+      reviews: 'Lese die Bewertungen unserer Gäste:',
+      button: 'Verfügbarkeit'
+    },
+    contact: {
+      text1: 'Hallo, ich heisse Isa und beantworte Deine Fragen, wenn möglich innerhalb 24 Stunden.',
+      text2: 'Sende uns Deine Fragen.',
+      form: {
+        name: 'Name',
+        namePH: 'Deine Name',
+        email: 'Email',
+        emailPH: 'deine@email.com',
+        message: 'Text',
+        messagePH: 'Deine Frage',
+      },
+      button: 'Send'
     }
   },
   fr: {

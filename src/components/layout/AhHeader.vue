@@ -15,7 +15,7 @@
               img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fespana%20(1).svg?alt=media&token=6fe8b235-f4d4-4c48-971b-3125842c0acb")
             b-dropdown-item(@click="selectLang('en')") {{ $t('header.languages.en') }}
               img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Freino-unido%20(1).svg?alt=media&token=b44d7fa5-07a9-42f8-9fc2-3a9bdd7bbd8b")
-            b-dropdown-item {{ $t('header.languages.de') }}
+            b-dropdown-item(@click="selectLang('de')") {{ $t('header.languages.de') }}
               img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Falemania.svg?alt=media&token=05e06cb4-9b48-4a39-9471-8762b0e8e610")
             b-dropdown-item {{ $t('header.languages.fr') }}
               img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Ffrancia.svg?alt=media&token=924ce700-e45a-47ba-b232-b5062cb3e701")

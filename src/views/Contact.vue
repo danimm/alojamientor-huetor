@@ -54,6 +54,9 @@ export default {
 </script>
 
 <style scoped>
+  h2 {
+    font-family: 'Satisfy', cursive;
+  }
   .container {
     margin-top: 60px;
     margin-bottom: 60px;
