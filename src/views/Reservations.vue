@@ -75,6 +75,10 @@
           this.srcZoover = 'http://www.zoover.de/spanien/costa-del-sol-costa-de-la-luz-andalusien/vinuela/huetor-casitas/ferienhaus'
           this.srcTrip = 'https://www.tripadvisor.de/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
           // console.log('Idioma: Alemán')
+        } else if (this.$i18n.locale === 'fr') {
+          this.srcZoover = 'http://www.zoover.fr/espagne/andalousie/vinuela/huetor-casitas/maison-de-vacances'
+          this.srcTrip = 'https://www.tripadvisor.fr/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS'
+          // console.log('Idioma: Francés')
         }
       }
     }

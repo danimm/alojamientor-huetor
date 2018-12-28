@@ -24,29 +24,32 @@
           p
             img.icon(:src="Instagram", alt="instagram-icon")
             a.text-white(href="https://www.instagram.com/alojamientos_huetor/", target="_blank") alojamientos_huetor
+          p
+            img.icon(:src="Facebook", alt="facebook-icon")
+            a.text-white(href="https://es-es.facebook.com/alojamientoshuetor.alojamientos", target="_blank") Alojamientos Huetor
         .col-lg-4.col-md-6.mb-4
           h4.mb-4.text-white {{ $t('footer.titleInstagram') }}
           .grid-container
             picture
-              img(src='https://scontent-frt3-2.cdninstagram.com/vp/3a70a24d56b506789a9420375f92112a/5C9C1124/t51.2885-15/sh0.08/e35/c135.0.809.809/s640x640/43014924_1750974341696474_8057018949742624768_n.jpg', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/d2ea5b92ceb732028edd397cf22c316b/5CC9B33E/t51.2885-15/sh0.08/e35/s640x640/43014924_1750974341696474_8057018949742624768_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
               //- img(:src='Image16', alt='')
             picture
-              img(src='https://scontent-frt3-2.cdninstagram.com/vp/84c6d737a1b7315083485e6cbad1be1a/5C904F97/t51.2885-15/e35/c236.0.607.607/45831884_319576411962109_2320455372717948928_n.jpg', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/0da4b1259ad1a00649d8ef66896de422/5CCE990E/t51.2885-15/sh0.08/e35/s640x640/45831884_319576411962109_2320455372717948928_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
               //- img(:src='Image17', alt='')
             picture
-              img(src='https://scontent-frt3-2.cdninstagram.com/vp/b030ea0e358342163b8f9764ce02f67b/5CB23795/t51.2885-15/sh0.08/e35/c0.135.1080.1080/s640x640/44766451_517433122075725_6381255945023913984_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/295ebf5acbb900fbe1e03dff130ae199/5CD97820/t51.2885-15/sh0.08/e35/p640x640/44766451_517433122075725_6381255945023913984_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
               //- img(:src='Image18', alt='')
             picture
-              img(src='https://scontent-frt3-2.cdninstagram.com/vp/4ab33f1d2bd058887a784a74ea4b68a0/5CA768D1/t51.2885-15/sh0.08/e35/c0.8.1080.1080a/s640x640/44626715_315581195932900_4565953039155855360_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/08dd86c6180d8a47316da9a085314634/5CCCDFF5/t51.2885-15/sh0.08/e35/p640x640/44626715_315581195932900_4565953039155855360_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
               //- img(:src='Image19', alt='')
             picture
-              img(:src='Image18', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/32aee5894a4057b5e7979f5bd20c6d82/5CBEE01D/t51.2885-15/sh0.08/e35/s750x750/45824477_728973444152426_723676807982743552_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
             picture
-              img(:src='Image19', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/dcfd6d488e51edfcd19214dcddb36805/5CB631D2/t51.2885-15/sh0.08/e35/s640x640/46420736_281738809195514_4119327786705879040_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
             picture
-              img(:src='Image20', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/814cf40cfc960e20c701e0a5fb11a87a/5CCC7B4B/t51.2885-15/sh0.08/e35/s640x640/47585742_899093220287686_8819568196756439040_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
             picture
-              img(:src='Image21', alt='')
+              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/ba8f855502d4cb19fda480c2fcaa610d/5CCB9E86/t51.2885-15/e35/46203166_276152556421819_7142441385302425600_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
             //- picture
             //-   img(:src='Image24', alt='')
         .col-lg-4.col-md-6
@@ -92,15 +95,7 @@
       Home: { type: String, required: true},
       Mail: { type: String, required: true},
       Instagram: { type: String, required: true},
-      Image16: { type: String, required:true },
-      Image17: { type: String, required:true },
-      Image18: { type: String, required:true },
-      Image19: { type: String, required:true },
-      Image20: { type: String, required:true },
-      Image21: { type: String, required:true },
-      Image22: { type: String, required:true },
-      Image23: { type: String, required:true },
-      Image24: { type: String, required:true },
+      Facebook: { type: String, required: true}
     },
     methods: {
       goLegal(){

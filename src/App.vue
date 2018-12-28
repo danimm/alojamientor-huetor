@@ -13,15 +13,7 @@
         :Home="Home",
         :Mail="Mail",
         :Instagram="Instagram",
-        :Image16="Image16",
-        :Image17="Image17",
-        :Image18="Image18",
-        :Image19="Image19",
-        :Image20="Image20",
-        :Image21="Image21",
-        :Image22="Image22",
-        :Image23="Image23",
-        :Image24="Image24",
+        :Facebook="Facebook"
       )
 </template>
 
@@ -67,39 +59,13 @@
         Home: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fhome.svg?alt=media&token=e1b3f244-7e9f-4574-8fbb-6e5e0d0ef82c',
         Mail: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fmail.svg?alt=media&token=b02d8d8d-5384-4d3f-bb70-92d663220d03',
         Instagram: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Flogo-de-instagram.svg?alt=media&token=fb3bea32-d4f1-4c16-94ef-a8f9d8a5a03d',
-        Image16: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage16.jpg?alt=media&token=65341002-e939-4d96-a800-81b40690af01',
-        Image17: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage17.JPG?alt=media&token=f869b8a0-8d0a-452c-a6a5-be2054642131',
-        Image18: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage18.JPG?alt=media&token=ea5f6296-00a7-47f2-9a74-123384124767',
-        Image19: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage19.jpg?alt=media&token=ec65d1e7-1b7b-4d08-9988-4d1cb5a1ed11',
-        Image20: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage20.JPG?alt=media&token=0fe251a5-db49-4332-a232-e06eef2b38bf',
-        Image21: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage21.jpg?alt=media&token=6701c268-c35b-407e-8b39-31b0a77cfa93',
-        Image22: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage22.JPG?alt=media&token=0cc0ce2c-16d2-404d-a349-e3cb66f26846',
-        Image23: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage23.JPG?alt=media&token=08bc4ed2-82ae-488e-af1d-dc8ebc014033',
-        Image24: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage24.JPG?alt=media&token=9753fff9-2b99-4ef4-b2a8-1031994a5d56'
+        Facebook: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Ffacebook-logo.svg?alt=media&token=e26d9375-35a0-4aa1-ada9-316c7de423d2'
       }
     },
     created() {
       addEventListener("load", () => {
           this.isLoaded = true
         })
-
-      // Images
-      // refStorageImages.child("Image16.jpg").getDownloadURL().then( url => this.Image16 = url ),
-      // refStorageImages.child("Image17.JPG").getDownloadURL().then( url => this.Image17 = url ),
-      // refStorageImages.child("Image18.JPG").getDownloadURL().then( url => this.Image18 = url ),
-      // refStorageImages.child("Image19.jpg").getDownloadURL().then( url => this.Image19 = url ),
-      // refStorageImages.child("Image20.JPG").getDownloadURL().then( url => this.Image20 = url ),
-      // refStorageImages.child("Image21.jpg").getDownloadURL().then( url => this.Image21 = url ),
-      // refStorageImages.child("Image22.JPG").getDownloadURL().then( url => this.Image22 = url ),
-      // refStorageImages.child("Image23.JPG").getDownloadURL().then( url => this.Image23 = url ),
-      // refStorageImages.child("Image24.JPG").getDownloadURL().then( url => this.Image24 = url ),
-
-      // Icons
-      // refStorageIcons.child("Logo-Dark.svg").getDownloadURL().then( url => this.LogoDark = url ),
-      // refStorageIcons.child("Logo-White.svg").getDownloadURL().then( url => this.LogoWhite = url ),
-      // refStorageIcons.child("phone.svg").getDownloadURL().then( url => this.Phone = url ),
-      // refStorageIcons.child("home.svg").getDownloadURL().then( url => this.Home = url ),
-      // refStorageIcons.child("mail.svg").getDownloadURL().then( url => this.Mail = url )
     }
   }
 </script>
