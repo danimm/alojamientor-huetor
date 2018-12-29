@@ -87,13 +87,16 @@
 </script>
 
 <style scoped>
-  h1, h2, h3, h4, h5, h6 {
+  h2, h4 {
     font-family: 'Satisfy', cursive;
   }
   .container-fluid {
     background-color:#fefdeb;
     padding: 30px 0 10px 0;
     /* margin-bottom: 50px; */
+  }
+  .container {
+    margin-top: 50px;
   }
   .grid-container {
     margin: 100px 0 50px 0;
@@ -112,13 +115,14 @@
   }
   @media screen and (max-width: 992px){
     .grid-container {
-    grid-template: repeat(2, 150px) / repeat(4, 1fr);
+      grid-template: repeat(2, 150px) / repeat(5, 1fr);
     }
   }
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 768px){
     .grid-container {
-    grid-template: repeat(2, 150px) / repeat(3, 1fr);
+      grid-template: repeat(2, 150px) / repeat(2, 1fr);
+      grid-gap: 40px;
     }
     h2 {
       font-size: 3em;
@@ -126,7 +130,8 @@
   }
   @media screen and (max-width: 576px){
     .grid-container {
-    grid-template: repeat(2, 150px) / repeat(2, 1fr);
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      grid-gap: 20px;
     }
   }
 </style>

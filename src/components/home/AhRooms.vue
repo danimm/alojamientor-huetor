@@ -47,8 +47,8 @@
   }
   .container-fluid {
     background-color:#fefdeb;
-    padding: 20px 0; 
-    margin: 100px 0;
+    padding: 20px 0;
+    margin-top: 40px; 
   }
   img {
     width: 100%;

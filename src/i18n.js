@@ -123,7 +123,7 @@ const messages = {
   en: {
     header: {
       home: 'Home',
-      reservations: 'Book',
+      reservations: 'Booking',
       gallery: 'Gallery',
       contact: 'Contact',
       languages: {

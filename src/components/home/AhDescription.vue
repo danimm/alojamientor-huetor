@@ -21,23 +21,19 @@
 </script>
 
 <style scoped>
-  h1, h2, h3, h4, h5, h6 {
+  h2 {
     font-family: 'Satisfy', cursive;
+    font-size: 3em;
+    margin-bottom: 50px;
   }
   .container {
     margin-top: 150px !important;
-    /* margin-bottom: 200px; */
     height: 690px;
   }
   img {
       object-fit: cover;
       width: 100%;
       height: 100%;
-  }
-  h2 {
-    font-size: 3em;
-    margin-bottom: 50px;
-    /* letter-spacing: 1px; */
   }
   p {
     line-height: 1.75rem;
@@ -46,13 +42,13 @@
     margin-bottom: 60px;
     margin-top: 60px;
   }
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 991px){
     .container {
       margin-top: 0 !important;
       height: 100%;
     }
     h2 {
-      margin-top: 20px;
+      margin-top: 50px;
     }
   }
 

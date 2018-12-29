@@ -39,11 +39,12 @@
 </script>
 
 <style scoped>
-  h1, h2, h3, h4, h5, h6 {
+  h2, h4 {
     font-family: 'Satisfy', cursive;
   }
   .container-fluid {
-    margin-bottom: 120px; 
+    margin-bottom: 120px;
+    margin-top: 120px;
   }
   .row {
     max-width: 100%;
@@ -62,6 +63,11 @@
     .card-title {
       font-size: 2.5em;
     }  
+  }
+  @media screen and (max-width: 768px){
+    .container-fluid {
+      margin-bottom: 80px;
+    }
   }
   @media screen and (max-width: 576px){
     h2 {
