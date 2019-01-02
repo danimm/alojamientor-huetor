@@ -101,7 +101,8 @@
   @media screen and (max-width: 576px){
     .grid-container {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto-fill, 60vh);
+      grid-template-rows: repeat(auto-fill, 50vh);
+      margin-top: 60px;
     }
   }
 </style>

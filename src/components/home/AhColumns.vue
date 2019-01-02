@@ -105,12 +105,18 @@
 
   @media screen and (max-width: 768px){
     .grid-container {
-      grid-template: 1fr 250px 1fr / 1fr;
+      grid-template: 1fr 0.5fr 1fr / 1fr;
       grid-gap: 10px;
       grid-template-areas:  "img1"
                             "text"
                             "img2";
     }
+    .text-container {
+      padding-bottom: 40px;
+    }
+    .text-container p {
+      padding-bottom: 0;
+    } 
     .container {
       margin-top: 0;
     }
