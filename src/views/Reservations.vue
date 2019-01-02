@@ -35,7 +35,7 @@
                   img(src="http://www.stickpng.com/assets/images/58482871cef1014c0b5e49e7.png")
             .col
               h4.text-center.title {{ $t('reservations.title') }}
-              iframe(:src='srcCalendar', style='height: 230px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+              iframe(:src='srcCalendar', style='height:340px; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
               div(style='width: 235px; margin: auto')
                 a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
         //- img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fcalendario.svg?alt=media&token=583bd152-ef11-4a6a-b546-aba863bf3973")
