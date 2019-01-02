@@ -255,7 +255,7 @@ const messages = {
       titleInstagram: 'folgen Sie uns auf Instagram',
       titleLinks: 'interessante Links',
       made: 'Erstellt von Daniel Muñoz Martín: ',
-      legal: 'Aviso legal'
+      legal: 'Rechtliche Hinweise'
     },
     home: {
       main: {
@@ -371,7 +371,7 @@ const messages = {
       titleInstagram: 'Suivez nous sur Instagram',
       titleLinks: 'Liens d’intérêt',
       made: 'faite par Daniel Muñoz Martín: ',
-      legal: 'Legal terms'
+      legal: 'Termes légaux'
     },
     home: {
       main: {
