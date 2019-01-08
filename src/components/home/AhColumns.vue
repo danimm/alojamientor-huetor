@@ -5,11 +5,11 @@
       .grid-container
         .img-container-1
           img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotopiscina.jpg?alt=media&token=40102798-cac4-4f11-a29d-9520c6043aea")
-        .img-container-2
-          img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage15.jpg?alt=media&token=bc972bb4-dec6-4d06-9a0b-847980c9c4c5")
         .text-container
           p {{ $t('home.columns.text1') }}
           p {{ $t('home.columns.text2') }}
+        .img-container-2
+          img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage15.jpg?alt=media&token=bc972bb4-dec6-4d06-9a0b-847980c9c4c5")
 </template>
 
 <script>
@@ -99,17 +99,18 @@
       padding: 0;
     }
     img {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     } 
   }
 
   @media screen and (max-width: 768px){
     .grid-container {
-      grid-template: 1fr 0.5fr 1fr / 1fr;
+      /* grid-template: 1fr 0.5fr 1fr / 1fr;
       grid-gap: 10px;
       grid-template-areas:  "img1"
                             "text"
-                            "img2";
+                            "img2"; */
+      display: block;                      
     }
     .text-container {
       padding-bottom: 40px;
@@ -131,10 +132,10 @@
     }
     .grid-container {
       margin-bottom: 0;
-      grid-template: 1fr 1fr 1fr / 1fr;
+      /* grid-template: 1fr 1fr 1fr / 1fr; */
     }
     .text-container {
-      padding: 10px 0;
+      padding: 20px 0 30px 0;
     } 
     .container-fluid {
       margin-top: 50px;
