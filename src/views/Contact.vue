@@ -36,6 +36,9 @@
               rows="5",
               required
               )
+          p(v-if="locale") **Al enviar este formulario está de acuerdo con nuestra política de privacidad. Para más información consulte las condiciones 
+            a(@click="goPrivacity") aquí
+
           button.btn.btn-primary(type='submit') {{ $t('contact.button') }}
           //- b-button(type='reset', variant='danger') Reiniciar
 
@@ -49,7 +52,20 @@ export default {
         src: 'https://a0.muscache.com/im/pictures/b387ac49-5c3d-4c0c-8762-76583de4cf78.jpg?aki_policy=profile_x_medium'
         }
       }
-    }
+    },
+    methods: {
+      goPrivacity(){
+        window.scrollTo(0, 0)
+        this.$router.push("privacity")
+      }
+    } ,
+    computed: {
+      locale() {
+        if (this.$i18n.locale == 'es'){
+          return true
+        }
+      }
+    } 
   }
 </script>
 
@@ -57,6 +73,13 @@ export default {
   h2 {
     font-family: 'Satisfy', cursive;
   }
+  a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    color: blue !important;
+    text-decoration: underline !important;
+  } 
   .container {
     margin-top: 60px;
     margin-bottom: 60px;
