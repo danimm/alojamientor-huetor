@@ -117,6 +117,8 @@ const messages = {
         message: 'Mensaje',
         messagePH: 'Escribe lo que quieras',
       },
+      privacity: '** Al enviar este formulario está de acuerdo con nuestra política de privacidad. Para más información consulte las condiciones ',
+      link: 'aquí.',
       button: 'Enviar'
     }
   },
@@ -233,6 +235,8 @@ const messages = {
         message: 'Message',
         messagePH: 'Write whatever you want',
       },
+      privacity: '** By submitting this form you agree to our privacy policy. For more information, see conditions ',
+      link: 'here.',
       button: 'Send'
     }
   },
@@ -349,7 +353,9 @@ const messages = {
         message: 'Text',
         messagePH: 'Deine Frage',
       },
-      button: 'Send'
+      privacity: '** Mit dem Absenden dieses Formulars stimmen Sie unseren Datenschutzbestimmungen zu. Weitere Informationen finden Sie ',
+      link: 'hier.',
+      button: 'Senden'
     }
   },
   fr: {
@@ -465,6 +471,8 @@ const messages = {
         message: 'Texte',
         messagePH: 'écrivez ce que vous voulez.',
       },
+      privacity: "** En soumettant ce formulaire, vous acceptez notre politique de confidentialité. Pour plus d'informations, consultez les conditions ",
+      link: 'ici.',
       button: 'Envoyer'
     }
   }

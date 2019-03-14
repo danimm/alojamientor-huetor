@@ -36,8 +36,8 @@
               rows="5",
               required
               )
-          p(v-if="locale") **Al enviar este formulario está de acuerdo con nuestra política de privacidad. Para más información consulte las condiciones 
-            a(@click="goPrivacity") aquí
+          p {{ $t('contact.privacity') }}
+            a(@click="goPrivacity") {{ $t('contact.link') }}
 
           button.btn.btn-primary(type='submit') {{ $t('contact.button') }}
           //- b-button(type='reset', variant='danger') Reiniciar
