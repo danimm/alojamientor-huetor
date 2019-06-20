@@ -25,8 +25,12 @@
       .col-lg-6.col-md-12.text-center
         .row.reviews
           .col
+            h4.text-center.title {{ $t('reservations.title') }}
+            iframe(:src='srcCalendar', style='height:auto; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+            .mb-4(style='width: 235px; margin: auto')
+              a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
             p.text-center {{ links }}
-            h4 {{ $t('reservations.reviews') }}
+            h4.reservation-reviews {{ $t('reservations.reviews') }}
             .row
               .col.tripadvisor-container
                 a(:href="srcTrip", target="_blank")
@@ -42,12 +46,12 @@
                 style="width: 100%; height: 300px; border: 0px;"
                 frameborder="0"
                 allowtransparency="allowtransparency") Tu navegador no soporta iframes
-            .col
-              h4.text-center.title {{ $t('reservations.title') }}
-              iframe(:src='srcCalendar', style='height:auto; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
+            //- .col
+            //-   h4.text-center.title {{ $t('reservations.title') }}
+            //-   iframe(:src='srcCalendar', style='height:auto; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
 
-              div(style='width: 235px; margin: auto')
-                a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
+            //-   div(style='width: 235px; margin: auto')
+            //-     a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
       
 
 </template>
@@ -157,9 +161,15 @@ h3 {
   text-decoration: underline;
   padding: 5px 0;
 }
-h4 {
-  font-size: 2.4em;
+.title,
+.reservation-reviews {
+  font-size: 2em;
+}
+.title {
   margin-bottom: 40px;
+}
+.reservation-reviews {
+  margin: 20px 0;
 }
 img {
   width: 70%;
@@ -184,11 +194,14 @@ iframe {
 .reviews {
   border: 2px solid gray;
   border-radius: 5px;
-  padding: 40px 0 40px 0;
+  padding: 10px 0 40px 0;
 }
 @media screen and (max-width: 992px) {
   .grid-container {
     grid-template-columns: 1fr;
+  }
+  .reviews {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -201,6 +214,9 @@ iframe {
   }
   img {
     width: 80%;
+  }
+  .reservation-reviews {
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 576px) {
