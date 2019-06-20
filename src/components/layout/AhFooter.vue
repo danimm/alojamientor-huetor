@@ -31,25 +31,25 @@
           h4.mb-4.text-white {{ $t('footer.titleInstagram') }}
           .grid-container
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/d2ea5b92ceb732028edd397cf22c316b/5CC9B33E/t51.2885-15/sh0.08/e35/s640x640/43014924_1750974341696474_8057018949742624768_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/0f00486941a24092917874d4ef52cdad/5D8FA1EA/t51.2885-15/e35/c0.135.1080.1080a/s150x150/61456738_602591240251459_7977204359561950190_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
               //- img(:src='Image16', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/0da4b1259ad1a00649d8ef66896de422/5CCE990E/t51.2885-15/sh0.08/e35/s640x640/45831884_319576411962109_2320455372717948928_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/34659d749ee99bd950ba8dd8a588f0dc/5DC54E8A/t51.2885-15/e35/c0.135.1080.1080a/s150x150/61338380_331609534403841_7395182412686598104_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
               //- img(:src='Image17', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/295ebf5acbb900fbe1e03dff130ae199/5CD97820/t51.2885-15/sh0.08/e35/p640x640/44766451_517433122075725_6381255945023913984_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/3f48e5f0f0df531ec017d728fe48dab6/5DA2A551/t51.2885-15/e35/c236.0.608.608a/61440214_1036506819887825_7408700076707344412_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
               //- img(:src='Image18', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/08dd86c6180d8a47316da9a085314634/5CCCDFF5/t51.2885-15/sh0.08/e35/p640x640/44626715_315581195932900_4565953039155855360_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/79c707039f48ae21fedc4917b422bfe9/5D8F2DA0/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/60428167_687269255041576_3122343742060127140_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
               //- img(:src='Image19', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/32aee5894a4057b5e7979f5bd20c6d82/5CBEE01D/t51.2885-15/sh0.08/e35/s750x750/45824477_728973444152426_723676807982743552_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/720b2005af1708bb708458367fe62e7e/5DC672D9/t51.2885-15/sh0.08/e35/s640x640/58785073_829576464085625_3479691210925167400_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/dcfd6d488e51edfcd19214dcddb36805/5CB631D2/t51.2885-15/sh0.08/e35/s640x640/46420736_281738809195514_4119327786705879040_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/fd17fdaa0eb7c9d7a880c9c95aebb51c/5DA40555/t51.2885-15/sh0.08/e35/s640x640/56197324_268353840710023_5474470613996799890_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/814cf40cfc960e20c701e0a5fb11a87a/5CCC7B4B/t51.2885-15/sh0.08/e35/s640x640/47585742_899093220287686_8819568196756439040_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/6a8b6c43e11c37345bfc9862191bd747/5D870F88/t51.2885-15/e35/47585952_223529871890045_8339322036379746390_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
             picture
-              img(src='https://instagram.fmad3-8.fna.fbcdn.net/vp/ba8f855502d4cb19fda480c2fcaa610d/5CCB9E86/t51.2885-15/e35/46203166_276152556421819_7142441385302425600_n.jpg?_nc_ht=instagram.fmad3-8.fna.fbcdn.net', alt='')
+              img(src='https://scontent-mad1-1.cdninstagram.com/vp/6d71a64daa5c4d96497e160e4aa85c10/5D91CB4A/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/62188326_348739355789196_2989692589005786510_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
             //- picture
             //-   img(:src='Image24', alt='')
         .col-lg-4.col-md-6
@@ -88,94 +88,94 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      Logo: { type: String, required: true},
-      Phone: { type: String, required: true},
-      Home: { type: String, required: true},
-      Mail: { type: String, required: true},
-      Instagram: { type: String, required: true},
-      Facebook: { type: String, required: true}
-    },
-    methods: {
-      goLegal(){
-        window.scrollTo(0, 0)
-        this.$router.push("legal")
-      }
+export default {
+  props: {
+    Logo: { type: String, required: true },
+    Phone: { type: String, required: true },
+    Home: { type: String, required: true },
+    Mail: { type: String, required: true },
+    Instagram: { type: String, required: true },
+    Facebook: { type: String, required: true }
+  },
+  methods: {
+    goLegal() {
+      window.scrollTo(0, 0);
+      this.$router.push("legal");
     }
   }
+};
 </script>
 
 <style scoped>
-  .wrapper {
-    background-color: #333a40;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 120px);
-    grid-gap: 10px;
-  }
-  img {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* object-position: left; */
-  }
-  .logo {
-    max-width: 200px;
-    height: auto;
-  }
-  .icon {
-    max-width: 20px;
-    height: auto;
-    margin-right: 5px;
-  }
-  .lastFooter {
-    margin-top: 30px;
-    border-top: gray 2px solid;
-    padding-top: 30px;
-    color: white;
-  }
-  .lastFooter a {
-    color: white;
-    padding-right: 12px;
-  }
-  .lastFooter .col {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .nav-link {
-    /* display: none; */
-    cursor: pointer;
-  }
-  @media screen and (max-width: 992px){
-    /* .grid-container {
+.wrapper {
+  background-color: #333a40;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 120px);
+  grid-gap: 10px;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: left; */
+}
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+.icon {
+  max-width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+.lastFooter {
+  margin-top: 30px;
+  border-top: gray 2px solid;
+  padding-top: 30px;
+  color: white;
+}
+.lastFooter a {
+  color: white;
+  padding-right: 12px;
+}
+.lastFooter .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-link {
+  /* display: none; */
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  /* .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 120px);
     } */
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    margin-bottom: 0;
+    margin-top: 20px;
   }
-  @media screen and (max-width: 768px){
-    h4 {
-      margin-bottom: 0;
-      margin-top: 20px;
-    }
-    .contact {
-      margin-bottom: 30px;
-    }
-    /* .col-sm-12 p {
+  .contact {
+    margin-bottom: 30px;
+  }
+  /* .col-sm-12 p {
       display: none;
     } */
-  }
+}
 
-  @media screen and (max-width: 576px){ 
-    .col-sm-10 {
-      display: flex;
-      justify-content: center;
-    }
-    .lastFooter p {
-      display: none;
-    }
+@media screen and (max-width: 576px) {
+  .col-sm-10 {
+    display: flex;
+    justify-content: center;
   }
+  .lastFooter p {
+    display: none;
+  }
+}
 </style>
