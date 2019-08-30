@@ -27,7 +27,7 @@
           .col
             h4.text-center.title {{ $t('reservations.title') }}
             .row.eviivo-container
-              a.link-eviivo.btn.btn-outline-warning(href="https://via.eviivo.com/AlojamientosHuetor", target="_blank")
+              a.link-eviivo.btn.btn-outline-warning(:href="srcEviivo", target="_blank")
                 img.logo-eviivo.p-2(src="https://eviivo.com/wp-content/themes/eviivo/assets/images/eviivo-logo.svg")
             p.text-center {{ links }}
             h4.reservation-reviews {{ $t('reservations.reviews') }}
@@ -65,7 +65,8 @@ export default {
             srcZoover:
                 "http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones",
             srcTrip:
-                "https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS"
+                "https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS",
+            srcEviivo: "https://via.eviivo.com/AlojamientosHuetor"
         };
     },
     computed: {
@@ -77,6 +78,7 @@ export default {
                         "https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS");
                 this.srcAvaibook =
                     "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=es";
+                this.srcEviivo = "https://via.eviivo.com/AlojamientosHuetor";
                 // return this.srcZoover
                 // console.log('Idioma: español')
             } else if (this.$i18n.locale === "en") {
@@ -86,6 +88,8 @@ export default {
                     "https://www.tripadvisor.com/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS";
                 this.srcAvaibook =
                     "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=en";
+                this.srcEviivo =
+                    "https://via.eviivo.com/en-GB/alojamientoshuetor";
                 // console.log('Idioma: inglés')
             } else if (this.$i18n.locale === "de") {
                 this.srcZoover =
@@ -94,6 +98,8 @@ export default {
                     "https://www.tripadvisor.de/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS";
                 this.srcAvaibook =
                     "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=de";
+                this.srcEviivo =
+                    "https://via.eviivo.com/de-DE/alojamientoshuetor";
                 // console.log('Idioma: Alemán')
             } else if (this.$i18n.locale === "fr") {
                 this.srcZoover =
@@ -102,6 +108,8 @@ export default {
                     "https://www.tripadvisor.fr/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS";
                 this.srcAvaibook =
                     "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=fr";
+                this.srcEviivo =
+                    "https://via.eviivo.com/fr-FR/alojamientoshuetor";
                 // console.log('Idioma: Francés')
             }
         }
