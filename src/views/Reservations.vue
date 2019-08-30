@@ -27,8 +27,8 @@
           .col
             h4.text-center.title {{ $t('reservations.title') }}
             .row.eviivo-container
-              a.link-eviivo.btn.btn-outline-warning(:href="srcEviivo", target="_blank")
-                img.logo-eviivo.p-2(src="https://eviivo.com/wp-content/themes/eviivo/assets/images/eviivo-logo.svg")
+              a.link-eviivo.btn.btn-warning(:href="srcEviivo", target="_blank") {{ $t('reservations.booking') }} 
+                //- img.logo-eviivo.p-2(src="https://eviivo.com/wp-content/themes/eviivo/assets/images/eviivo-logo.svg")
             p.text-center {{ links }}
             h4.reservation-reviews {{ $t('reservations.reviews') }}
             .row
