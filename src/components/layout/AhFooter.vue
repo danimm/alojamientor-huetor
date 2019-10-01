@@ -31,7 +31,7 @@
           h4.mb-4.text-white {{ $t('footer.titleInstagram') }}
           .grid-container
             picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/0f00486941a24092917874d4ef52cdad/5D8FA1EA/t51.2885-15/e35/c0.135.1080.1080a/s150x150/61456738_602591240251459_7977204359561950190_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
+              img(src='https://scontent-frt3-2.cdninstagram.com/vp/23535bcb64671a4d5f4dee49141f2909/5E2860BF/t51.2885-15/e35/s150x150/66288749_356406998363671_7595822246282734912_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=107', alt='')
               //- img(:src='Image16', alt='')
             picture
               img(src='https://scontent-mad1-1.cdninstagram.com/vp/34659d749ee99bd950ba8dd8a588f0dc/5DC54E8A/t51.2885-15/e35/c0.135.1080.1080a/s150x150/61338380_331609534403841_7395182412686598104_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
@@ -40,7 +40,7 @@
               img(src='https://scontent-mad1-1.cdninstagram.com/vp/3f48e5f0f0df531ec017d728fe48dab6/5DA2A551/t51.2885-15/e35/c236.0.608.608a/61440214_1036506819887825_7408700076707344412_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
               //- img(:src='Image18', alt='')
             picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/79c707039f48ae21fedc4917b422bfe9/5D8F2DA0/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/60428167_687269255041576_3122343742060127140_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
+              img(src='https://scontent-frt3-2.cdninstagram.com/vp/166883723281d47d7c5efb770e43476d/5E1CCE97/t51.2885-15/e35/c0.113.899.899a/s150x150/66780653_183246999357061_3422272521502879010_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101', alt='')
               //- img(:src='Image19', alt='')
             picture
               img(src='https://scontent-mad1-1.cdninstagram.com/vp/720b2005af1708bb708458367fe62e7e/5DC672D9/t51.2885-15/sh0.08/e35/s640x640/58785073_829576464085625_3479691210925167400_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
