@@ -39,19 +39,6 @@
                 a(:href="srcZoover", target="_blank")
                   img(
                     src="http://www.stickpng.com/assets/images/58482871cef1014c0b5e49e7.png")
-              .col-12.center-align.mt-4
-                img.avaibook.mb-4(src="https://www.avaibook.com/wp-content/uploads/2017/02/logo-avaibook.png")
-                iframe(
-                :src="srcAvaibook"
-                style="width: 100%; height: 300px; border: 0px;"
-                frameborder="0"
-                allowtransparency="allowtransparency") Tu navegador no soporta iframes
-            //- .col
-            //-   h4.text-center.title {{ $t('reservations.title') }}
-            //-   iframe(:src='srcCalendar', style='height:auto; border: 0', frameborder='0', allowtransparency='allowtransparency') Tu navegador no soporta iframes
-
-            //-   div(style='width: 235px; margin: auto')
-            //-     a(href='https://www.avaibook.com/en/', target='_blank') ©AvaiBook.com 2018
       
 
 </template>
@@ -61,7 +48,6 @@ export default {
     data() {
         return {
             srcCalendar: `https://www.avaibook.com/widgets_propietarios/loader.php?id=32406&lang=${this.$i18n.locale}`,
-            srcAvaibook: `https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=es`,
             srcZoover:
                 "http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones",
             srcTrip:
@@ -76,8 +62,6 @@ export default {
                     "http://www.zoover.es/espana/andalucia-costa-del-sol-costa-de-la-luz/vinuela/huetor-casitas/casa-de-vacaciones"),
                     (this.srcTrip =
                         "https://www.tripadvisor.es/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS");
-                this.srcAvaibook =
-                    "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=es";
                 this.srcEviivo = "https://via.eviivo.com/AlojamientosHuetor";
                 // return this.srcZoover
                 // console.log('Idioma: español')
@@ -86,8 +70,6 @@ export default {
                     "http://www.zoover.co.uk/spain/andalusia-costa-del-sol-de-la-luz/vinuela/huetor-casitas/holiday-home";
                 this.srcTrip =
                     "https://www.tripadvisor.com/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS";
-                this.srcAvaibook =
-                    "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=en";
                 this.srcEviivo =
                     "https://via.eviivo.com/en-GB/alojamientoshuetor";
                 // console.log('Idioma: inglés')
@@ -96,8 +78,6 @@ export default {
                     "http://www.zoover.de/spanien/costa-del-sol-costa-de-la-luz-andalusien/vinuela/huetor-casitas/ferienhaus";
                 this.srcTrip =
                     "https://www.tripadvisor.de/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS";
-                this.srcAvaibook =
-                    "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=de";
                 this.srcEviivo =
                     "https://via.eviivo.com/de-DE/alojamientoshuetor";
                 // console.log('Idioma: Alemán')
@@ -106,8 +86,6 @@ export default {
                     "http://www.zoover.fr/espagne/andalousie/vinuela/huetor-casitas/maison-de-vacances";
                 this.srcTrip =
                     "https://www.tripadvisor.fr/Hotel_Review-g1080319-d1444597-Reviews-Alojamientos_Huetor-Vinuela_Province_of_Malaga_Andalucia.html#REVIEWS";
-                this.srcAvaibook =
-                    "https://www.avaibook.com/widgets_propietarios/opiniones.php?cod_propietario=5627&subtipo=2&color_texto=000000&lang=fr";
                 this.srcEviivo =
                     "https://via.eviivo.com/fr-FR/alojamientoshuetor";
                 // console.log('Idioma: Francés')
