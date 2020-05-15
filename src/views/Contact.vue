@@ -46,63 +46,65 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       img: {
-        src: 'https://a0.muscache.com/im/pictures/b387ac49-5c3d-4c0c-8762-76583de4cf78.jpg?aki_policy=profile_x_medium'
-        }
+        src:
+          'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/profile%2F3_profile.jpg?alt=media&token=20ffce68-639e-469d-a63b-ba291aeabfa3'
       }
-    },
-    methods: {
-      goPrivacity(){
-        window.scrollTo(0, 0)
-        this.$router.push("privacity")
+    };
+  },
+  methods: {
+    goPrivacity() {
+      window.scrollTo(0, 0);
+      this.$router.push('privacity');
+    }
+  },
+  computed: {
+    locale() {
+      if (this.$i18n.locale == 'es') {
+        return true;
       }
-    } ,
-    computed: {
-      locale() {
-        if (this.$i18n.locale == 'es'){
-          return true
-        }
-      }
-    } 
+    }
   }
+};
 </script>
 
 <style scoped>
-  h2 {
-    font-family: 'Satisfy', cursive;
-  }
-  a {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0;
-    color: blue !important;
-    text-decoration: underline !important;
-  } 
-  .container {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-  .btn {
-    margin-right: 20px;
-  }
-  h4 {
-    margin-bottom: 20px;
+h2 {
+  font-family: 'Satisfy', cursive;
+}
+a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  color: blue !important;
+  text-decoration: underline !important;
+}
+.container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.btn {
+  margin-right: 20px;
+}
+h4 {
+  margin-bottom: 20px;
+}
+img {
+  width: 50%;
+  object-fit: cover;
+
+  border: 5px solid #2d3338ed;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .col-sm-12 {
+    margin-bottom: 40px;
   }
   img {
-    width: 70%;
-    border: 5px solid #2d3338ed;
-    border-radius: 50%;
+    max-width: 50%;
   }
-
-  @media screen and (max-width: 567px){
-    .col-sm-12 {
-      margin-bottom: 40px;
-    }
-    img {
-      max-width: 50%;
-    } 
-  }
-
+}
 </style>

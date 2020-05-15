@@ -26,32 +26,13 @@
             a.text-white(href="https://www.instagram.com/alojamientos_huetor/", target="_blank") alojamientos_huetor
           p
             img.icon(:src="Facebook", alt="facebook-icon")
-            a.text-white(href="https://es-es.facebook.com/alojamientoshuetor.alojamientos", target="_blank") Alojamientos Huetor
+            a.text-white(href="https://www.facebook.com/alojamientoshuetor/", target="_blank") Alojamientos Huetor
         .col-lg-4.col-md-6.mb-4
           h4.mb-4.text-white {{ $t('footer.titleInstagram') }}
           .grid-container
-            picture
-              img(src='https://scontent-frt3-2.cdninstagram.com/vp/23535bcb64671a4d5f4dee49141f2909/5E2860BF/t51.2885-15/e35/s150x150/66288749_356406998363671_7595822246282734912_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=107', alt='')
-              //- img(:src='Image16', alt='')
-            picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/34659d749ee99bd950ba8dd8a588f0dc/5DC54E8A/t51.2885-15/e35/c0.135.1080.1080a/s150x150/61338380_331609534403841_7395182412686598104_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
-              //- img(:src='Image17', alt='')
-            picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/3f48e5f0f0df531ec017d728fe48dab6/5DA2A551/t51.2885-15/e35/c236.0.608.608a/61440214_1036506819887825_7408700076707344412_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
-              //- img(:src='Image18', alt='')
-            picture
-              img(src='https://scontent-frt3-2.cdninstagram.com/vp/166883723281d47d7c5efb770e43476d/5E1CCE97/t51.2885-15/e35/c0.113.899.899a/s150x150/66780653_183246999357061_3422272521502879010_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_cat=101', alt='')
-              //- img(:src='Image19', alt='')
-            picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/720b2005af1708bb708458367fe62e7e/5DC672D9/t51.2885-15/sh0.08/e35/s640x640/58785073_829576464085625_3479691210925167400_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
-            picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/fd17fdaa0eb7c9d7a880c9c95aebb51c/5DA40555/t51.2885-15/sh0.08/e35/s640x640/56197324_268353840710023_5474470613996799890_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
-            picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/6a8b6c43e11c37345bfc9862191bd747/5D870F88/t51.2885-15/e35/47585952_223529871890045_8339322036379746390_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
-            picture
-              img(src='https://scontent-mad1-1.cdninstagram.com/vp/6d71a64daa5c4d96497e160e4aa85c10/5D91CB4A/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/62188326_348739355789196_2989692589005786510_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com', alt='')
-            //- picture
-            //-   img(:src='Image24', alt='')
+            picture(v-for="(image,index ) in IGlinks")
+              img(:src='image.url', alt=``)
+        //- image v-for
         .col-lg-4.col-md-6
           h4.text-white {{ $t('footer.titleLinks') }}
           p.text-white.mt-4
@@ -97,10 +78,56 @@ export default {
     Instagram: { type: String, required: true },
     Facebook: { type: String, required: true }
   },
+  data() {
+    return {
+      IGlinks: [
+        {
+          id: 1,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F1_image.png?alt=media&token=11dac811-b53e-46b7-96d0-0894ed514d78'
+        },
+        {
+          id: 2,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F2_image.png?alt=media&token=22a96fd8-6d35-4bfb-9925-1572031f11fb'
+        },
+        {
+          id: 3,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F3_image.png?alt=media&token=01620dc3-851a-4464-a06c-397fb6996efc'
+        },
+        {
+          id: 4,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F4_image.png?alt=media&token=e9543d89-981d-48df-91cd-dd012c3248d9'
+        },
+        {
+          id: 5,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F5_image.png?alt=media&token=9b9e5ebb-0dcd-49bc-b8b3-b09d496ae3d0'
+        },
+        {
+          id: 6,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F6_image.png?alt=media&token=aa1732a5-2ec3-4d41-a722-16b299e5ab57'
+        },
+        {
+          id: 7,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F7_image.png?alt=media&token=8a519a34-7bb5-4852-86cf-700aa7e27d03'
+        },
+        {
+          id: 8,
+          url:
+            'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/Instagram%2F8_image.png?alt=media&token=397ec329-f948-4fe9-b90d-bf959731f160'
+        }
+      ]
+    };
+  },
   methods: {
     goLegal() {
       window.scrollTo(0, 0);
-      this.$router.push("legal");
+      this.$router.push('legal');
     }
   }
 };
