@@ -8,7 +8,7 @@
         .content
           h2 {{ $t('home.description.title') }}
           a.link-eviivo.btn.btn-warning.d-block.d-lg-none(
-            href="https://via.eviivo.com/AlojamientosHuetor", target="_blank") {{ $t('header.reservations') }} 
+            :href="link", target="_blank") {{ $t('header.reservations') }} 
           p {{ $t('home.description.text1') }}
           p {{ $t('home.description.text2') }}
           p {{ $t('home.description.text3') }}
@@ -18,7 +18,28 @@
 
 <script>
   export default {
-    
+    computed: {
+      link(){
+        switch (this.$i18n.locale) {
+          case "es":
+            return "https://via.eviivo.com/es-ES/alojamientoshuetor"
+            break;
+          case "en":
+            return "https://via.eviivo.com/en-GB/alojamientoshuetor"
+            break;
+          case "de":
+            return "https://via.eviivo.com/de-DE/alojamientoshuetor"
+            break;
+          case "fr":
+            return "https://via.eviivo.com/fr-FR/alojamientoshuetor"
+            break;
+        
+          default:
+            return "https://via.eviivo.com/AlojamientosHuetor"
+            break;
+        }
+      }
+    }
   }
 </script>
 

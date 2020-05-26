@@ -27,13 +27,6 @@
     props: { 
       Logo: { type: String }
     },
-    // data(){
-    //   return {
-    //     links: {
-    //       src: ""
-    //     }
-    //   }
-    // },
     computed: {
       link(){
         switch (this.$i18n.locale) {
