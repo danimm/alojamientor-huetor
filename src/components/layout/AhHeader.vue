@@ -8,7 +8,7 @@
         b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") {{ $t('header.home') }}
           a.nav-link.btn.btn-warning(:href="link" target="_blank") {{ $t('header.reservations') }}
-          router-link.nav-link(to="reservations") {{ $t('header.reviews') }}
+          router-link.nav-link(to="reviews") {{ $t('header.reviews') }}
           router-link.nav-link(to="gallery") {{ $t('header.gallery') }}
           router-link.nav-link(to="contact") {{ $t('header.contact') }}
           b-nav-item-dropdown(:text="$t('header.languages.lang')" right)

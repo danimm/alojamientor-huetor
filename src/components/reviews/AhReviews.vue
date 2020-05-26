@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    a.link-eviivo.btn.btn-warning(:href="links.linkEviivo", target="_blank") {{ $t('reservations.booking') }}
+    a.link-eviivo.btn.btn-warning(:href="links.linkEviivo", target="_blank") {{ $t('header.reservations') }}
     .row.reviews.mt-4
       .col
         h4.reservation-reviews {{ $t('reservations.reviews') }}
@@ -100,6 +100,7 @@
 h4.reservation-reviews {
   font-family: "Satisfy", cursive;
   font-size: 2em;
+  margin: 20px 0;
 }
 img {
   width: 70%;
@@ -107,6 +108,8 @@ img {
 
 .container {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews {
@@ -123,7 +126,6 @@ img {
 }
 
 .link-eviivo {
-    // margin-top: 30px;
     display: block;
     border-radius: 20px;
     // margin-top: 40px;
@@ -132,7 +134,7 @@ img {
 }
 @media screen and (max-width: 992px) {
     .reviews {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -141,7 +143,7 @@ img {
         padding: 30px 0px;
     }
     img {
-        width: 80%;
+        width: 100%;
     }
     .reservation-reviews {
         margin-top: 15px;

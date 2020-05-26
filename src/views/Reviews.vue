@@ -21,8 +21,14 @@ export default {
 .container {
     padding-top: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     /* margin-top: 50px; */
     margin-bottom: 150px;
+}
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
 }
 </style>
