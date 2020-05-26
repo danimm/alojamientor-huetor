@@ -7,7 +7,8 @@
       b-collapse#nav_collapse(is-nav)
         b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") {{ $t('header.home') }}
-          router-link.nav-link.btn.btn-warning(to="reservations") {{ $t('header.reservations') }}
+          a.nav-link.btn.btn-warning(:href="link" target="_blank") {{ $t('header.reservations') }}
+          router-link.nav-link(to="reservations") {{ $t('header.reviews') }}
           router-link.nav-link(to="gallery") {{ $t('header.gallery') }}
           router-link.nav-link(to="contact") {{ $t('header.contact') }}
           b-nav-item-dropdown(:text="$t('header.languages.lang')" right)
@@ -25,6 +26,35 @@
   export default {
     props: { 
       Logo: { type: String }
+    },
+    // data(){
+    //   return {
+    //     links: {
+    //       src: ""
+    //     }
+    //   }
+    // },
+    computed: {
+      link(){
+        switch (this.$i18n.locale) {
+          case "es":
+            return "https://via.eviivo.com/es-ES/alojamientoshuetor"
+            break;
+          case "en":
+            return "https://via.eviivo.com/en-GB/alojamientoshuetor"
+            break;
+          case "de":
+            return "https://via.eviivo.com/de-DE/alojamientoshuetor"
+            break;
+          case "fr":
+            return "https://via.eviivo.com/fr-FR/alojamientoshuetor"
+            break;
+        
+          default:
+            return "https://via.eviivo.com/AlojamientosHuetor"
+            break;
+        }
+      }
     },
     methods: {
     selectLang (lang) {
