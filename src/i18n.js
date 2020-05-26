@@ -7,7 +7,7 @@ const messages = {
     es: {
         header: {
             home: "Inicio",
-            reservations: "Reservar",
+            reservations: "Reservar ahora",
             gallery: "Galería",
             contact: "Contacto",
             languages: {
@@ -141,7 +141,7 @@ const messages = {
     en: {
         header: {
             home: "Home",
-            reservations: "Booking",
+            reservations: "Booking now",
             gallery: "Gallery",
             contact: "Contact",
             languages: {
@@ -274,7 +274,7 @@ const messages = {
     de: {
         header: {
             home: "Home",
-            reservations: "Reservierungen",
+            reservations: "Jetzt Reservieren",
             gallery: "Galerie",
             contact: "Kontakt",
             languages: {
@@ -409,7 +409,7 @@ const messages = {
     fr: {
         header: {
             home: "Accueil",
-            reservations: "Les reservations",
+            reservations: "Réservez maintenant",
             gallery: "Galerie photo",
             contact: "Contact",
             languages: {

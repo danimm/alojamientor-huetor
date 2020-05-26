@@ -7,6 +7,8 @@
       .col-lg-6.col-md-12
         .content
           h2 {{ $t('home.description.title') }}
+          a.link-eviivo.btn.btn-warning.d-block.d-lg-none(
+            href="https://via.eviivo.com/AlojamientosHuetor", target="_blank") {{ $t('header.reservations') }} 
           p {{ $t('home.description.text1') }}
           p {{ $t('home.description.text2') }}
           p {{ $t('home.description.text3') }}
@@ -24,7 +26,7 @@
   h2 {
     font-family: 'Satisfy', cursive;
     font-size: 3em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .container {
     margin-top: 150px !important;
@@ -37,6 +39,11 @@
   }
   p {
     line-height: 1.75rem;
+  }
+  .link-eviivo {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 1.4em;
   }
   .container {
     margin-bottom: 60px;

@@ -23,22 +23,22 @@
               li {{ $t('reservations.card.list.item12') }}
 
       .col-lg-6.col-md-12.text-center
-        .row.reviews
+        a.link-eviivo.btn.btn-warning(:href="srcEviivo", target="_blank") {{ $t('reservations.booking') }} 
+        .row.reviews.mt-4
           .col
-            h4.text-center.title {{ $t('reservations.title') }}
-            .row.eviivo-container
-              a.link-eviivo.btn.btn-warning(:href="srcEviivo", target="_blank") {{ $t('reservations.booking') }} 
-                //- img.logo-eviivo.p-2(src="https://eviivo.com/wp-content/themes/eviivo/assets/images/eviivo-logo.svg")
+            //- h4.text-center.title {{ $t('reservations.title') }}
+            //- .row.eviivo-container
+            //-   a.link-eviivo.btn.btn-warning(:href="srcEviivo", target="_blank") {{ $t('reservations.booking') }} 
             p.text-center {{ links }}
             h4.reservation-reviews {{ $t('reservations.reviews') }}
             .row
               .col.tripadvisor-container
                 a(:href="srcTrip", target="_blank")
-                  img(src="http://www.hotelmadanis.com/wp-content/uploads/2017/10/tripadvisor.png")
+                  img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Freviews%2Ftripadvisor.svg?alt=media&token=e4123b47-20d9-4f27-b745-9c85bd587544")
               .col.zoover-container
                 a(:href="srcZoover", target="_blank")
                   img(
-                    src="http://www.stickpng.com/assets/images/58482871cef1014c0b5e49e7.png")
+                    src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Freviews%2Fzoover.png?alt=media&token=d8aeec52-47a6-40ab-baae-5f0843e6d2f5")
       
 
 </template>
