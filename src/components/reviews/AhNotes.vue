@@ -21,68 +21,67 @@
 </template>
 
 <script>
-  export default {
-    computed: {
-      items(){
-        return this.$i18n.messages[this.$i18n.locale].reservations.card.list
-      }
+export default {
+  computed: {
+    items() {
+      return this.$i18n.messages[this.$i18n.locale].reservations.card.list;
     }
   }
+};
 </script>
 
 <style lang="scss" scoped>
+.grid-container {
+  /* margin: 0 50px; */
+  grid-gap: 20px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr) / 1fr;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: #fefdeb;
+  margin: 0 10px;
+
+  h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: left;
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .grid-container {
-    /* margin: 0 50px; */
-    grid-gap: 20px;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr) / 1fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr;
   }
-
-  .card {
-    padding: 0 20px 0 20px;
-    border-radius: 10px;
-    background-color: #fefdeb;
-    margin: 0 10px;
-
-    h2 {
-      font-family: "Satisfy", cursive;
-      text-align: left;
-      font-size: 3em;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      text-decoration: underline;
-      padding: 5px 0;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
 }
 @media screen and (max-width: 768px) {
-    .grid-container {
-        margin-bottom: 40px;
-    }
+  .grid-container {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 576px) {
-    h2 {
-        font-size: 1.9em;
-    }
-    .grid-container {
-        margin-bottom: 40px;
-    }
-    .date {
-        font-size: 1.5em;
-        font-size: 1.4em;
-        padding: 5px;
-    }
-    ul {
-        padding-left: 10px;
-    }
+  h2 {
+    font-size: 1.9em;
+  }
+  .grid-container {
+    margin-bottom: 40px;
+  }
+  .date {
+    font-size: 1em;
+    padding: 5px;
+  }
+  ul {
+    padding-left: 10px;
+  }
 }
 </style>

@@ -17,72 +17,81 @@
 </template>
 
 <script>
-  export default {
-    computed: {
-      link(){
-        switch (this.$i18n.locale) {
-          case "es":
-            return "https://via.eviivo.com/es-ES/alojamientoshuetor"
-            break;
-          case "en":
-            return "https://via.eviivo.com/en-GB/alojamientoshuetor"
-            break;
-          case "de":
-            return "https://via.eviivo.com/de-DE/alojamientoshuetor"
-            break;
-          case "fr":
-            return "https://via.eviivo.com/fr-FR/alojamientoshuetor"
-            break;
-        
-          default:
-            return "https://via.eviivo.com/AlojamientosHuetor"
-            break;
-        }
+export default {
+  computed: {
+    link() {
+      switch (this.$i18n.locale) {
+        case 'es':
+          return 'https://via.eviivo.com/es-ES/alojamientoshuetor';
+          break;
+        case 'en':
+          return 'https://via.eviivo.com/en-GB/alojamientoshuetor';
+          break;
+        case 'de':
+          return 'https://via.eviivo.com/de-DE/alojamientoshuetor';
+          break;
+        case 'fr':
+          return 'https://via.eviivo.com/fr-FR/alojamientoshuetor';
+          break;
+
+        default:
+          return 'https://via.eviivo.com/AlojamientosHuetor';
+          break;
       }
     }
   }
+};
 </script>
 
 <style scoped>
-  h2 {
-    font-family: 'Satisfy', cursive;
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
+h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.container {
+  margin-top: 150px !important;
+  height: 690px;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+p {
+  line-height: 1.75rem;
+}
+.link-eviivo {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 15px;
+  color: #0d0c0c;
+  font-size: 1.8em;
+}
+.container {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 991px) {
   .container {
-    margin-top: 150px !important;
-    height: 690px;
+    margin-top: 0 !important;
+    height: 100%;
   }
-  img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+  h2 {
+    margin-top: 50px;
   }
-  p {
-    line-height: 1.75rem;
-  }
+}
+
+@media screen and (max-width: 768px) {
   .link-eviivo {
-    width: 100%;
-    margin-bottom: 30px;
     font-size: 1.4em;
   }
-  .container {
-    margin-bottom: 60px;
-    margin-top: 60px;
-  }
-  @media screen and (max-width: 991px){
-    .container {
-      margin-top: 0 !important;
-      height: 100%;
-    }
-    h2 {
-      margin-top: 50px;
-    }
-  }
+}
 
-  @media screen and (max-width: 576px){
-    h2 {
-      font-size: 2.5em;
-    }
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 2.5em;
   }
+}
 </style>

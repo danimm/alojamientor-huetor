@@ -41,19 +41,17 @@
           .row.align-items-center
             .col-md-6.offset-md-6.text-center.text-md-right
               h1.display-3 Alojamientos Huetor
-              p.d-none.d-md-block.h4
-                | {{ $t('home.main.text1') }}
+              p.d-none.d-md-block.h4 {{ $t('home.main.text1') }}
 </template>
 
 <script>
-
 export default {
-  data () {
+  data() {
     return {
       isLoaded: false,
       slide: 0,
       sliding: null
-    }
+    };
   },
   props: {
     Slide1: { type: String },
@@ -61,70 +59,68 @@ export default {
     Slide3: { type: String }
   },
   mounted() {
-    this.isLoaded = true
+    this.isLoaded = true;
   },
   methods: {
-    onSlideStart (slide) {
-      this.sliding = true
+    onSlideStart(slide) {
+      this.sliding = true;
     },
-    onSlideEnd (slide) {
-      this.sliding = false
+    onSlideEnd(slide) {
+      this.sliding = false;
     }
   }
-}
+};
 </script>
-<!-- carousel-1.vue -->
 
 <style scoped>
-  h1 {
-    font-family: 'Satisfy', cursive;
-  }
-  article {
+h1 {
+  font-family: 'Satisfy', cursive;
+}
+article {
+  display: none;
+}
+.showContent {
+  display: block;
+}
+#carousel {
+  position: relative;
+}
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #f1f1f1;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+img {
+  max-height: 80vh;
+  object-fit: cover;
+}
+:nth-of-type(1) img {
+  object-position: 50% 37%;
+}
+:nth-of-type(2) img {
+  object-position: 0 50%;
+}
+:nth-of-type(3) img {
+  object-position: center 64%;
+}
+p {
+  margin-bottom: 20px;
+}
+.btn {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .showContent {
     display: none;
   }
-  .showContent {
-    display: block;
-  }
-  #carousel {
-      position: relative;
-  }
-  #carousel .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: #F1F1F1;
-  }
-  #carousel .overlay .container,
-  #carousel .overlay .row {
-    height: 100%;
-  }
-  img {
-    max-height: 80vh;
-    object-fit: cover;
-  }
-  :nth-of-type(1) img {
-    object-position: 50% 37%;
-  }
-  :nth-of-type(2) img {
-    object-position: 0 50%;
-  }
-  :nth-of-type(3) img {
-    object-position: center 64%;
-  }
-  p {
-    margin-bottom: 20px;
-  }
-  .btn {
-    margin-left: 20px;
-  }
-  
-  @media screen and (max-width: 992px){
-    .showContent {
-      display: none;
-    }
-  }
-
+}
 </style>
