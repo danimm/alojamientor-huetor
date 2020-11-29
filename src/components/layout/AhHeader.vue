@@ -11,6 +11,7 @@
           router-link.nav-link(to="reviews") {{ $t('header.reviews') }}
           router-link.nav-link(to="gallery") {{ $t('header.gallery') }}
           router-link.nav-link(to="contact") {{ $t('header.contact') }}
+          router-link.nav-link(to="activities") {{ $t('header.activities') }}
           b-nav-item-dropdown(:text="$t('header.languages.lang')" right)
             b-dropdown-item(@click="selectLang('es')") {{ $t('header.languages.es') }}
               img.icon(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/icons%2Fespana%20(1).svg?alt=media&token=6fe8b235-f4d4-4c48-971b-3125842c0acb")
@@ -23,65 +24,65 @@
 </template>
 
 <script>
-  export default {
-    props: { 
-      Logo: { type: String }
-    },
-    computed: {
-      link(){
-        switch (this.$i18n.locale) {
-          case "es":
-            return "https://via.eviivo.com/es-ES/alojamientoshuetor"
-            break;
-          case "en":
-            return "https://via.eviivo.com/en-GB/alojamientoshuetor"
-            break;
-          case "de":
-            return "https://via.eviivo.com/de-DE/alojamientoshuetor"
-            break;
-          case "fr":
-            return "https://via.eviivo.com/fr-FR/alojamientoshuetor"
-            break;
-        
-          default:
-            return "https://via.eviivo.com/AlojamientosHuetor"
-            break;
-        }
+export default {
+  props: {
+    Logo: { type: String }
+  },
+  computed: {
+    link() {
+      switch (this.$i18n.locale) {
+        case 'es':
+          return 'https://via.eviivo.com/es-ES/alojamientoshuetor';
+          break;
+        case 'en':
+          return 'https://via.eviivo.com/en-GB/alojamientoshuetor';
+          break;
+        case 'de':
+          return 'https://via.eviivo.com/de-DE/alojamientoshuetor';
+          break;
+        case 'fr':
+          return 'https://via.eviivo.com/fr-FR/alojamientoshuetor';
+          break;
+
+        default:
+          return 'https://via.eviivo.com/AlojamientosHuetor';
+          break;
       }
-    },
-    methods: {
-    selectLang (lang) {
-        this.$i18n.locale = lang
-      }
-    },
-    beforeRouteLeave(){
-      window.scrollTo(0,0)
     }
+  },
+  methods: {
+    selectLang(lang) {
+      this.$i18n.locale = lang;
+    }
+  },
+  beforeRouteLeave() {
+    window.scrollTo(0, 0);
   }
+};
 </script>
 
 <style scoped>
-  .nav-link {
-    text-align: center;
-  }
-  img {
-    max-width: 180px;
-  }
-  .icon {
-    width: 30%;
-    /* margin-left: 10px; */
-  }
-  .dropdown-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-  }
-  .icon {
-    width: 35px;
-  }
-  @media screen and (max-width: 992px){
-    /* .container {
+.nav-link {
+  text-align: center;
+}
+img {
+  max-width: 180px;
+}
+.icon {
+  width: 30%;
+  /* margin-left: 10px; */
+}
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.icon {
+  width: 35px;
+}
+@media screen and (max-width: 992px) {
+  /* .container {
       height: 50px;
     }
     .navbar {
@@ -90,19 +91,19 @@
       background-color: white;
       width: 95vw;
     } */
+}
+@media screen and (max-width: 576px) {
+  img {
+    max-width: 140px;
+    object-fit: contain;
+    /* height: ; */
   }
-  @media screen and (max-width: 576px){
-    img {
-      max-width: 140px;
-      object-fit: contain;
-      /* height: ; */
-    }
-    .navbar-brand {
-      margin-right: 0;
-    }
-    .navbar-light {
-      padding: 0;
-      padding-right: 0.5em;
-    }
+  .navbar-brand {
+    margin-right: 0;
   }
+  .navbar-light {
+    padding: 0;
+    padding-right: 0.5em;
+  }
+}
 </style>
