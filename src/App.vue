@@ -1,5 +1,6 @@
 <template lang="pug">
   #app
+    data-protection
     .loader-container(:class="{ 'hideLoader': isLoaded }")
       Loader
     .content(:class="{ 'showContent': isLoaded }")
@@ -44,9 +45,10 @@
   import AhHeader from '@/components/layout/AhHeader.vue'
   import AhFooter from '@/components/layout/AhFooter.vue'
   import Loader from '@/components/misc/Loader.vue'
+  import DataProtection from '@/components/dataProtection.vue'
 
   export default {
-    components: { AhHeader, AhFooter, Loader },
+    components: { AhHeader, AhFooter, Loader, DataProtection },
     data() {
       return {
         isLoaded: false,

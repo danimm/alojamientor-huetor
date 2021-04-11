@@ -1,6 +1,5 @@
 <template lang="pug">
   main
-    data-protection
     ah-main(
       :Slide1="Slide1",
       :Slide2="Slide2",
@@ -45,10 +44,9 @@ import AhRooms from '@/components/home/AhRooms.vue'
 import AhColumns from '@/components/home/AhColumns.vue'
 import AhOffer from '@/components/home/AhOffer.vue'
 import AhMap from '@/components/home/AhMap.vue'
-import DataProtection from '@/components/dataProtection.vue'
 
 export default {
-  components: { AhMain, AhIntro, AhDescription, AhCards, AhRooms,AhColumns, AhOffer, AhMap, DataProtection },
+  components: { AhMain, AhIntro, AhDescription, AhCards, AhRooms,AhColumns, AhOffer, AhMap },
   name: 'home',
   data() {
     return {

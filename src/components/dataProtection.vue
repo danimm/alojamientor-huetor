@@ -17,7 +17,7 @@
           <p>Para administrar o deshabilitar estas cookies haz click en Configuración de Cookies.</p>
         </div>
         <b-button class="mt-3" block @click="openCookieConfig()">Configuración de Cookies</b-button>
-        <b-button variant="success" class="mt-3" block @click="AcceptCookies()">Aceptar</b-button>
+        <b-button variant="success" class="mt-3" block @click="acceptCookies()">Aceptar</b-button>
       </template>
       <template v-if="showCookieConfig && !showCookieText">
         <cookie-config @back="closeCookieConfig" />
@@ -41,15 +41,15 @@ export default {
     }
   },
   mounted() {
-    // todo: localStorage
     const cookiesJSON = window.localStorage.getItem('UserCookies')
     // const googleAnalytics = JSON.parse(cookiesJSON)
+    // todo: route name
     if (!cookiesJSON) {
       this.$refs.modal.show()
     }
   },
   methods: {
-    AcceptCookies() {
+    acceptCookies() {
       window.localStorage.setItem('UserCookies', JSON.stringify({
         GoogleAnalytics: {
           accepted: true

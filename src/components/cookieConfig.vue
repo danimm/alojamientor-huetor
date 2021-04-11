@@ -32,14 +32,26 @@
       Puedes obtener información sobre si existen transferencias a terceros países, por parte de los terceros identificados en esta Política de cookies, en sus correspondientes políticas: (en su caso)
     </p>
     <h5>FINALIDAD DE LAS COOKIES UTILIZADAS</h5>
-    <h6>TÉCNICAS</h6>
-    <b-form-checkbox
-        v-model="analytics"
-        name="google_analytics"
-        disabled
-    >
-      Google Analytics
-    </b-form-checkbox>
+    <!--    <h6>TÉCNICAS</h6>-->
+    <!--    <b-form-checkbox-->
+    <!--        v-model="analytics"-->
+    <!--        name="google_analytics"-->
+    <!--        disabled-->
+    <!--    >-->
+    <!--      Google Analytics-->
+    <!--    </b-form-checkbox>-->
+    <b-table small :items="items" class="text-center">
+      <template #head(duration)="data">
+        <span>Duración</span>
+      </template>
+      <template #cell(aceptar)="row">
+        <b-form-checkbox
+            v-model="analytics"
+            name="google_analytics"
+            disabled
+        />
+      </template>
+    </b-table>
     <p class="pt-4">
       CONSTRUCCIONES HUETOR 2001, S.L. puede modificar esta Política de Cookies en función de nuevas exigencias legislativas,  reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Autoridad competente.
     </p>
@@ -56,7 +68,19 @@ export default {
   name: 'CookieConfig',
   data() {
     return {
-      analytics: true
+      analytics: true,
+      fields: [
+        'Aceptar',
+        'Nombre',
+        'Duración',
+        'Finalidad'
+      ],
+      items: [{
+        aceptar: '',
+        Nombre: 'Google Analytics',
+        duration: 'Ilimitada',
+        Finalidad: 'Técnica'
+      }]
     }
   },
   methods: {
