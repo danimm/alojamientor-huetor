@@ -2,11 +2,11 @@
   <div class="row">
     {{ $i18n.locale }}
     <div class="col">
-    <iframe 
-      class='civitatis-iframe' 
+    <iframe
+      class='civitatis-iframe'
       :src='`${url[$i18n.locale === "de" ? "en" : $i18n.locale]}`'
-      frameborder='0' 
-      data-maxwidth='100%' 
+      frameborder='0'
+      data-maxwidth='100%'
       style='max-width: 100%'
       >
     </iframe>
@@ -37,7 +37,6 @@ export default {
 }
 .col {
   width: 100%;
-  // min-height: 100%;
 }
 iframe {
   width: 100%;

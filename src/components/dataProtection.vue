@@ -20,7 +20,7 @@
         <b-button variant="success" class="mt-3" block @click="acceptCookies()">Aceptar</b-button>
       </template>
       <template v-if="showCookieConfig && !showCookieText">
-        <cookie-config @back="closeCookieConfig" />
+        <cookie-config @back="closeCookieConfig" @closeModal="hideModal" />
       </template>
       <cookie-text v-if="showCookieText" @back="closeCookieText" />
       <!--      <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')">Close Me</b-button>-->
@@ -46,6 +46,15 @@ export default {
     // todo: route name
     if (!cookiesJSON) {
       this.$refs.modal.show()
+    }
+  },
+  watch: {
+    $route(to, from) {
+      if (to.path === '/legal') this.hideModal()
+      if (from.path === '/legal') {
+        this.closeCookieConfig()
+        this.$refs.modal.show()
+      }
     }
   },
   methods: {

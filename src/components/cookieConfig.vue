@@ -22,7 +22,7 @@
       <b>Safari: </b><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac">https://support.apple.com/es-es/guide/safari/sfri11471/mac</a>
     </p>
     <p>
-      Al navegar por el sitio web podemos tratar sus datos personales. Para más información sobre nuestra Política de Protección de datos pulsa
+      Al navegar por el sitio web podemos tratar sus datos personales. Para más información sobre nuestra <b>Política de Protección de datos</b> pulsa
       <b><a class="link" @click="goDataProtect()">aquí.</a></b>
     </p>
     <p>
@@ -85,8 +85,9 @@ export default {
   },
   methods: {
     goBack() { this.$emit('back') },
+
     goDataProtect() {
-      this.goBack()
+      // this.$emit('closeModal')
       this.$router.push('legal');
     }
   }

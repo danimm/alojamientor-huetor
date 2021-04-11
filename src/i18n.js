@@ -133,7 +133,7 @@ const messages = {
       privacity:
         '** Al enviar este formulario está de acuerdo con nuestra política de privacidad. Para más información consulte las condiciones ',
       link: 'aquí.',
-      button: 'Enviar'
+      button: 'Aceptar y Enviar'
     }
   },
   en: {
