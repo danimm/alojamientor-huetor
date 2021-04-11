@@ -40,6 +40,13 @@
     >
       Google Analytics
     </b-form-checkbox>
+    <p class="pt-4">
+      CONSTRUCCIONES HUETOR 2001, S.L. puede modificar esta Política de Cookies en función de nuevas exigencias legislativas,  reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Autoridad competente.
+    </p>
+    <p>
+      Cuando se produzcan cambios significativos en esta Política de Cookies se comunicará al usuario y, en caso necesario, se solicitará su  consentimiento.
+    </p>
+
     <b-button class="mt-3" block @click="goBack()">Volver</b-button>
   </div>
 </template>
