@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="d-block text-left">
       <p><b>Responsable:</b> CONSTRUCCIONES HUETOR 2001, S.L. con domicilio social en LA LOMILLA, 8A 29713 LOS ROMANES</p>
       <p>En la presente Política de Cookies encontrarás la descripción y finalidad de cada una de las cookies utilizadas, así como su Nombre, el servidor de envío, su caducidad y en su caso la existencia de transferencia internacional de datos.</p>
@@ -32,7 +31,6 @@
       <p>El tiempo de conservación de las cookies dependerá del tipo de que se trate, siendo siempre el mínimo indispensable para cumplir su finalidad de uso.</p>
       <b-button class="mt-3" block @click="goBack()">Volver</b-button>
     </div>
-  </div>
 </template>
 
 <script>
