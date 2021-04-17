@@ -68,18 +68,17 @@ export default {
 img {
   max-width: 180px;
 }
-.icon {
-  width: 30%;
-  /* margin-left: 10px; */
-}
 .dropdown-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
+  padding-top: 40px;
 }
 .icon {
   width: 35px;
+  position: absolute;
+  right: 10%;
 }
 @media screen and (max-width: 992px) {
   /* .container {
