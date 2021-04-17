@@ -159,6 +159,14 @@ const messages = {
       title: 'Consulta las fechas disponibles para tus próximas vacaciones',
       booking: 'Reservar aquí',
       reviews: 'Lee las opiniones de nuestros clientes:',
+      comments: {
+        title: 'Déjanos tu comentario',
+        text: 'En Alojamientos Huetor queremos saber tu opinión. Publica una reseña en nuestro perfil. Gracias',
+        button: {
+          text: 'Escribe tu reseña',
+          link: ''
+        }
+      },
       button: 'Consultar fechas'
     },
     contact: {
@@ -330,7 +338,15 @@ const messages = {
       title: 'Check the available dates for your next vacation',
       booking: 'Book here',
       reviews: 'Read the opinions of our clients:',
-      button: 'Consult dates'
+      button: 'Consult dates',
+      comments: {
+        title: 'Leave us your comment',
+        text: 'At Huetor Accommodations we want to know your opinion. Post a review on our profile. Thanks',
+        button: {
+          text: 'Write your review',
+          link: ''
+        }
+      }
     },
     contact: {
       text1: 'Hello! I am Isa, write me any questions you have and I will try to answer you in less than 24 hours.',
@@ -503,7 +519,15 @@ const messages = {
       title: 'Prüfe die Verfügbarkeit für Deinen nächsten Urlaub',
       booking: 'Hier buchen',
       reviews: 'Lese die Bewertungen unserer Gäste:',
-      button: 'Verfügbarkeit'
+      button: 'Verfügbarkeit',
+      comments: {
+        title: 'Hinterlasse uns deinen Kommentar',
+        text: 'Bei Huetor Accommodations möchten wir von Ihnen hören. Schreiben Sie eine Bewertung in unser Profil. Vielen Dank.',
+        button: {
+          text: 'Schreibe deine Kommentar',
+          link: ''
+        }
+      }
     },
     contact: {
       text1: 'Hallo, ich heisse Isa und beantworte deine Fragen, wenn möglich innerhalb 24 Stunden.',
@@ -675,7 +699,15 @@ const messages = {
       title: 'Vérifiez les dates disponibles pour vos prochaines vacances',
       booking: 'réserver ici',
       reviews: 'Voir les commentaires de nos clients:',
-      button: 'Disponibilité'
+      button: 'Disponibilité',
+      comments: {
+        title: 'Laissez-nous votre commentaire',
+        text: 'Chez Huetor Hébergements, nous voulons connaître votre opinion. Publiez un avis sur notre profil. Merci.',
+        button: {
+          text: 'Écris ton commentaire',
+          link: ''
+        }
+      }
     },
     contact: {
       text1: 'Bonjour,  Je suis Isa, écrivez-moi toutes vos questions et je tenterai de vous répondre dans moins de 24 heures.',
