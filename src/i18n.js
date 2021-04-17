@@ -361,7 +361,7 @@ const messages = {
       },
       privacity: '** By submitting this form you agree to our privacy policy. For more information, see conditions ',
       link: 'here.',
-      button: 'Send'
+      button: 'Accept and send'
     }
   },
   de: {
@@ -542,7 +542,7 @@ const messages = {
       },
       privacity: '** Mit dem Absenden dieses Formulars stimmen Sie unseren Datenschutzbestimmungen zu. Weitere Informationen finden Sie ',
       link: 'hier.',
-      button: 'Senden'
+      button: 'Akzeptieren und senden'
     }
   },
   fr: {
@@ -723,7 +723,7 @@ const messages = {
       privacity:
         "** En soumettant ce formulaire, vous acceptez notre politique de confidentialité. Pour plus d'informations, consultez les conditions ",
       link: 'ici.',
-      button: 'Envoyer'
+      button: 'Accepter et envoyer'
     }
   }
 };
