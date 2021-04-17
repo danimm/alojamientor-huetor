@@ -36,21 +36,23 @@
         .col-lg-4.col-md-6
           h4.text-white {{ $t('footer.titleLinks') }}
           p.text-white.mt-4
-            a.text-white(href="http://planamalaga.com/" target="_blank") Actividades al aire libre
+            a.text-white(:href="$t('footer.links.activities.src')") {{ $t('footer.links.activities.text') }}
           p.text-white
-            a.text-white(href="http://www.granadatur.com" target="_blank") Turismo de Granada
+            a.text-white(:href="$t('footer.links.malaga.src')") {{ $t('footer.links.malaga.text') }}
           p.text-white
-            a.text-white(href="http://www.turismosevilla.org/opencms2/opencms/es/index.html" target="_blank") Portal de Turismo de la provincia de Sevilla
+            a.text-white(:href="$t('footer.links.cordoba.src')") {{ $t('footer.links.cordoba.text') }}
           p.text-white
-            a.text-white(href="http://www.cadizturismo.com/esp/1024/index.asp" target="_blank") Turismo de Cádiz
+            a.text-white(:href="$t('footer.links.sevilla.src')") {{ $t('footer.links.sevilla.text') }}
           p.text-white
-            a.text-white(href="http://www.cordobaturismo.es/es" target="_blank") Turismo de Córdoba
+            a.text-white(:href="$t('footer.links.cadiz.src')") {{ $t('footer.links.cadiz.text') }}
           p.text-white
-            a.text-white(href="http://www.turismoalmeria.com" target="_blank") Costa de Almería
+            a.text-white(:href="$t('footer.links.granada.src')") {{ $t('footer.links.granada.text') }}
           p.text-white
-            a.text-white(href="http://www.turismohuelva.org" target="_blank") Patronato de Turismo de Huelva
+            a.text-white(:href="$t('footer.links.jaen.src')") {{ $t('footer.links.jaen.text') }}
           p.text-white
-            a.text-white(href="http://www.andalucia.org" target="_blank") Web oficial de turismo de Andalucía
+            a.text-white(:href="$t('footer.links.almeria.src')") {{ $t('footer.links.almeria.text') }}
+          p.text-white
+            a.text-white(:href="$t('footer.links.andalucia.src')") {{ $t('footer.links.andalucia.text') }}
           p.text-white
     b-container
       b-row.lastFooter

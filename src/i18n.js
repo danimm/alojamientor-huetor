@@ -25,7 +25,49 @@ const messages = {
       titleInstagram: 'Síguenos en Instagram',
       titleLinks: 'Enlaces de interés',
       made: 'Creado por Daniel Muñoz Martín: ',
-      legal: 'Aviso legal'
+      legal: 'Aviso legal',
+      links: {
+        activities: {
+          text: 'Actividades al aire libre',
+          src: 'https://planamalaga.com/es/'
+        },
+        malaga: {
+          text: 'Turismo de Málaga',
+          src: 'https://www.andalucia.org/es/provincia-malaga'
+        },
+        cordoba: {
+          text: 'Turismo Córdoba',
+          src: 'https://www.andalucia.org/es/provincia-cordoba'
+        },
+        sevilla: {
+          text: 'Turismo Sevilla',
+          src: 'https://www.andalucia.org/es/provincia-sevilla'
+        },
+        cadiz: {
+          text: 'Turismo Cadiz',
+          src: 'https://www.andalucia.org/es/provincia-cadiz'
+        },
+        granada: {
+          text: 'Turismo Granada',
+          src: 'https://www.andalucia.org/es/provincia-granada'
+        },
+        jaen: {
+          text: 'Turismo de Jaén',
+          src: 'https://www.andalucia.org/es/provincia-jaen'
+        },
+        almeria: {
+          text: 'Turismo Almeria',
+          src: 'https://www.andalucia.org/es/provincia-almeria'
+        },
+        huelva: {
+          text: 'Turismo de Huelva',
+          src: 'https://www.andalucia.org/es/provincia-huelva'
+        },
+        andalucia: {
+          text: 'Turismo de Andalucía',
+          src: 'https://www.andalucia.org/es/inicio'
+        }
+      }
     },
     home: {
       main: {
@@ -157,7 +199,49 @@ const messages = {
       titleInstagram: 'Follow us on Instagram',
       titleLinks: 'Links of interest',
       made: 'Made by Daniel Muñoz Martín: ',
-      legal: 'Legal terms'
+      legal: 'Legal terms',
+      links: {
+        activities: {
+          text: 'Outdoor activities',
+          src: 'https://planamalaga.com'
+        },
+        malaga: {
+          text: 'Malaga Tourism',
+          src: 'https://www.andalucia.org/en/provincia-malaga'
+        },
+        cordoba: {
+          text: 'Cordoba Tourism',
+          src: 'https://www.andalucia.org/en/provincia-cordoba'
+        },
+        sevilla: {
+          text: 'Sevilla Tourism',
+          src: 'https://www.andalucia.org/en/provincia-sevilla'
+        },
+        cadiz: {
+          text: 'Cadiz Tourism',
+          src: 'https://www.andalucia.org/en/provincia-cadiz'
+        },
+        granada: {
+          text: 'Granada Tourism',
+          src: 'https://www.andalucia.org/en/provincia-granada'
+        },
+        jaen: {
+          text: 'Jaen Tourism',
+          src: 'https://www.andalucia.org/en/provincia-jaen'
+        },
+        almeria: {
+          text: 'Almeria Tourism',
+          src: 'https://www.andalucia.org/en/provincia-almeria'
+        },
+        huelva: {
+          text: 'Huelva Tourism',
+          src: 'https://www.andalucia.org/en/provincia-huelva'
+        },
+        andalucia: {
+          text: 'Andalucia Tourism',
+          src: 'https://www.andalucia.org/en/home'
+        }
+      }
     },
     home: {
       main: {
@@ -285,7 +369,49 @@ const messages = {
       titleInstagram: 'folgen Sie uns auf Instagram',
       titleLinks: 'interessante Links',
       made: 'Erstellt von Daniel Muñoz Martín: ',
-      legal: 'Rechtliche Hinweise'
+      legal: 'Rechtliche Hinweise',
+      links: {
+        activities: {
+          text: 'Outdoor-Aktivitäten',
+          src: 'https://planamalaga.com'
+        },
+        malaga: {
+          text: 'Malaga Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-malaga'
+        },
+        cordoba: {
+          text: 'Cordoba Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-cordoba'
+        },
+        sevilla: {
+          text: 'Sevilla Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-sevilla'
+        },
+        cadiz: {
+          text: 'Cadiz Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-cadiz'
+        },
+        granada: {
+          text: 'Granada Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-granada'
+        },
+        jaen: {
+          text: 'Jaen Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-jaen'
+        },
+        almeria: {
+          text: 'Almeria Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-almeria'
+        },
+        huelva: {
+          text: 'Huelva Tourismus',
+          src: 'https://www.andalucia.org/de/provincia-huelva'
+        },
+        andalucia: {
+          text: 'Andalucia Tourismus',
+          src: 'https://www.andalucia.org/de/home'
+        }
+      }
     },
     home: {
       main: {
@@ -416,7 +542,49 @@ const messages = {
       titleInstagram: 'Suivez nous sur Instagram',
       titleLinks: 'Liens d’intérêt',
       made: 'faite par Daniel Muñoz Martín: ',
-      legal: 'Termes légaux'
+      legal: 'Termes légaux',
+      links: {
+        activities: {
+          text: 'Outdoor-Aktivitäten',
+          src: 'https://planamalaga.com'
+        },
+        malaga: {
+          text: 'Tourisme à Malaga',
+          src: 'https://www.andalucia.org/fr/provincia-malaga'
+        },
+        cordoba: {
+          text: 'Tourisme à Cordoba',
+          src: 'https://www.andalucia.org/fr/provincia-cordoba'
+        },
+        sevilla: {
+          text: 'Tourisme à Sevilla',
+          src: 'https://www.andalucia.org/fr/provincia-sevilla'
+        },
+        cadiz: {
+          text: 'Tourisme à Cadiz',
+          src: 'https://www.andalucia.org/fr/provincia-cadiz'
+        },
+        granada: {
+          text: 'Tourisme à Granada',
+          src: 'https://www.andalucia.org/fr/provincia-granada'
+        },
+        jaen: {
+          text: 'Tourisme à Jaen',
+          src: 'https://www.andalucia.org/fr/provincia-jaen'
+        },
+        almeria: {
+          text: 'Tourisme à Almeria',
+          src: 'https://www.andalucia.org/fr/provincia-almeria'
+        },
+        huelva: {
+          text: 'Tourisme à Huelva',
+          src: 'https://www.andalucia.org/fr/provincia-huelva'
+        },
+        andalucia: {
+          text: 'Tourisme à Andalucia',
+          src: 'https://www.andalucia.org/fr/home'
+        }
+      }
     },
     home: {
       main: {
