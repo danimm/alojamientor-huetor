@@ -36,23 +36,23 @@
         .col-lg-4.col-md-6
           h4.text-white {{ $t('footer.titleLinks') }}
           p.text-white.mt-4
-            a.text-white(:href="$t('footer.links.activities.src')") {{ $t('footer.links.activities.text') }}
+            a.text-white(:href="$t('footer.links.activities.src')", target="_blank") {{ $t('footer.links.activities.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.malaga.src')") {{ $t('footer.links.malaga.text') }}
+            a.text-white(:href="$t('footer.links.malaga.src')", target="_blank") {{ $t('footer.links.malaga.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.cordoba.src')") {{ $t('footer.links.cordoba.text') }}
+            a.text-white(:href="$t('footer.links.cordoba.src')", target="_blank") {{ $t('footer.links.cordoba.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.sevilla.src')") {{ $t('footer.links.sevilla.text') }}
+            a.text-white(:href="$t('footer.links.sevilla.src')", target="_blank") {{ $t('footer.links.sevilla.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.cadiz.src')") {{ $t('footer.links.cadiz.text') }}
+            a.text-white(:href="$t('footer.links.cadiz.src')", target="_blank") {{ $t('footer.links.cadiz.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.granada.src')") {{ $t('footer.links.granada.text') }}
+            a.text-white(:href="$t('footer.links.granada.src')", target="_blank") {{ $t('footer.links.granada.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.jaen.src')") {{ $t('footer.links.jaen.text') }}
+            a.text-white(:href="$t('footer.links.jaen.src')", target="_blank") {{ $t('footer.links.jaen.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.almeria.src')") {{ $t('footer.links.almeria.text') }}
+            a.text-white(:href="$t('footer.links.almeria.src')", target="_blank") {{ $t('footer.links.almeria.text') }}
           p.text-white
-            a.text-white(:href="$t('footer.links.andalucia.src')") {{ $t('footer.links.andalucia.text') }}
+            a.text-white(:href="$t('footer.links.andalucia.src')", target="_blank") {{ $t('footer.links.andalucia.text') }}
           p.text-white
     b-container
       b-row.lastFooter
