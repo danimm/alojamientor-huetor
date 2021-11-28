@@ -55,6 +55,9 @@
             a.text-white(:href="$t('footer.links.andalucia.src')", target="_blank") {{ $t('footer.links.andalucia.text') }}
           p.text-white
     b-container
+      b-row
+        .col.my-4
+          img(src='@/assets/images/banner2.jpg', alt=`banner`)
       b-row.lastFooter
         .col-sm-12.col-md-6
           p
