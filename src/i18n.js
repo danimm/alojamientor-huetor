@@ -8,6 +8,7 @@ const messages = {
     header: {
       home: 'Inicio',
       reservations: 'Reservar ahora',
+      carReservation: 'Reserva tu coche',
       reviews: 'Comentarios',
       gallery: 'Galería',
       contact: 'Contacto',
@@ -190,6 +191,7 @@ const messages = {
     header: {
       home: 'Home',
       reservations: 'Booking now',
+      carReservation: 'Book a car',
       reviews: 'Reviews',
       gallery: 'Gallery',
       contact: 'Contact',
@@ -368,6 +370,7 @@ const messages = {
     header: {
       home: 'Home',
       reservations: 'Jetzt Reservieren',
+      carReservation: 'Auto Reservieren',
       reviews: 'Bewertungen',
       gallery: 'Galerie',
       contact: 'Kontakt',
@@ -549,6 +552,7 @@ const messages = {
     header: {
       home: 'Accueil',
       reservations: 'Réservez maintenant',
+      carReservation: 'Réservez votre véhicule',
       reviews: 'Commentaires',
       gallery: 'Galerie photo',
       contact: 'Contact',

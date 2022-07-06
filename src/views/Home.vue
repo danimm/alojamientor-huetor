@@ -50,8 +50,8 @@ export default {
   name: 'home',
   data() {
     return {
-      Slide1: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/slides%2FSlide2.jpg?alt=media&token=b7c27705-23e8-4a99-8ac6-8068e643386c',
-      Slide2: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage24.JPG?alt=media&token=9753fff9-2b99-4ef4-b2a8-1031994a5d56',
+      Slide1: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/slides%2FDJI_0482.JPG?alt=media&token=674fd592-29c7-4e86-84c1-c71b4115d4e5',
+      Slide2: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/slides%2FIMG_3224.JPG?alt=media&token=46c9946b-939f-42fe-b328-47d8e5dcb59d',
       Slide3: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2FSlide3.JPEG?alt=media&token=cf5b1f96-c846-400e-ae37-ac15c4717bd7',
       Image1: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage1.JPG?alt=media&token=248ab0a9-bcda-4c97-9cd3-c55575236369',
       Image2: 'https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage2.JPG?alt=media&token=8e846eb0-c9d2-4311-af38-8032ce2c6faa',

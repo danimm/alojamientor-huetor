@@ -39,7 +39,7 @@
       .overlay
         .container
           .row.align-items-center
-            .col-md-6.offset-md-6.text-center.text-md-right
+            .col-md-6.offset-md-6.text-center.text-md-right.description-container
               h1.display-3 Alojamientos Huetor
               p.d-none.d-md-block.h4 {{ $t('home.main.text1') }}
 </template>
@@ -116,6 +116,10 @@ p {
 }
 .btn {
   margin-left: 20px;
+}
+
+.description-container {
+  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 992px) {

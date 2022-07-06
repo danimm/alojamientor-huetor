@@ -7,7 +7,8 @@
       b-collapse#nav_collapse(is-nav)
         b-navbar-nav(class="ml-auto")
           router-link.nav-link(to="/") {{ $t('header.home') }}
-          a.nav-link.btn.btn-warning(:href="link" target="_blank") {{ $t('header.reservations') }}
+          a.nav-link.btn.btn-warning(:href="link.eviivo" target="_blank") {{ $t('header.reservations') }}
+          a.nav-link.ml-2(:href="link.hellehollis" target="_blank") {{ $t('header.carReservation') }}
           router-link.nav-link(to="reviews") {{ $t('header.reviews') }}
           router-link.nav-link(to="gallery") {{ $t('header.gallery') }}
           router-link.nav-link(to="contact") {{ $t('header.contact') }}
@@ -30,24 +31,26 @@ export default {
   },
   computed: {
     link() {
-      switch (this.$i18n.locale) {
-        case 'es':
-          return 'https://via.eviivo.com/es-ES/alojamientoshuetor';
-          break;
-        case 'en':
-          return 'https://via.eviivo.com/en-GB/alojamientoshuetor';
-          break;
-        case 'de':
-          return 'https://via.eviivo.com/de-DE/alojamientoshuetor';
-          break;
-        case 'fr':
-          return 'https://via.eviivo.com/fr-FR/alojamientoshuetor';
-          break;
-
-        default:
-          return 'https://via.eviivo.com/AlojamientosHuetor';
-          break;
+      const locale = this.$i18n.locale;
+      const links = {
+        es: {
+          eviivo: 'https://via.eviivo.com/es-ES/alojamientoshuetor',
+          hellehollis: 'https://www.hellehollis.com/booking-cargroup.aspx?affiliate_id=292&langID=es'
+        },
+        en: {
+          eviivo: 'https://via.eviivo.com/en-GB/alojamientoshuetor',
+          hellehollis: 'https://www.hellehollis.com/booking-cargroup.aspx?affiliate_id=292&langID=en'
+        },
+        de: {
+          eviivo: 'https://via.eviivo.com/de-DE/alojamientoshuetor',
+          hellehollis: 'https://www.hellehollis.com/booking-cargroup.aspx?affliate_id=292&langID=de'
+        },
+        fr: {
+          eviivo: 'https://via.eviivo.com/fr-FR/alojamientoshuetor',
+          hellehollis: 'https://www.hellehollis.com/booking-cargroup.aspx?affliate_id=292&langID=fr\n'
+        },
       }
+      return links[locale];
     }
   },
   methods: {

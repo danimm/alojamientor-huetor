@@ -6,7 +6,7 @@
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage1.jpg?alt=media&token=6af97302-4031-4a42-81b3-5a7d0b246dcc")
       .item
         //- <-- Imagen 2 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2FH-81162951850.JPEG?alt=media&token=bdfd149c-8cea-41f2-be64-37a0d3fd2eab")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDJI_0561.JPG?alt=media&token=b231c580-6c90-4f4c-9ee5-fcbe28153bb5")
       .item
         //- <-- Imagen 3 -->
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage4.JPEG?alt=media&token=18e09220-e481-4ecd-b700-9a56753ed339")
@@ -15,35 +15,44 @@
         img.pool(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage7.JPEG?alt=media&token=fd12cc98-8c52-48bc-84f6-143ba13ed3a5")
       .item
         //- <-- Imagen 7 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage3.jpg?alt=media&token=0a7a27d1-6ed6-4118-99ea-ea9ef0b497b2")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDJI_0544.JPG?alt=media&token=6622fb66-408f-4a43-b092-e2b3f5493229")
       .item
         //- <-- Imagen 8 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0201.JPG?alt=media&token=96ed55f5-9872-4c10-b103-bc5f303de408")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FIMG_3262.jpg?alt=media&token=9299b368-03c6-42ea-8633-9741e57d3833")
       .item
         //- <-- Imagen 9 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0219.JPG?alt=media&token=b96bbfb4-5c36-41a0-94c1-f22a87c76eed")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FIMG_3227.JPG?alt=media&token=da02aa19-b6e0-47cd-b521-b7f4a909dc26")
       .item
         //- <-- Imagen 10 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Fimage3.JPEG?alt=media&token=6908b5a3-bea6-4431-a332-da303161e62c")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDJI_0533.JPG?alt=media&token=8324047b-3a6f-4e14-b832-b19cc47aa67a")
       .item
         //- <-- Imagen 11 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0252.JPG?alt=media&token=002855b7-e04b-4510-8218-e220e7ffd67f")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDJI_0486.JPG?alt=media&token=c6c4f100-3d39-4edf-9041-7609f7ee35c0")
       .item
         //- <-- Imagen 12 -->
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0278.JPG?alt=media&token=5d8af7cc-c1c0-42c0-99a6-6d67f46f2bbe")
       .item
         //- <-- Imagen 13 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0294.JPG?alt=media&token=2e61c11a-c39c-4292-8154-8799426c857a")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FIMG_3245.JPG?alt=media&token=d1a4d121-6f66-42a2-b933-62d5b4d8b2c4")
       .item
         //- <-- Imagen 14 -->
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0306.JPG?alt=media&token=54f5f654-4993-45c5-a4d3-03b5d4b92538")
       .item
         //- <-- Imagen 15 -->
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDSC_0316.JPG?alt=media&token=ff976e4f-00d5-44d7-9198-195731e1c2e0")
-        
+
       .item
         //- <-- Imagen 16 -->
-        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage7.JPG?alt=media&token=bab52def-ba59-4c40-97f7-d40917ec38c6")
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FIMG_1901.JPG?alt=media&token=2621ad6d-0621-4585-a632-a05565ce6f62")
+
+
+      .item
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FIMG_3197.JPG?alt=media&token=0f91b7b7-bd24-49cf-934f-5f8bed77228d")
+
+      .item
+        img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/gallery%2Ffotos-2%2FDJI_0481.JPG?alt=media&token=8e3b15c7-0732-4ab0-aa59-28b7a840e95c")
+
+
       .item
         //- <-- Imagen 17 -->
         img(src="https://firebasestorage.googleapis.com/v0/b/huetor-16ddf.appspot.com/o/images%2FImage10.JPG?alt=media&token=e188e884-15fa-4748-9e03-982feed9f730")
@@ -65,14 +74,6 @@
       
       
 </template>
-
-
-<script>
-  export default {
-    
-  }
-  
-</script>
 
 <style scoped>
   .grid-container {
