@@ -22,6 +22,9 @@
           .col.zoover-container
             a(:href="links.linkAirbnb", target="_blank")
               img.airbnb(src="@/assets/airbnb.png")
+          .col.kayak-container
+            a(:href="links.linkKayak", target="_blank")
+              img.airbnb(src="https://content.r9cdn.net/seo-res/badges/v4/ORANGE_MEDIUM_TRAVEL_AWARDS.png")
 </template>
 
 <script>
@@ -49,7 +52,9 @@ export default {
             linkEviivo: 'https://via.eviivo.com/AlojamientosHuetor',
             linkBooking: 'http://www.booking.com/Share-WBzKDE',
             linkAirbnb:
-              'https://www.airbnb.es/rooms/39353570?adults=2&check_in=2021-04-06&check_out=2021-04-08&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&guests=1'
+              'https://www.airbnb.es/rooms/39353570?adults=2&check_in=2021-04-06&check_out=2021-04-08&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&guests=1',
+            linkKayak:
+              'https://www.kayak.es/Vinuela-Hoteles-Alojamientos-Huetor.375601.ksp'
           };
           break;
         case 'en':
@@ -60,7 +65,9 @@ export default {
             linkEviivo: 'https://via.eviivo.com/en-GB/alojamientoshuetor',
             linkBooking: 'http://www.booking.com/Share-MXFwsC',
             linkAirbnb:
-              'https://www.airbnb.co.uk/rooms/39353570?check_out=2021-04-08&adults=2&check_in=2021-04-06&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&guests=1&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&_set_bev_on_new_domain=1610717448_OThlZDNiYjRjNWU2'
+              'https://www.airbnb.co.uk/rooms/39353570?check_out=2021-04-08&adults=2&check_in=2021-04-06&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&guests=1&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&_set_bev_on_new_domain=1610717448_OThlZDNiYjRjNWU2',
+            linkKayak:
+                'https://www.kayak.es/Vinuela-Hoteles-Alojamientos-Huetor.375601.ksp'
           };
           break;
         case 'de':
@@ -71,7 +78,9 @@ export default {
             linkEviivo: 'https://via.eviivo.com/de-DE/alojamientoshuetor',
             linkBooking: 'https://www.booking.com/hotel/es/alojamientos-huetor.de.html',
             linkAirbnb:
-              'https://www.airbnb.ch/rooms/39353570?adults=2&check_in=2021-04-06&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&check_out=2021-04-08&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&_set_bev_on_new_domain=1610717448_OThlZDNiYjRjNWU2&guests=1&locale=de'
+              'https://www.airbnb.ch/rooms/39353570?adults=2&check_in=2021-04-06&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&check_out=2021-04-08&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&_set_bev_on_new_domain=1610717448_OThlZDNiYjRjNWU2&guests=1&locale=de',
+            linkKayak:
+                'https://www.kayak.es/Vinuela-Hoteles-Alojamientos-Huetor.375601.ksp'
           };
           break;
         case 'fr':
@@ -82,7 +91,9 @@ export default {
             linkEviivo: 'https://via.eviivo.com/fr-FR/alojamientoshuetor',
             linkBooking: 'http://www.booking.com/Share-JPJX5Z',
             linkAirbnb:
-              'https://www.airbnb.fr/rooms/39353570?check_out=2021-04-08&adults=2&check_in=2021-04-06&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&guests=1&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&_set_bev_on_new_domain=1610717448_OThlZDNiYjRjNWU2'
+              'https://www.airbnb.fr/rooms/39353570?check_out=2021-04-08&adults=2&check_in=2021-04-06&federated_search_id=804e33e0-9686-47f8-89fe-f91121fe2031&guests=1&source_impression_id=p3_1617189548_2ptMidTajDJa6Xre&_set_bev_on_new_domain=1610717448_OThlZDNiYjRjNWU2',
+            linkKayak:
+                'https://www.kayak.es/Vinuela-Hoteles-Alojamientos-Huetor.375601.ksp'
           };
           break;
 
@@ -127,6 +138,7 @@ img.airbnb {
 }
 
 .zoover-container,
+.kayak-container,
 .tripadvisor-container {
   display: flex;
   justify-content: center;
