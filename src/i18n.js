@@ -68,7 +68,8 @@ const messages = {
           text: 'Turismo de Andalucía',
           src: 'https://www.andalucia.org/es/inicio'
         }
-      }
+      },
+      energy: 'Construcciones Huetor 2001 sl. ha recibido una ayuda de la Unión Europea con cargo al Programa Operativo FEDER de Andalucía 2014-2020, financiada como parte de la respuesta de la Unión a la pandemia de COVID-19 (REACT-UE), para compensar el sobrecoste energético de gas natural y/o electricidad a pymes y autónomos especialmente afectados por el incremento de los precios del gas natural y la electricidad provocados por el impacto de la guerra de agresión de Rusia contra Ucrania.'
     },
     home: {
       main: {
@@ -251,7 +252,8 @@ const messages = {
           text: 'Andalucia Tourism',
           src: 'https://www.andalucia.org/en/home'
         }
-      }
+      },
+      energy: "Construcciones Huetor 2001 sl. has received a grant from the European Union under the Andalusia ERDF Operational Program 2014-2020, funded as part of the Union's response to the COVID-19 pandemic (REACT-EU), to compensate the extra energy cost of natural gas and/or electricity to SMEs and self-employed especially affected by the increase in natural gas and electricity prices caused by the impact of Russia's war of aggression against Ukraine."
     },
     home: {
       main: {
@@ -430,7 +432,8 @@ const messages = {
           text: 'Andalucia Tourismus',
           src: 'https://www.andalucia.org/de/home'
         }
-      }
+      },
+      energy: 'Construcciones Huetor 2001 sl. hat von der Europäischen Union im Rahmen des operationellen Programms 2014-2020 des EFRE für Andalusien einen Zuschuss erhalten, der als Teil der EU-Reaktion auf die COVID-19-Pandemie (REACT-EU) finanziert wird, um die zusätzlichen Energiekosten für Erdgas und/oder Elektrizität für KMU und Selbstständige auszugleichen, die besonders von dem Anstieg der Erdgas- und Elektrizitätspreise aufgrund der Auswirkungen des russischen Angriffskriegs gegen die Ukraine betroffen sind'
     },
     home: {
       main: {
@@ -612,7 +615,8 @@ const messages = {
           text: 'Tourisme à Andalucia',
           src: 'https://www.andalucia.org/fr/home'
         }
-      }
+      },
+      energy: "Construcciones Huetor 2001 sl. a reçu une subvention de l'Union européenne dans le cadre du programme opérationnel FEDER Andalousie 2014-2020, financé dans le cadre de la réponse de l'UE à la pandémie COVID-19 (REACT-UE), pour compenser le surcoût énergétique du gaz naturel et/ou de l'électricité pour les PME et les travailleurs indépendants particulièrement touchés par l'augmentation des prix du gaz naturel et de l'électricité causée par l'impact de la guerre d'agression de la Russie contre l'Ukraine."
     },
     home: {
       main: {

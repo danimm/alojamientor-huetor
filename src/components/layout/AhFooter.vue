@@ -53,11 +53,13 @@
             a.text-white(:href="$t('footer.links.almeria.src')", target="_blank") {{ $t('footer.links.almeria.text') }}
           p.text-white
             a.text-white(:href="$t('footer.links.andalucia.src')", target="_blank") {{ $t('footer.links.andalucia.text') }}
-          p.text-white
     b-container
       b-row
         .col.my-4
           img(src='@/assets/images/banner2.jpg', alt=`banner`)
+      b-row
+        .col.my-4
+          p.text-white.text-center {{ $t('footer.energy') }}
       b-row.lastFooter
         .col-sm-12.col-md-6
           p
@@ -65,10 +67,6 @@
           a.text-white.email(href="mailto:info@danimm.com", target="_blank") info@danimm.com
           
         .col-sm-10.col-md-6.text-right
-          //- router-link.nav-link(to="/") Inicio
-          //- router-link.nav-link(to="reservations") Reservas
-          //- router-link.nav-link(to="gallery") Galería
-          //- router-link.nav-link(to="contact") Contacto
           a.nav-link(@click="goLegal") {{ $t('footer.legal') }}
 
 </template>
